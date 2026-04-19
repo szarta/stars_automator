@@ -1,0 +1,83 @@
+{
+  "bbs_joat_gr05": {
+    "prt": "JOAT",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 5,
+    "population": 50000,
+    "population_raw": 500,
+    "expected": 50000,
+    "match": "\u2713"
+  },
+  "bbs_joat_gr10": {
+    "prt": "JOAT",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 10,
+    "population": 75000,
+    "population_raw": 750,
+    "expected": 75000,
+    "match": "\u2713"
+  },
+  "bbs_joat_gr14": {
+    "prt": "JOAT",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 14,
+    "population": 95000,
+    "population_raw": 950,
+    "expected": 95000,
+    "match": "\u2713"
+  },
+  "bbs_joat_gr10_lsp": {
+    "prt": "JOAT",
+    "lrts": [
+      "IFE",
+      "LSP"
+    ],
+    "gr": 10,
+    "population": 52500,
+    "population_raw": 525,
+    "expected": 75000,
+    "match": "\u2717 (got 52,500)"
+  },
+  "bbs_pp_gr10": {
+    "prt": "PP",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 10,
+    "population": 60000,
+    "population_raw": 600,
+    "expected": 75000,
+    "match": "\u2717 (got 60,000)"
+  },
+  "bbs_it_gr10": {
+    "prt": "IT",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 10,
+    "population": 60000,
+    "population_raw": 600,
+    "expected": 75000,
+    "match": "\u2717 (got 60,000)"
+  },
+  "bbs_pp_gr05": {
+    "prt": "PP",
+    "lrts": [
+      "IFE"
+    ],
+    "gr": 5,
+    "population": 40000,
+    "population_raw": 400,
+    "expected": 50000,
+    "match": "\u2717 (got 40,000)"
+  },
+  "bbs_pp_gr14": {
+    "error": "create_game failed or timed out"
+  }
+}

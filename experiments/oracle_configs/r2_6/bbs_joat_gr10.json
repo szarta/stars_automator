@@ -1,0 +1,104 @@
+{
+  "experiment_name": "bbs_joat_gr10",
+  "game_name": "BBSTest",
+  "universe": {
+    "map_size": "small",
+    "density": "normal",
+    "player_positions": "moderate",
+    "seed": 12345
+  },
+  "options": {
+    "max_minerals": false,
+    "slow_tech": false,
+    "bbs_play": true,
+    "galaxy_clumping": false,
+    "computer_alliances": false,
+    "no_random_events": true,
+    "public_scores": false
+  },
+  "victory": {
+    "planets": {
+      "enabled": true,
+      "percent": 60
+    },
+    "tech": {
+      "enabled": false,
+      "level": 26,
+      "fields": 4
+    },
+    "score": {
+      "enabled": false,
+      "score": 5000
+    },
+    "exceeds_nearest": {
+      "enabled": false,
+      "percent": 150
+    },
+    "production": {
+      "enabled": false,
+      "capacity": 100
+    },
+    "capital_ships": {
+      "enabled": false,
+      "number": 100
+    },
+    "turns": {
+      "enabled": false,
+      "years": 100
+    },
+    "must_meet": 1,
+    "min_years": 50
+  },
+  "human_races": [
+    {
+      "format_version": 1,
+      "name": "Humanoid",
+      "plural_name": "Humanoids",
+      "prt": "JOAT",
+      "lrts": [
+        "IFE"
+      ],
+      "hab": {
+        "gravity": {
+          "immune": false,
+          "min": 0.22,
+          "max": 4.4
+        },
+        "temperature": {
+          "immune": false,
+          "min": -140.0,
+          "max": 140.0
+        },
+        "radiation": {
+          "immune": false,
+          "min": 15.0,
+          "max": 85.0
+        }
+      },
+      "economy": {
+        "resource_production": 1000,
+        "factory_production": 10,
+        "factory_cost": 10,
+        "factory_cheap_germanium": false,
+        "colonists_operate_factories": 10,
+        "mine_production": 10,
+        "mine_cost": 5,
+        "colonists_operate_mines": 10,
+        "growth_rate": 10
+      },
+      "research_costs": {
+        "energy": "normal",
+        "weapons": "normal",
+        "propulsion": "normal",
+        "construction": "normal",
+        "electronics": "normal",
+        "biotechnology": "normal",
+        "expensive_tech_start_at_4": false
+      },
+      "leftover_spend": "surface_minerals",
+      "icon_index": 0
+    },
+    "/home/brandon/data/stars/stars-reborn-research/original/stars.r1"
+  ],
+  "ai_players": []
+}

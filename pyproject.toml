@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stars-automator"
+version = "0.1.0"
+description = "Automation tools to gather data from Stars! 4x strategy game"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+stars-create-game   = "stars_automator.game:main"
+stars-generate-turn = "stars_automator.turns:main"
+stars-dump-game     = "stars_automator.dump:main"
+stars-create-ini    = "stars_automator.ini:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["stars_automator*"]
