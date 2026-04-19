@@ -1,32 +1,42 @@
 """
 Default paths for Stars! automation tools.
 
-All defaults can be overridden with environment variables:
+Priority (highest to lowest):
+  1. Environment variable
+  2. stars_automator.local.cfg  (gitignored, machine-specific values)
+  3. stars_automator.cfg        (committed, placeholder defaults)
 
-    STARS_EXE           Path to stars.exe (Wine-compatible binary)
-    STARS_PARSER_DIR    Directory containing stars_file_parser binaries
-                        (json_to_r1, json_to_def, m1_to_json, …)
-    WINEPREFIX          Wine prefix directory (standard Wine env var)
-    DISPLAY             X display for Wine / Xvfb (standard X11 env var)
+To configure for your machine, copy stars_automator.cfg to
+stars_automator.local.cfg and fill in the real paths.
 """
+import configparser
 import os
+from pathlib import Path
 
-DEFAULT_STARS_EXE = os.path.expanduser(
-    os.environ.get(
-        "STARS_EXE",
-        "~/data/stars/stars-reborn-research/original/stars.exe",
-    )
-)
+_REPO_ROOT = Path(__file__).parent.parent
 
-DEFAULT_PARSER_DIR = os.path.expanduser(
-    os.environ.get(
-        "STARS_PARSER_DIR",
-        "~/data/stars/stars_file_parser/target/debug",
-    )
-)
 
-DEFAULT_WINEPREFIX = os.path.expanduser(
-    os.environ.get("WINEPREFIX", "~/.wine32")
-)
+def _load_config() -> configparser.ConfigParser:
+    cfg = configparser.ConfigParser()
+    for name in ("stars_automator.cfg", "stars_automator.local.cfg"):
+        path = _REPO_ROOT / name
+        if path.exists():
+            cfg.read(path)
+    return cfg
 
-DEFAULT_DISPLAY = os.environ.get("DISPLAY", ":99")
+
+_CFG = _load_config()
+
+
+def _get(section: str, key: str, env_var: str, fallback: str) -> str:
+    if env_var in os.environ:
+        return os.path.expanduser(os.environ[env_var])
+    val = _CFG.get(section, key, fallback=fallback)
+    return os.path.expanduser(val)
+
+
+DEFAULT_STARS_EXE    = _get("paths", "stars_exe",          "STARS_EXE",          "/path/to/stars.exe")
+DEFAULT_PARSER_DIR   = _get("paths", "stars_parser_dir",   "STARS_PARSER_DIR",   "/path/to/stars_file_parser/target/debug")
+DEFAULT_RESEARCH_DIR = _get("paths", "stars_research_dir", "STARS_RESEARCH_DIR", "/path/to/stars-reborn-research")
+DEFAULT_WINEPREFIX   = _get("wine",  "wineprefix",         "WINEPREFIX",         "~/.wine32")
+DEFAULT_DISPLAY      = _get("wine",  "display",            "DISPLAY",            ":99")

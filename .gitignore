@@ -6,3 +6,4 @@ dist/
 build/
 .eggs/
 *.egg
+stars_automator.local.cfg

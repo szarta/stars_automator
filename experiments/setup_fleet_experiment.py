@@ -32,13 +32,12 @@ import shutil
 import sys
 from pathlib import Path
 
-_RESEARCH  = Path(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-).expanduser()
+from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_STARS_EXE
 
+_RESEARCH  = Path(DEFAULT_RESEARCH_DIR)
 BASE_DIR   = _RESEARCH / "original" / "race_fleet_permutation_games"
 RACES_DIR  = _RESEARCH / "original" / "race_ship_permutations"
-STARS_EXE  = _RESEARCH / "original" / "stars.exe"
+STARS_EXE  = Path(DEFAULT_STARS_EXE)
 
 PRTS             = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
 SIZES            = ["tiny", "small", "medium", "large", "huge"]

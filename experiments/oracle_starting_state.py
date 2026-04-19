@@ -39,25 +39,26 @@ import subprocess
 import sys
 import tempfile
 
+from stars_automator.config import (
+    DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR,
+    DEFAULT_STARS_EXE, DEFAULT_WINEPREFIX, DEFAULT_DISPLAY,
+)
+
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-RESEARCH   = os.path.expanduser(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-)
-PARSER_DIR = os.path.expanduser(
-    os.environ.get("STARS_PARSER_DIR", "~/data/stars/stars_file_parser/target/debug")
-)
+RESEARCH   = DEFAULT_RESEARCH_DIR
+PARSER_DIR = DEFAULT_PARSER_DIR
 
-STARS_EXE   = os.path.join(RESEARCH, "original", "stars.exe")
+STARS_EXE   = DEFAULT_STARS_EXE
 JSON_TO_R1  = os.path.join(PARSER_DIR, "json_to_r1")
 JSON_TO_DEF = os.path.join(PARSER_DIR, "json_to_def")
 M1_TO_JSON  = os.path.join(PARSER_DIR, "m1_to_json")
 
 WINE_ENV = {
     **os.environ,
-    "WINEPREFIX": os.path.expanduser("~/.wine32"),
-    "WINEARCH": "win32",
-    "DISPLAY": os.environ.get("DISPLAY", ":99"),
+    "WINEPREFIX": DEFAULT_WINEPREFIX,
+    "WINEARCH":   "win32",
+    "DISPLAY":    DEFAULT_DISPLAY,
 }
 
 # ── Base race template ────────────────────────────────────────────────────────

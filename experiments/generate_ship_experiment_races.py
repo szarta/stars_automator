@@ -18,7 +18,6 @@ Race JSON key is expensive_tech_start_at_4 (confirmed 2026-04-16).
 
 import json
 import itertools
-import os
 import sys
 from pathlib import Path
 
@@ -125,10 +124,8 @@ def generate(output_dir: str) -> int:
 
 
 if __name__ == "__main__":
-    _research = Path(
-        os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-    ).expanduser()
+    from stars_automator.config import DEFAULT_RESEARCH_DIR
     out_dir = (sys.argv[1] if len(sys.argv) > 1
-               else str(_research / "original" / "race_ship_permutations"))
+               else str(Path(DEFAULT_RESEARCH_DIR) / "original" / "race_ship_permutations"))
     n = generate(out_dir)
     print(f"Generated {n} race files → {out_dir}")

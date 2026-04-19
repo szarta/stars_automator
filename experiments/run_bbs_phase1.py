@@ -18,6 +18,8 @@ Environment variables:
 """
 import argparse, json, os, pathlib, shutil, subprocess, sys, time
 
+from stars_automator.config import DEFAULT_PARSER_DIR
+
 HERE        = pathlib.Path(__file__).parent
 CONFIGS_DIR = HERE / "oracle_configs" / "r2_6"
 EXPERIMENTS = [
@@ -30,10 +32,6 @@ EXPERIMENTS = [
     "bbs_pp_gr05",
     "bbs_pp_gr14",
 ]
-
-DEFAULT_PARSER_DIR = os.path.expanduser(
-    os.environ.get("STARS_PARSER_DIR", "~/data/stars/stars_file_parser/target/debug")
-)
 
 
 def run_create_game(cfg_path: pathlib.Path, display: str, timeout: int) -> bool:
@@ -113,7 +111,7 @@ def main():
                     help="delete existing /tmp/<name>/ and recreate")
     args = ap.parse_args()
 
-    parser_dir = DEFAULT_PARSER_DIR
+    parser_dir = str(DEFAULT_PARSER_DIR)
 
     results = {}
     for name in EXPERIMENTS:

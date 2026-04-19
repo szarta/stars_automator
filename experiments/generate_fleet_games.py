@@ -31,18 +31,14 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-_RESEARCH  = Path(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-).expanduser()
-_PARSER    = Path(
-    os.environ.get("STARS_PARSER_DIR", "~/data/stars/stars_file_parser/target/debug")
-).expanduser()
+from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR, DEFAULT_WINEPREFIX
 
-BASE_DIR   = _RESEARCH / "original" / "race_fleet_permutation_games"
-RACES_DIR  = _RESEARCH / "original" / "race_ship_permutations"
-PARSER_DIR = _PARSER
-JSON_TO_R1  = PARSER_DIR / "json_to_r1"
-JSON_TO_DEF = PARSER_DIR / "json_to_def"
+_RESEARCH   = Path(DEFAULT_RESEARCH_DIR)
+_PARSER     = Path(DEFAULT_PARSER_DIR)
+BASE_DIR    = _RESEARCH / "original" / "race_fleet_permutation_games"
+RACES_DIR   = _RESEARCH / "original" / "race_ship_permutations"
+JSON_TO_R1  = _PARSER / "json_to_r1"
+JSON_TO_DEF = _PARSER / "json_to_def"
 
 PRTS = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
 
@@ -72,7 +68,7 @@ DEFAULT_VICTORY = {
 def wine_env(display: str) -> dict:
     return {
         **os.environ,
-        "WINEPREFIX": os.path.expanduser("~/.wine32"),
+        "WINEPREFIX": DEFAULT_WINEPREFIX,
         "WINEARCH":   "win32",
         "DISPLAY":    display,
     }

@@ -68,16 +68,10 @@ import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-_RESEARCH  = Path(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-).expanduser()
-_PARSER    = Path(
-    os.environ.get("STARS_PARSER_DIR", "~/data/stars/stars_file_parser/target/debug")
-).expanduser()
+from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR
 
-BASE_DIR   = _RESEARCH / "original" / "race_fleet_permutation_games"
-PARSER_DIR = _PARSER
-M1_TO_JSON = PARSER_DIR / "m1_to_json"
+BASE_DIR   = Path(DEFAULT_RESEARCH_DIR) / "original" / "race_fleet_permutation_games"
+M1_TO_JSON = Path(DEFAULT_PARSER_DIR) / "m1_to_json"
 
 PRTS = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
 
@@ -222,7 +216,7 @@ def main():
         sys.exit(1)
 
     out_path = Path(args.out) if args.out else (
-        _RESEARCH / "docs" / "findings" / "fleet_corpus.jsonl"
+        Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "fleet_corpus.jsonl"
     )
 
     game_dirs = find_game_dirs(args.prt)

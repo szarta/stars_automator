@@ -11,19 +11,17 @@ Environment variables:
     STARS_RESEARCH_DIR  Root of the stars-reborn-research repo
                         (default: ~/data/stars/stars-reborn-research)
 """
-import copy, json, os, pathlib
+import copy, json, pathlib
+
+from stars_automator.config import DEFAULT_RESEARCH_DIR
 
 HERE = pathlib.Path(__file__).parent
 BASE_RACE = json.loads((HERE / "_base_race_joat_ife.json").read_text())
 
 SEED = 12345  # fixed across all experiments for reproducibility
 
-_RESEARCH = pathlib.Path(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-).expanduser()
-
 # Second player — only present so Stars! accepts the game; never read for results.
-FILLER_RACE = str(_RESEARCH / "original" / "stars.r1")
+FILLER_RACE = str(pathlib.Path(DEFAULT_RESEARCH_DIR) / "original" / "stars.r1")
 
 
 def make_race(gr, lrts=None, prt="JOAT"):

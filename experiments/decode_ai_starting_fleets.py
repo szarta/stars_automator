@@ -49,15 +49,11 @@ from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-RESEARCH   = Path(
-    os.environ.get("STARS_RESEARCH_DIR", "~/data/stars/stars-reborn-research")
-).expanduser()
-PARSER_DIR = Path(
-    os.environ.get("STARS_PARSER_DIR", "~/data/stars/stars_file_parser/target/debug")
-).expanduser()
+from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR
 
+RESEARCH   = Path(DEFAULT_RESEARCH_DIR)
 BASE_DIR   = RESEARCH / "original" / "initial_maps"
-M1_TO_JSON = PARSER_DIR / "m1_to_json"
+M1_TO_JSON = Path(DEFAULT_PARSER_DIR) / "m1_to_json"
 
 DIFFICULTIES = ["easy", "standard", "harder", "expert"]
 SIZES        = ["tiny", "small", "medium", "large", "huge"]
@@ -244,7 +240,7 @@ def main():
     args = parser.parse_args()
 
     out_path = Path(args.out) if args.out else (
-        RESEARCH / "docs" / "findings" / "ai_fleet_corpus.jsonl"
+        Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "ai_fleet_corpus.jsonl"
     )
 
     if args.report:
