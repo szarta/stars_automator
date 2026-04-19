@@ -53,17 +53,30 @@ Or run without installing using `python3 -m stars_automator.<module>`.
 
 ---
 
-## Environment variables
+## Configuration
 
-All tools respect these env vars (falling back to hardcoded defaults if unset):
+Paths are resolved in priority order (highest to lowest):
 
-| Variable             | Default                                              | Purpose                          |
-|----------------------|------------------------------------------------------|----------------------------------|
-| `STARS_EXE`          | `~/data/stars/stars-reborn-research/original/stars.exe` | Path to `stars.exe`           |
-| `STARS_PARSER_DIR`   | `~/data/stars/stars_file_parser/target/debug`        | Directory of parser binaries     |
-| `WINEPREFIX`         | `~/.wine32`                                          | Wine prefix (standard Wine var)  |
-| `DISPLAY`            | `:99`                                                | X display for Wine               |
-| `STARS_RESEARCH_DIR` | `~/data/stars/stars-reborn-research`                 | Research repo root (experiments) |
+1. **Environment variable** — always wins if set
+2. **`stars_automator.local.cfg`** — your machine-specific overrides (gitignored)
+3. **`stars_automator.cfg`** — committed placeholder defaults
+
+To configure for your machine:
+
+```bash
+cp stars_automator.cfg stars_automator.local.cfg
+# edit stars_automator.local.cfg with real paths
+```
+
+### Settings reference
+
+| Config key (`[section]`)         | Env var              | Purpose                          |
+|----------------------------------|----------------------|----------------------------------|
+| `[paths] stars_exe`              | `STARS_EXE`          | Path to `stars.exe`              |
+| `[paths] stars_parser_dir`       | `STARS_PARSER_DIR`   | Directory of parser binaries     |
+| `[paths] stars_research_dir`     | `STARS_RESEARCH_DIR` | Research repo root (experiments) |
+| `[wine] wineprefix`              | `WINEPREFIX`         | Wine prefix (must be 32-bit)     |
+| `[wine] display`                 | `DISPLAY`            | X display for Wine               |
 
 ---
 
