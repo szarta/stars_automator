@@ -1,12 +1,13 @@
 """
 Wine and Xvfb helpers shared across all automation scripts.
 """
+
 import os
 import subprocess
 import time
 
 from stars_automator._cli import die
-from stars_automator.config import DEFAULT_WINEPREFIX, DEFAULT_DISPLAY
+from stars_automator.config import DEFAULT_DISPLAY, DEFAULT_WINEPREFIX
 
 
 def make_wine_env(
@@ -17,8 +18,8 @@ def make_wine_env(
     return {
         **os.environ,
         "WINEPREFIX": wineprefix,
-        "WINEARCH":   "win32",
-        "DISPLAY":    display,
+        "WINEARCH": "win32",
+        "DISPLAY": display,
     }
 
 

@@ -62,15 +62,14 @@ Environment variables:
 
 import argparse
 import json
-import os
 import subprocess
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR
+from stars_automator.config import DEFAULT_PARSER_DIR, DEFAULT_RESEARCH_DIR
 
-BASE_DIR   = Path(DEFAULT_RESEARCH_DIR) / "original" / "race_fleet_permutation_games"
+BASE_DIR = Path(DEFAULT_RESEARCH_DIR) / "original" / "race_fleet_permutation_games"
 M1_TO_JSON = Path(DEFAULT_PARSER_DIR) / "m1_to_json"
 
 PRTS = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
@@ -84,9 +83,9 @@ def parse_race_stem(stem: str) -> tuple[str, list[str], list[str]]:
     — this is NOT the BET LRT.
     """
     parts = stem.split("_", 2)
-    prt              = parts[0].upper()
-    lrts             = [x.upper() for x in parts[1].split(".") if x] if len(parts) >= 2 else []
-    expensive_start4 = [x for x in parts[2].split(".") if x]          if len(parts) >= 3 else []
+    prt = parts[0].upper()
+    lrts = [x.upper() for x in parts[1].split(".") if x] if len(parts) >= 2 else []
+    expensive_start4 = [x for x in parts[2].split(".") if x] if len(parts) >= 3 else []
     return prt, lrts, expensive_start4
 
 
@@ -96,11 +95,11 @@ def decode_game(game_dir: Path) -> list[dict]:
     Returns a list of per-player records (skips missing .mN files silently).
     Raises RuntimeError on m1_to_json failures.
     """
-    meta      = json.loads((game_dir / "_meta.json").read_text())
+    meta = json.loads((game_dir / "_meta.json").read_text())
     game_name = meta["game_name"]
-    races     = meta["races"]
+    races = meta["races"]
     accel_bbs = meta["universe"]["accelerated_bbs"]
-    rel_dir   = str(game_dir.relative_to(BASE_DIR))
+    rel_dir = str(game_dir.relative_to(BASE_DIR))
 
     records = []
     for idx, race_stem in enumerate(races):
@@ -115,37 +114,35 @@ def decode_game(game_dir: Path) -> list[dict]:
             timeout=30,
         )
         if result.returncode != 0:
-            raise RuntimeError(
-                f"m1_to_json failed on {mfile}: {result.stderr.decode().strip()}"
-            )
+            raise RuntimeError(f"m1_to_json failed on {mfile}: {result.stderr.decode().strip()}")
 
         data = json.loads(result.stdout)
         prt, lrts, expensive_start4 = parse_race_stem(race_stem)
 
         p = data.get("player", {})
         tech = {
-            "en": p.get("tech_energy",        0),
-            "we": p.get("tech_weapons",        0),
-            "pr": p.get("tech_propulsion",     0),
-            "co": p.get("tech_construction",   0),
-            "el": p.get("tech_electronics",    0),
-            "bi": p.get("tech_biology",        0),
+            "en": p.get("tech_energy", 0),
+            "we": p.get("tech_weapons", 0),
+            "pr": p.get("tech_propulsion", 0),
+            "co": p.get("tech_construction", 0),
+            "el": p.get("tech_electronics", 0),
+            "bi": p.get("tech_biology", 0),
         }
 
-        designs   = []
+        designs = []
         starbases = []
         for d in data.get("designs", []):
             components = []
             for s in d.get("slots", []):
-                cnt  = s.get("count", 1)
+                cnt = s.get("count", 1)
                 name = s.get("component", "?")
                 components.append(f"{cnt}x {name}" if cnt > 1 else name)
 
             entry = {
-                "hull_id":    d["hull_id"],
-                "hull_name":  d["hull_name"],
-                "name":       d["name"],
-                "count":      d.get("total_remaining", 0),
+                "hull_id": d["hull_id"],
+                "hull_name": d["hull_name"],
+                "name": d["name"],
+                "count": d.get("total_remaining", 0),
                 "components": components,
             }
             if d.get("is_starbase"):
@@ -153,18 +150,20 @@ def decode_game(game_dir: Path) -> list[dict]:
             else:
                 designs.append(entry)
 
-        records.append({
-            "race_stem":        race_stem,
-            "prt":              prt,
-            "lrts":             lrts,
-            "expensive_start4": expensive_start4,
-            "accelerated_bbs":  accel_bbs,
-            "tech":             tech,
-            "game_dir":         rel_dir,
-            "player":           player_num,
-            "designs":          designs,
-            "starbases":        starbases,
-        })
+        records.append(
+            {
+                "race_stem": race_stem,
+                "prt": prt,
+                "lrts": lrts,
+                "expensive_start4": expensive_start4,
+                "accelerated_bbs": accel_bbs,
+                "tech": tech,
+                "game_dir": rel_dir,
+                "player": player_num,
+                "designs": designs,
+                "starbases": starbases,
+            }
+        )
 
     return records
 
@@ -201,22 +200,26 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--prt",     help="Process only this PRT (e.g. IT)")
-    parser.add_argument("--workers", type=int, default=4,
-                        help="Parallel processes (default: 4)")
-    parser.add_argument("--out",     default=None,
-                        help="Output JSONL path")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Count work items without processing")
+    parser.add_argument("--prt", help="Process only this PRT (e.g. IT)")
+    parser.add_argument("--workers", type=int, default=4, help="Parallel processes (default: 4)")
+    parser.add_argument("--out", default=None, help="Output JSONL path")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Count work items without processing"
+    )
     args = parser.parse_args()
 
     if not M1_TO_JSON.exists():
-        print(f"error: m1_to_json not found at {M1_TO_JSON}\n"
-              f"  Run `cargo build` in stars_file_parser/", file=sys.stderr)
+        print(
+            f"error: m1_to_json not found at {M1_TO_JSON}\n"
+            f"  Run `cargo build` in stars_file_parser/",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
-    out_path = Path(args.out) if args.out else (
-        Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "fleet_corpus.jsonl"
+    out_path = (
+        Path(args.out)
+        if args.out
+        else (Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "fleet_corpus.jsonl")
     )
 
     game_dirs = find_game_dirs(args.prt)
@@ -236,9 +239,7 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     done = failed = players = 0
 
-    with open(out_path, "w") as out_f, \
-         ProcessPoolExecutor(max_workers=args.workers) as ex:
-
+    with open(out_path, "w") as out_f, ProcessPoolExecutor(max_workers=args.workers) as ex:
         futures = {ex.submit(_worker, gd): gd for gd in game_dirs}
 
         for fut in as_completed(futures):
@@ -255,9 +256,10 @@ def main():
 
             if done % 100 == 0 or done == len(game_dirs):
                 pct = 100 * done / len(game_dirs)
-                print(f"  [{done}/{len(game_dirs)}] {pct:.0f}%  "
-                      f"players={players}  failed={failed}",
-                      flush=True)
+                print(
+                    f"  [{done}/{len(game_dirs)}] {pct:.0f}%  players={players}  failed={failed}",
+                    flush=True,
+                )
 
     print(f"\nDone. {players} player records written to {out_path}")
     if failed:

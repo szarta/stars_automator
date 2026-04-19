@@ -1,23 +1,24 @@
 """
-    stars_automater.py
+stars_automater.py
 
-    Functions to launch and manipulate a Stars! game using Wine and xdotool.
+Functions to launch and manipulate a Stars! game using Wine and xdotool.
 
-    The resolutions of windows and mouse positions are shamelessly hard-coded.
-    Use xprop, xwininfo and xmousepos to get mouse coordinates and resolutions.
+The resolutions of windows and mouse positions are shamelessly hard-coded.
+Use xprop, xwininfo and xmousepos to get mouse coordinates and resolutions.
 
-    :author: Brandon Arrendondo
-    :license: MIT
+:author: Brandon Arrendondo
+:license: MIT
 """
+
+import logging
 import subprocess
 import time
-import logging
 
 STARS_SPLASH_GEOMETRY = "1600x900"
-#STARS_SPLASH_GEOMETRY = "2560x1600"
-#STARS_SPLASH_GEOMETRY = "2222x1348"
+# STARS_SPLASH_GEOMETRY = "2560x1600"
+# STARS_SPLASH_GEOMETRY = "2222x1348"
 NEW_GAME_SAVE_GEOMETRY = "413x218"
-#STARS_GAME_GEOMETRY = "1535x1161"
+# STARS_GAME_GEOMETRY = "1535x1161"
 STARS_GAME_GEOMETRY = "2540x1569"
 
 
@@ -72,62 +73,62 @@ def select_new_game():
     logging.debug("Selecting New Game...")
 
     cmd = "xdotool mousemove 306 1536 click 1"
-    result = subprocess.check_output(cmd, shell=True)
+    subprocess.check_output(cmd, shell=True)
 
 
 def select_universe_size(size):
-    if (size == UniverseSize.Tiny):
+    if size == UniverseSize.Tiny:
         logging.debug("Choosing Tiny universe size.")
         cmd = "xdotool mousemove 1132 810 click 1"
-    elif (size == UniverseSize.Small):
+    elif size == UniverseSize.Small:
         logging.debug("Choosing Small universe size.")
         cmd = "xdotool mousemove 1132 830 click 1"
-    elif (size == UniverseSize.Medium):
+    elif size == UniverseSize.Medium:
         logging.debug("Choosing Medium universe size.")
         cmd = "xdotool mousemove 1132 860 click 1"
-    elif (size == UniverseSize.Large):
+    elif size == UniverseSize.Large:
         logging.debug("Choosing Large universe size.")
         cmd = "xdotool mousemove 1132 880 click 1"
-    elif (size == UniverseSize.Huge):
+    elif size == UniverseSize.Huge:
         logging.debug("Choosing Huge universe size.")
         cmd = "xdotool mousemove 1132 900 click 1"
     else:
         raise Exception("Invalid universe size.")
 
-    result = subprocess.check_output(cmd, shell=True)
+    subprocess.check_output(cmd, shell=True)
 
 
 def select_advanced_game():
     logging.debug("Selecting Advanced Game...")
 
     cmd = "xdotool mousemove 1340 880 click 1"
-    result = subprocess.check_output(cmd, shell=True)
+    subprocess.check_output(cmd, shell=True)
 
 
 def select_universe_density(density):
-    if (density == UniverseDensity.Sparse):
+    if density == UniverseDensity.Sparse:
         logging.debug("Choosing Sparse universe density.")
         cmd = "xdotool mousemove 1143 865 click 1"
-    elif (density == UniverseDensity.Normal):
+    elif density == UniverseDensity.Normal:
         logging.debug("Choosing Normal universe density.")
         cmd = "xdotool mousemove 1143 890 click 1"
-    elif (density == UniverseDensity.Dense):
+    elif density == UniverseDensity.Dense:
         logging.debug("Choosing Dense universe density.")
         cmd = "xdotool mousemove 1143 905 click 1"
-    elif (density == UniverseDensity.Packed):
+    elif density == UniverseDensity.Packed:
         logging.debug("Choosing Packed universe density.")
         cmd = "xdotool mousemove 1143 925 click 1"
     else:
         raise Exception("Invalid universe density.")
 
-    result = subprocess.check_output(cmd, shell=True)
+    subprocess.check_output(cmd, shell=True)
 
 
 def select_finish_advanced_game():
     logging.debug("Selecting Finish...")
 
     cmd = "xdotool mousemove 1434 972 click 1"
-    result = subprocess.check_output(cmd, shell=True)
+    subprocess.check_output(cmd, shell=True)
 
 
 def default_ok_new_game():
@@ -136,7 +137,7 @@ def default_ok_new_game():
     for line in result.splitlines():
         discovered_geometry = get_window_geometry(line)
         logging.debug("Discovered geometry: {0!s}".format(discovered_geometry))
-        if (discovered_geometry == NEW_GAME_SAVE_GEOMETRY):
+        if discovered_geometry == NEW_GAME_SAVE_GEOMETRY:
             window_id = int(line.strip())
             cmd = "xdotool key Return {0!s}".format(window_id)
             result = subprocess.check_output(cmd, shell=True)
@@ -151,21 +152,21 @@ def dump_universe_map():
     for line in result.splitlines():
         discovered_geometry = get_window_geometry(line)
         logging.debug("Discovered geometry: {0!s}".format(discovered_geometry))
-        if (discovered_geometry == STARS_GAME_GEOMETRY):
+        if discovered_geometry == STARS_GAME_GEOMETRY:
             window_id = int(line.strip())
             logging.debug("Pressing Alt R")
             cmd = "xdotool windowactivate {0!s} key Alt key R".format(window_id)
             result = subprocess.check_output(cmd, shell=True)
 
-            time.sleep(.5)
+            time.sleep(0.5)
             cmd = "xdotool windowactivate {0!s} key D".format(window_id)
             result = subprocess.check_output(cmd, shell=True)
 
-            time.sleep(.5)
+            time.sleep(0.5)
             cmd = "xdotool windowactivate {0!s} key U".format(window_id)
             result = subprocess.check_output(cmd, shell=True)
 
-            time.sleep(.5)
+            time.sleep(0.5)
 
             return
 

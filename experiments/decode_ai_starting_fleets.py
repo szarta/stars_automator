@@ -42,22 +42,21 @@ Environment variables:
 
 import argparse
 import json
-import os
 import subprocess
 import sys
 from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR
+from stars_automator.config import DEFAULT_PARSER_DIR, DEFAULT_RESEARCH_DIR
 
-RESEARCH   = Path(DEFAULT_RESEARCH_DIR)
-BASE_DIR   = RESEARCH / "original" / "initial_maps"
+RESEARCH = Path(DEFAULT_RESEARCH_DIR)
+BASE_DIR = RESEARCH / "original" / "initial_maps"
 M1_TO_JSON = Path(DEFAULT_PARSER_DIR) / "m1_to_json"
 
 DIFFICULTIES = ["easy", "standard", "harder", "expert"]
-SIZES        = ["tiny", "small", "medium", "large", "huge"]
-GAME_NAME    = "Game"
+SIZES = ["tiny", "small", "medium", "large", "huge"]
+GAME_NAME = "Game"
 
 
 def decode_game(game_dir: Path, difficulty: str, map_size: str, run: int) -> list[dict]:
@@ -79,41 +78,43 @@ def decode_game(game_dir: Path, difficulty: str, map_size: str, run: int) -> lis
             timeout=30,
         )
         if result.returncode != 0:
-            raise RuntimeError(
-                f"m1_to_json failed on {mfile}: {result.stderr.decode().strip()}"
-            )
+            raise RuntimeError(f"m1_to_json failed on {mfile}: {result.stderr.decode().strip()}")
 
-        data  = json.loads(result.stdout)
-        race  = data.get("player", {}).get("race", {})
-        prt   = race.get("prt", "?")
-        lrts  = race.get("lrts", [])
+        data = json.loads(result.stdout)
+        race = data.get("player", {}).get("race", {})
+        prt = race.get("prt", "?")
+        lrts = race.get("lrts", [])
 
         designs = []
         for d in data.get("designs", []):
             components = []
             for s in d.get("slots", []):
-                cnt  = s.get("count", 1)
+                cnt = s.get("count", 1)
                 name = s.get("component", "?")
                 components.append(f"{cnt}x {name}" if cnt > 1 else name)
 
-            designs.append({
-                "name":        d["name"],
-                "hull_name":   d["hull_name"],
-                "hull_id":     d["hull_id"],
-                "is_starbase": d.get("is_starbase", False),
-                "count":       d.get("total_remaining", 0),
-                "components":  components,
-            })
+            designs.append(
+                {
+                    "name": d["name"],
+                    "hull_name": d["hull_name"],
+                    "hull_id": d["hull_id"],
+                    "is_starbase": d.get("is_starbase", False),
+                    "count": d.get("total_remaining", 0),
+                    "components": components,
+                }
+            )
 
-        records.append({
-            "difficulty": difficulty,
-            "map_size":   map_size,
-            "run":        run,
-            "player":     player_num,
-            "prt":        prt,
-            "lrts":       lrts,
-            "designs":    designs,
-        })
+        records.append(
+            {
+                "difficulty": difficulty,
+                "map_size": map_size,
+                "run": run,
+                "player": player_num,
+                "prt": prt,
+                "lrts": lrts,
+                "designs": designs,
+            }
+        )
         player_num += 1
 
     return records
@@ -162,7 +163,7 @@ def summarise(jsonl_path: Path) -> None:
     name_hull: dict[tuple, str] = {}
 
     for rec in records:
-        prt  = rec["prt"]
+        prt = rec["prt"]
         diff = rec["difficulty"]
         for d in rec["designs"]:
             key = (prt, d["name"])
@@ -186,13 +187,16 @@ def summarise(jsonl_path: Path) -> None:
             print(x)
         print()
 
-    varies = [(prt, name) for (prt, name), diffs in name_by_diff.items()
-              if len(diffs) < 4 and len(diffs) > 0]
+    varies = [
+        (prt, name)
+        for (prt, name), diffs in name_by_diff.items()
+        if len(diffs) < 4 and len(diffs) > 0
+    ]
     if varies:
         print("Names NOT present in all 4 difficulties:")
         for prt, name in sorted(varies):
             diffs = name_by_diff[(prt, name)]
-            hull  = name_hull[(prt, name)]
+            hull = name_hull[(prt, name)]
             print(f"  {prt} '{name}' ({hull}): only in {sorted(diffs)}")
         print()
 
@@ -200,10 +204,12 @@ def summarise(jsonl_path: Path) -> None:
     print("=" * 70)
     for prt in sorted(prt_designs):
         print(f"\n{prt}")
-        ships     = [(n, h) for n, hs in prt_designs[prt].items()
-                     for h in hs if not _is_starbase_hull(h)]
-        starbases = [(n, h) for n, hs in prt_designs[prt].items()
-                     for h in hs if _is_starbase_hull(h)]
+        ships = [
+            (n, h) for n, hs in prt_designs[prt].items() for h in hs if not _is_starbase_hull(h)
+        ]
+        starbases = [
+            (n, h) for n, hs in prt_designs[prt].items() for h in hs if _is_starbase_hull(h)
+        ]
         print("  Ships:")
         for name, hull in sorted(ships, key=lambda x: x[1]):
             diffs = sorted(name_by_diff[(prt, name)])
@@ -215,8 +221,12 @@ def summarise(jsonl_path: Path) -> None:
 
 
 STARBASE_HULLS = {
-    "Space Station", "Ultra Station", "Death Star", "Orbital Fort",
-    "Space Dock", "Star Base",
+    "Space Station",
+    "Ultra Station",
+    "Death Star",
+    "Orbital Fort",
+    "Space Dock",
+    "Star Base",
 }
 
 
@@ -229,31 +239,33 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--workers", type=int, default=4,
-                        help="Parallel processes (default: 4)")
-    parser.add_argument("--out",     default=None,
-                        help="JSONL output path")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Count work items without processing")
-    parser.add_argument("--report",  action="store_true",
-                        help="Print summary from existing JSONL")
+    parser.add_argument("--workers", type=int, default=4, help="Parallel processes (default: 4)")
+    parser.add_argument("--out", default=None, help="JSONL output path")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Count work items without processing"
+    )
+    parser.add_argument("--report", action="store_true", help="Print summary from existing JSONL")
     args = parser.parse_args()
 
-    out_path = Path(args.out) if args.out else (
-        Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "ai_fleet_corpus.jsonl"
+    out_path = (
+        Path(args.out)
+        if args.out
+        else (Path(DEFAULT_RESEARCH_DIR) / "docs" / "findings" / "ai_fleet_corpus.jsonl")
     )
 
     if args.report:
         if not out_path.exists():
-            print(f"error: {out_path} not found — run without --report first",
-                  file=sys.stderr)
+            print(f"error: {out_path} not found — run without --report first", file=sys.stderr)
             sys.exit(1)
         summarise(out_path)
         return
 
     if not M1_TO_JSON.exists():
-        print(f"error: m1_to_json not found at {M1_TO_JSON}\n"
-              f"  Run `cargo build` in stars_file_parser/", file=sys.stderr)
+        print(
+            f"error: m1_to_json not found at {M1_TO_JSON}\n"
+            f"  Run `cargo build` in stars_file_parser/",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     game_items = find_game_dirs()
@@ -274,9 +286,7 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     done = failed = players = 0
 
-    with open(out_path, "w") as out_f, \
-         ProcessPoolExecutor(max_workers=args.workers) as ex:
-
+    with open(out_path, "w") as out_f, ProcessPoolExecutor(max_workers=args.workers) as ex:
         futures = {ex.submit(_worker, item): item for item in game_items}
 
         for fut in as_completed(futures):
@@ -293,9 +303,10 @@ def main():
 
             if done % 50 == 0 or done == len(game_items):
                 pct = 100 * done / len(game_items)
-                print(f"  [{done}/{len(game_items)}] {pct:.0f}%  "
-                      f"players={players}  failed={failed}",
-                      flush=True)
+                print(
+                    f"  [{done}/{len(game_items)}] {pct:.0f}%  players={players}  failed={failed}",
+                    flush=True,
+                )
 
     print(f"\nDone. {players} AI player records written to {out_path}")
     if failed:

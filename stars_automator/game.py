@@ -68,44 +68,45 @@ import subprocess
 import sys
 
 from stars_automator._cli import die
-from stars_automator.config import DEFAULT_STARS_EXE, DEFAULT_PARSER_DIR
+from stars_automator.config import DEFAULT_PARSER_DIR, DEFAULT_STARS_EXE
 from stars_automator.wine import ensure_xvfb, make_wine_env, wine_path
 
 DEFAULT_VICTORY = {
-    "planets":         {"enabled": True,  "percent": 60},
-    "tech":            {"enabled": True,  "level": 26, "fields": 4},
-    "score":           {"enabled": False, "score": 5000},
+    "planets": {"enabled": True, "percent": 60},
+    "tech": {"enabled": True, "level": 26, "fields": 4},
+    "score": {"enabled": False, "score": 5000},
     "exceeds_nearest": {"enabled": False, "percent": 150},
-    "production":      {"enabled": False, "capacity": 100},
-    "capital_ships":   {"enabled": False, "number": 100},
-    "turns":           {"enabled": False, "years": 100},
+    "production": {"enabled": False, "capacity": 100},
+    "capital_ships": {"enabled": False, "number": 100},
+    "turns": {"enabled": False, "years": 100},
     "must_meet": 1,
     "min_years": 50,
 }
 
 DEFAULT_OPTIONS = {
-    "max_minerals":       False,
-    "slow_tech":          False,
-    "bbs_play":           False,
-    "galaxy_clumping":    False,
+    "max_minerals": False,
+    "slow_tech": False,
+    "bbs_play": False,
+    "galaxy_clumping": False,
     "computer_alliances": False,
-    "no_random_events":   False,
-    "public_scores":      False,
+    "no_random_events": False,
+    "public_scores": False,
 }
 
 
 def run_tool(cmd, description):
     result = subprocess.run(cmd, capture_output=True)
     if result.returncode != 0:
-        die(f"{description} failed:\n  cmd: {' '.join(str(c) for c in cmd)}\n"
-            f"  stderr: {result.stderr.decode().strip()}")
+        die(
+            f"{description} failed:\n  cmd: {' '.join(str(c) for c in cmd)}\n"
+            f"  stderr: {result.stderr.decode().strip()}"
+        )
     return result
 
 
 def check_tool(path):
     if not os.path.isfile(path):
-        die(f"tool not found: {path}\n"
-            f"  Run `cargo build` in the stars_file_parser directory.")
+        die(f"tool not found: {path}\n  Run `cargo build` in the stars_file_parser directory.")
 
 
 def resolve_race(entry, workdir, player_idx, json_to_r1_bin, env):
@@ -123,18 +124,18 @@ def resolve_race(entry, workdir, player_idx, json_to_r1_bin, env):
         elif entry.endswith(".json"):
             if not os.path.isfile(entry):
                 die(f"race JSON file not found: {entry}")
-            run_tool([json_to_r1_bin, entry, r1_dest],
-                     f"json_to_r1 (player {player_idx})")
+            run_tool([json_to_r1_bin, entry, r1_dest], f"json_to_r1 (player {player_idx})")
             print(f"  player {player_idx}: converted {entry} → player{player_idx}.r1")
         else:
-            die(f"human_races entry {player_idx!r} is a string but not "
-                f"a .json or .r1 path: {entry!r}")
+            die(
+                f"human_races entry {player_idx!r} is a string but not "
+                f"a .json or .r1 path: {entry!r}"
+            )
     elif isinstance(entry, dict):
         json_path = os.path.join(workdir, f"player{player_idx}.json")
         with open(json_path, "w") as f:
             json.dump(entry, f, indent=2)
-        run_tool([json_to_r1_bin, json_path, r1_dest],
-                 f"json_to_r1 (player {player_idx})")
+        run_tool([json_to_r1_bin, json_path, r1_dest], f"json_to_r1 (player {player_idx})")
         name = entry.get("name", "?")
         print(f"  player {player_idx}: inline race '{name}' → player{player_idx}.r1")
     else:
@@ -149,10 +150,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("config", help="Path to the game configuration JSON file")
-    parser.add_argument("--display", default=":99",
-                        help="X display to use for Wine (default: :99)")
-    parser.add_argument("--start-xvfb", action="store_true",
-                        help="Start Xvfb on --display if it is not already running")
+    parser.add_argument("--display", default=":99", help="X display to use for Wine (default: :99)")
+    parser.add_argument(
+        "--start-xvfb",
+        action="store_true",
+        help="Start Xvfb on --display if it is not already running",
+    )
     args = parser.parse_args()
 
     config_path = os.path.expanduser(args.config)
@@ -165,14 +168,14 @@ def main():
     if not experiment_name:
         die("config must include 'experiment_name'")
 
-    game_name   = cfg.get("game_name", "Game")
-    stars_exe   = os.path.expanduser(cfg.get("stars_exe",   DEFAULT_STARS_EXE))
-    parser_dir  = os.path.expanduser(cfg.get("parser_dir",  DEFAULT_PARSER_DIR))
-    universe    = cfg.get("universe")
-    options     = {**DEFAULT_OPTIONS, **cfg.get("options", {})}
-    victory     = {**DEFAULT_VICTORY, **cfg.get("victory", {})}
+    game_name = cfg.get("game_name", "Game")
+    stars_exe = os.path.expanduser(cfg.get("stars_exe", DEFAULT_STARS_EXE))
+    parser_dir = os.path.expanduser(cfg.get("parser_dir", DEFAULT_PARSER_DIR))
+    universe = cfg.get("universe")
+    options = {**DEFAULT_OPTIONS, **cfg.get("options", {})}
+    victory = {**DEFAULT_VICTORY, **cfg.get("victory", {})}
     human_races = cfg.get("human_races", [])
-    ai_players  = cfg.get("ai_players", [])
+    ai_players = cfg.get("ai_players", [])
 
     if not universe:
         die("config must include a 'universe' section")
@@ -184,7 +187,7 @@ def main():
     if missing:
         die(f"universe section missing keys: {', '.join(sorted(missing))}")
 
-    json_to_r1_bin  = os.path.join(parser_dir, "json_to_r1")
+    json_to_r1_bin = os.path.join(parser_dir, "json_to_r1")
     json_to_def_bin = os.path.join(parser_dir, "json_to_def")
     for tool in [json_to_r1_bin, json_to_def_bin]:
         check_tool(tool)
@@ -231,32 +234,38 @@ def main():
 
     game_def = {
         "game_name": game_name,
-        "universe":  universe,
-        "options":   options,
-        "players":   players,
-        "victory":   victory,
+        "universe": universe,
+        "options": options,
+        "players": players,
+        "victory": victory,
         "output_xy": xy_wine,
     }
 
     def_json_path = os.path.join(workdir, "game.json")
-    def_path      = os.path.join(workdir, "game.def")
+    def_path = os.path.join(workdir, "game.def")
     with open(def_json_path, "w") as f:
         json.dump(game_def, f, indent=2)
     run_tool([json_to_def_bin, def_json_path, def_path], "json_to_def")
-    print(f"  wrote game.def  ({len(players)} player(s): "
-          f"{len(r1_wine_paths)} human, {len(ai_players)} AI)")
+    print(
+        f"  wrote game.def  ({len(players)} player(s): "
+        f"{len(r1_wine_paths)} human, {len(ai_players)} AI)"
+    )
 
     print("[stars.exe]")
     print(f"  running: wine stars.exe -a game.def  (cwd={workdir})")
     with open(os.devnull, "w") as devnull:
         result = subprocess.run(
             ["wine", "stars.exe", "-a", "game.def"],
-            cwd=workdir, env=env,
-            stdout=devnull, stderr=devnull,
+            cwd=workdir,
+            env=env,
+            stdout=devnull,
+            stderr=devnull,
         )
     if result.returncode != 0:
-        die(f"stars.exe exited {result.returncode} — check that Xvfb is running "
-            f"on {args.display} and that WINEPREFIX={env['WINEPREFIX']} is valid")
+        die(
+            f"stars.exe exited {result.returncode} — check that Xvfb is running "
+            f"on {args.display} and that WINEPREFIX={env['WINEPREFIX']} is valid"
+        )
 
     print("[output]")
     expected = [f"{game_name}.hst", f"{game_name}.xy"]

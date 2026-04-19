@@ -44,7 +44,6 @@ import argparse
 import os
 import shutil
 import subprocess
-import sys
 
 from stars_automator._cli import die
 from stars_automator.ini import ensure_stars_ini
@@ -56,16 +55,15 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("game_dir",     help="Directory containing the player file")
-    parser.add_argument("player_file",  help="Player file name, e.g. Game.m1")
-    parser.add_argument("--planets",    action="store_true", help="Dump planet info")
-    parser.add_argument("--fleets",     action="store_true", help="Dump fleet info")
-    parser.add_argument("--map",        action="store_true", help="Dump universe map")
-    parser.add_argument("--copy-exe",   metavar="PATH",
-                        help="Copy stars.exe from PATH into game_dir")
+    parser.add_argument("game_dir", help="Directory containing the player file")
+    parser.add_argument("player_file", help="Player file name, e.g. Game.m1")
+    parser.add_argument("--planets", action="store_true", help="Dump planet info")
+    parser.add_argument("--fleets", action="store_true", help="Dump fleet info")
+    parser.add_argument("--map", action="store_true", help="Dump universe map")
+    parser.add_argument("--copy-exe", metavar="PATH", help="Copy stars.exe from PATH into game_dir")
     args = parser.parse_args()
 
-    game_dir    = os.path.realpath(os.path.expanduser(args.game_dir))
+    game_dir = os.path.realpath(os.path.expanduser(args.game_dir))
     player_file = args.player_file
 
     if not os.path.isdir(game_dir):
@@ -90,8 +88,8 @@ def main():
         )
 
     dump_planets = args.planets
-    dump_fleets  = args.fleets
-    dump_map     = args.map
+    dump_fleets = args.fleets
+    dump_map = args.map
     if not (dump_planets or dump_fleets or dump_map):
         dump_planets = dump_fleets = dump_map = True
 
@@ -122,8 +120,10 @@ def main():
     with open(os.devnull, "w") as devnull:
         result = subprocess.run(
             ["wine", "stars.exe", d_flag, player_file],
-            cwd=game_dir, env=env,
-            stdout=devnull, stderr=devnull,
+            cwd=game_dir,
+            env=env,
+            stdout=devnull,
+            stderr=devnull,
         )
 
     if result.returncode != 0:
@@ -141,7 +141,7 @@ def main():
 
     for fname in touched:
         fpath = os.path.join(game_dir, fname)
-        size  = os.path.getsize(fpath)
+        size = os.path.getsize(fpath)
         print(f"  {fname:<24s}  {size:>8d} bytes")
 
     if not touched:

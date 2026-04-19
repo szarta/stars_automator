@@ -18,3 +18,10 @@ stars-create-ini    = "stars_automator.ini:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["stars_automator*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

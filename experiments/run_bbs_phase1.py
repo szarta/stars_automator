@@ -16,11 +16,19 @@ Environment variables:
     STARS_PARSER_DIR    Directory of stars_file_parser binaries
                         (default: ~/data/stars/stars_file_parser/target/debug)
 """
-import argparse, json, os, pathlib, shutil, subprocess, sys, time
+
+import argparse
+import json
+import os
+import pathlib
+import shutil
+import subprocess
+import sys
+import time
 
 from stars_automator.config import DEFAULT_PARSER_DIR
 
-HERE        = pathlib.Path(__file__).parent
+HERE = pathlib.Path(__file__).parent
 CONFIGS_DIR = HERE / "oracle_configs" / "r2_6"
 EXPERIMENTS = [
     "bbs_joat_gr05",
@@ -40,13 +48,15 @@ def run_create_game(cfg_path: pathlib.Path, display: str, timeout: int) -> bool:
     Returns True on success, False on timeout or error.
     """
     cmd = [
-        sys.executable, "-m", "stars_automator.game",
+        sys.executable,
+        "-m",
+        "stars_automator.game",
         str(cfg_path),
-        "--display", display,
+        "--display",
+        display,
     ]
     print(f"  [create_game] {cfg_path.name}")
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                            text=True)
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     deadline = time.monotonic() + timeout
     output_lines = []
     try:
@@ -78,8 +88,7 @@ def run_create_game(cfg_path: pathlib.Path, display: str, timeout: int) -> bool:
     return True
 
 
-def read_homeworld_pop(workdir: pathlib.Path, game_name: str,
-                       parser_dir: str) -> int | None:
+def read_homeworld_pop(workdir: pathlib.Path, game_name: str, parser_dir: str) -> int | None:
     """Read player-1 homeworld population from .m1 file."""
     m1 = workdir / f"{game_name}.m1"
     if not m1.exists():
@@ -102,13 +111,19 @@ def read_homeworld_pop(workdir: pathlib.Path, game_name: str,
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--display",  default=":99")
-    ap.add_argument("--timeout",  type=int, default=120,
-                    help="seconds before killing a stalled stars.exe (default 120)")
-    ap.add_argument("--force",    action="store_true",
-                    help="delete existing /tmp/<name>/ and recreate")
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument("--display", default=":99")
+    ap.add_argument(
+        "--timeout",
+        type=int,
+        default=120,
+        help="seconds before killing a stalled stars.exe (default 120)",
+    )
+    ap.add_argument(
+        "--force", action="store_true", help="delete existing /tmp/<name>/ and recreate"
+    )
     args = ap.parse_args()
 
     parser_dir = str(DEFAULT_PARSER_DIR)
@@ -116,13 +131,13 @@ def main():
     results = {}
     for name in EXPERIMENTS:
         cfg_path = CONFIGS_DIR / f"{name}.json"
-        workdir  = pathlib.Path(f"/tmp/{name}")
-        cfg      = json.loads(cfg_path.read_text())
+        workdir = pathlib.Path(f"/tmp/{name}")
+        cfg = json.loads(cfg_path.read_text())
         game_name = cfg.get("game_name", "Game")
 
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"Experiment: {name}")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
 
         if args.force and workdir.exists():
             print(f"  [force] removing {workdir}")
@@ -148,24 +163,32 @@ def main():
             expected = 25000 + 5000 * gr
             match = "✓" if pop == expected else f"✗ (got {pop:,})"
             results[name] = {
-                "prt": prt, "lrts": lrts, "gr": gr,
-                "population": pop, "population_raw": pop_raw,
-                "expected": expected, "match": match,
+                "prt": prt,
+                "lrts": lrts,
+                "gr": gr,
+                "population": pop,
+                "population_raw": pop_raw,
+                "expected": expected,
+                "match": match,
             }
             print(f"  homeworld pop = {pop:,}  expected {expected:,}  {match}")
 
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print("RESULTS SUMMARY")
-    print(f"{'='*60}")
-    print(f"{'Experiment':<25} {'PRT':<6} {'GR':>4} {'LRTs':<12} {'Pop':>8}  {'Expected':>8}  Match")
+    print(f"{'=' * 60}")
+    print(
+        f"{'Experiment':<25} {'PRT':<6} {'GR':>4} {'LRTs':<12} {'Pop':>8}  {'Expected':>8}  Match"
+    )
     print("-" * 80)
     for name, r in results.items():
         if "error" in r:
             print(f"{name:<25}  ERROR: {r['error']}")
         else:
             lrt_str = "+".join(r["lrts"]) or "—"
-            print(f"{name:<25} {r['prt']:<6} {r['gr']:>4}  {lrt_str:<12} "
-                  f"{r['population']:>8,}  {r['expected']:>8,}  {r['match']}")
+            print(
+                f"{name:<25} {r['prt']:<6} {r['gr']:>4}  {lrt_str:<12} "
+                f"{r['population']:>8,}  {r['expected']:>8,}  {r['match']}"
+            )
 
     results_path = CONFIGS_DIR / "phase1_results.json"
     results_path.write_text(json.dumps(results, indent=2) + "\n")

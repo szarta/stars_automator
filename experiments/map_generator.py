@@ -6,41 +6,38 @@ generate maps of different sizes.
 :author: Brandon Arrendondo
 :license: MIT
 """
-import sys
+
 import argparse
-import time
-import shutil
-import os
 import glob
+import logging
+import os
+import shutil
+import sys
+import time
 
 from stars_automator import ui as stars_automater
-import logging
 
 
 def main(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument("stars_exe")
     parser.add_argument("--num_runs", type=int, default=100)
-    parser.add_argument("--universe_size", type=int, default=1,
-                        help="Universe Size [1-5]")
+    parser.add_argument("--universe_size", type=int, default=1, help="Universe Size [1-5]")
 
-    parser.add_argument("--universe_density", type=int, default=1,
-                        help="Universe Density [1-4]")
+    parser.add_argument("--universe_density", type=int, default=1, help="Universe Density [1-4]")
 
-    parser.add_argument("-v", "--verbose", help="increase output verbosity",
-                        action="store_true")
+    parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
 
     args = parser.parse_args()
 
-    logging.basicConfig(format='[map-generator:%(asctime)s] %(message)s')
+    logging.basicConfig(format="[map-generator:%(asctime)s] %(message)s")
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
     else:
         logging.getLogger().setLevel(logging.INFO)
 
     for i in range(args.num_runs):
-        exists, window_id, process = stars_automater.launch_stars(
-            args.stars_exe)
+        exists, window_id, process = stars_automater.launch_stars(args.stars_exe)
 
         if exists:
             logging.info("Stars! launched.")

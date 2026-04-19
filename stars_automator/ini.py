@@ -121,11 +121,13 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
-        "--wineprefix", default=DEFAULT_WINEPREFIX,
+        "--wineprefix",
+        default=DEFAULT_WINEPREFIX,
         help=f"Wine prefix directory (default: {DEFAULT_WINEPREFIX})",
     )
     parser.add_argument(
-        "--dry-run", action="store_true",
+        "--dry-run",
+        action="store_true",
         help="Show what would change without writing",
     )
     args = parser.parse_args()

@@ -11,7 +11,10 @@ Environment variables:
     STARS_RESEARCH_DIR  Root of the stars-reborn-research repo
                         (default: ~/data/stars/stars-reborn-research)
 """
-import copy, json, pathlib
+
+import copy
+import json
+import pathlib
 
 from stars_automator.config import DEFAULT_RESEARCH_DIR
 
@@ -37,28 +40,28 @@ def make_config(name, race):
         "experiment_name": name,
         "game_name": "BBSTest",
         "universe": {
-            "map_size":         "small",
-            "density":          "normal",
+            "map_size": "small",
+            "density": "normal",
             "player_positions": "moderate",
-            "seed":             SEED,
+            "seed": SEED,
         },
         "options": {
-            "max_minerals":       False,
-            "slow_tech":          False,
-            "bbs_play":           True,
-            "galaxy_clumping":    False,
+            "max_minerals": False,
+            "slow_tech": False,
+            "bbs_play": True,
+            "galaxy_clumping": False,
             "computer_alliances": False,
-            "no_random_events":   True,
-            "public_scores":      False,
+            "no_random_events": True,
+            "public_scores": False,
         },
         "victory": {
-            "planets":         {"enabled": True,  "percent": 60},
-            "tech":            {"enabled": False, "level": 26, "fields": 4},
-            "score":           {"enabled": False, "score": 5000},
+            "planets": {"enabled": True, "percent": 60},
+            "tech": {"enabled": False, "level": 26, "fields": 4},
+            "score": {"enabled": False, "score": 5000},
             "exceeds_nearest": {"enabled": False, "percent": 150},
-            "production":      {"enabled": False, "capacity": 100},
-            "capital_ships":   {"enabled": False, "number": 100},
-            "turns":           {"enabled": False, "years": 100},
+            "production": {"enabled": False, "capacity": 100},
+            "capital_ships": {"enabled": False, "number": 100},
+            "turns": {"enabled": False, "years": 100},
             "must_meet": 1,
             "min_years": 50,
         },
@@ -76,17 +79,17 @@ def make_config(name, race):
 #
 # Variant tests use GR=10 (valid for all PRTs+IFE+extra LRTs).
 EXPERIMENTS = [
-    ("bbs_joat_gr05",     make_race(5)),
-    ("bbs_joat_gr10",     make_race(10)),
-    ("bbs_joat_gr14",     make_race(14)),
+    ("bbs_joat_gr05", make_race(5)),
+    ("bbs_joat_gr10", make_race(10)),
+    ("bbs_joat_gr14", make_race(14)),
     ("bbs_joat_gr10_lsp", make_race(10, lrts=["IFE", "LSP"])),
-    ("bbs_pp_gr10",       make_race(10, prt="PP")),
-    ("bbs_it_gr10",       make_race(10, prt="IT")),
+    ("bbs_pp_gr10", make_race(10, prt="PP")),
+    ("bbs_it_gr10", make_race(10, prt="IT")),
     # PP/IT formula disambiguation: need 2 GR values to distinguish hypotheses.
     # A: (25k+5k×GR)×0.8 → gr05=40k  gr14=76k
     # B:  10k+5k×GR      → gr05=35k  gr14=80k
-    ("bbs_pp_gr05",       make_race(5,  prt="PP")),
-    ("bbs_pp_gr14",       make_race(14, prt="PP")),
+    ("bbs_pp_gr05", make_race(5, prt="PP")),
+    ("bbs_pp_gr14", make_race(14, prt="PP")),
 ]
 
 for name, race in EXPERIMENTS:

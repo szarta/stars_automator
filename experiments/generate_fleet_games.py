@@ -31,35 +31,35 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from stars_automator.config import DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR, DEFAULT_WINEPREFIX
+from stars_automator.config import DEFAULT_PARSER_DIR, DEFAULT_RESEARCH_DIR, DEFAULT_WINEPREFIX
 
-_RESEARCH   = Path(DEFAULT_RESEARCH_DIR)
-_PARSER     = Path(DEFAULT_PARSER_DIR)
-BASE_DIR    = _RESEARCH / "original" / "race_fleet_permutation_games"
-RACES_DIR   = _RESEARCH / "original" / "race_ship_permutations"
-JSON_TO_R1  = _PARSER / "json_to_r1"
+_RESEARCH = Path(DEFAULT_RESEARCH_DIR)
+_PARSER = Path(DEFAULT_PARSER_DIR)
+BASE_DIR = _RESEARCH / "original" / "race_fleet_permutation_games"
+RACES_DIR = _RESEARCH / "original" / "race_ship_permutations"
+JSON_TO_R1 = _PARSER / "json_to_r1"
 JSON_TO_DEF = _PARSER / "json_to_def"
 
 PRTS = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
 
 DEFAULT_OPTIONS = {
-    "max_minerals":       False,
-    "slow_tech":          False,
-    "bbs_play":           False,
-    "galaxy_clumping":    False,
+    "max_minerals": False,
+    "slow_tech": False,
+    "bbs_play": False,
+    "galaxy_clumping": False,
     "computer_alliances": False,
-    "no_random_events":   False,
-    "public_scores":      False,
+    "no_random_events": False,
+    "public_scores": False,
 }
 
 DEFAULT_VICTORY = {
-    "planets":         {"enabled": True,  "percent": 60},
-    "tech":            {"enabled": True,  "level": 26, "fields": 4},
-    "score":           {"enabled": False, "score": 5000},
+    "planets": {"enabled": True, "percent": 60},
+    "tech": {"enabled": True, "level": 26, "fields": 4},
+    "score": {"enabled": False, "score": 5000},
     "exceeds_nearest": {"enabled": False, "percent": 150},
-    "production":      {"enabled": False, "capacity": 100},
-    "capital_ships":   {"enabled": False, "number": 100},
-    "turns":           {"enabled": False, "years": 100},
+    "production": {"enabled": False, "capacity": 100},
+    "capital_ships": {"enabled": False, "number": 100},
+    "turns": {"enabled": False, "years": 100},
     "must_meet": 1,
     "min_years": 50,
 }
@@ -69,8 +69,8 @@ def wine_env(display: str) -> dict:
     return {
         **os.environ,
         "WINEPREFIX": DEFAULT_WINEPREFIX,
-        "WINEARCH":   "win32",
-        "DISPLAY":    display,
+        "WINEARCH": "win32",
+        "DISPLAY": display,
     }
 
 
@@ -89,8 +89,8 @@ def generate_game(game_dir: Path, display: str) -> tuple[bool, str]:
         return False, f"missing _meta.json in {game_dir}"
 
     meta = json.loads(meta_path.read_text())
-    game_name  = meta["game_name"]
-    uparams    = meta["universe"]
+    game_name = meta["game_name"]
+    uparams = meta["universe"]
     race_stems = meta["races"]
 
     if (game_dir / f"{game_name}.hst").exists():
@@ -101,28 +101,27 @@ def generate_game(game_dir: Path, display: str) -> tuple[bool, str]:
     r1_wine_paths = []
     for player_idx, stem in enumerate(race_stems, start=1):
         json_path = RACES_DIR / f"{stem}.json"
-        r1_path   = game_dir / f"player{player_idx}.r1"
+        r1_path = game_dir / f"player{player_idx}.r1"
         result = subprocess.run(
             [str(JSON_TO_R1), str(json_path), str(r1_path)],
             capture_output=True,
         )
         if result.returncode != 0:
-            return False, (f"json_to_r1 failed for {stem}: "
-                           f"{result.stderr.decode().strip()}")
+            return False, (f"json_to_r1 failed for {stem}: {result.stderr.decode().strip()}")
         r1_wine_paths.append(to_wine_path(r1_path))
 
     options = {
         **DEFAULT_OPTIONS,
         "galaxy_clumping": uparams["galaxy_clumping"],
-        "bbs_play":        uparams["accelerated_bbs"],
+        "bbs_play": uparams["accelerated_bbs"],
     }
     game_def = {
         "game_name": game_name,
-        "universe":  {
-            "map_size":         uparams["map_size"],
-            "density":          uparams["density"],
+        "universe": {
+            "map_size": uparams["map_size"],
+            "density": uparams["density"],
             "player_positions": uparams["player_positions"],
-            "seed":             uparams["seed"],
+            "seed": uparams["seed"],
         },
         "options": options,
         "players": [{"human": {"race_file": wp}} for wp in r1_wine_paths],
@@ -145,8 +144,10 @@ def generate_game(game_dir: Path, display: str) -> tuple[bool, str]:
         with open(os.devnull, "w") as devnull:
             result = subprocess.run(
                 ["wine", "stars.exe", "-a", "game.def"],
-                cwd=game_dir, env=env,
-                stdout=devnull, stderr=devnull,
+                cwd=game_dir,
+                env=env,
+                stdout=devnull,
+                stderr=devnull,
                 timeout=60,
             )
     except subprocess.TimeoutExpired:
@@ -158,11 +159,11 @@ def generate_game(game_dir: Path, display: str) -> tuple[bool, str]:
     if not hst.exists():
         return False, f"{game_name}.hst not created (stars.exe may have silently failed)"
 
-    created = sum(1 for n in range(1, len(race_stems) + 1)
-                  if (game_dir / f"{game_name}.m{n}").exists())
+    created = sum(
+        1 for n in range(1, len(race_stems) + 1) if (game_dir / f"{game_name}.m{n}").exists()
+    )
     if created < len(race_stems):
-        return True, (f"partial: {created}/{len(race_stems)} players placed "
-                      f"({game_dir.name})")
+        return True, (f"partial: {created}/{len(race_stems)} players placed ({game_dir.name})")
 
     return True, f"ok: {game_dir.name}"
 
@@ -186,42 +187,52 @@ def find_pending(base_dir: Path, prt_filter: str | None) -> list[Path]:
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--workers",    type=int, default=2,
-                        help="Parallel Wine processes (default: 2; try 4 if stable)")
-    parser.add_argument("--display",    default=":99",
-                        help="X display for Wine (default: :99)")
-    parser.add_argument("--start-xvfb", action="store_true",
-                        help="Start Xvfb on --display if not already running")
-    parser.add_argument("--prt",        help="Only process one PRT (e.g. IT)")
-    parser.add_argument("--dry-run",    action="store_true",
-                        help="List pending games without generating them")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=2,
+        help="Parallel Wine processes (default: 2; try 4 if stable)",
+    )
+    parser.add_argument("--display", default=":99", help="X display for Wine (default: :99)")
+    parser.add_argument(
+        "--start-xvfb", action="store_true", help="Start Xvfb on --display if not already running"
+    )
+    parser.add_argument("--prt", help="Only process one PRT (e.g. IT)")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="List pending games without generating them"
+    )
     args = parser.parse_args()
 
     for tool in [JSON_TO_R1, JSON_TO_DEF]:
         if not tool.exists():
-            print(f"error: tool not found: {tool}\n"
-                  f"  Run `cargo build` in stars_file_parser/", file=sys.stderr)
+            print(
+                f"error: tool not found: {tool}\n  Run `cargo build` in stars_file_parser/",
+                file=sys.stderr,
+            )
             sys.exit(1)
     if not BASE_DIR.exists():
-        print(f"error: experiment dir not found: {BASE_DIR}\n"
-              f"  Run setup_fleet_experiment.py first.", file=sys.stderr)
+        print(
+            f"error: experiment dir not found: {BASE_DIR}\n  Run setup_fleet_experiment.py first.",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     if args.start_xvfb:
-        probe = subprocess.run(["xdpyinfo", "-display", args.display],
-                               capture_output=True)
+        probe = subprocess.run(["xdpyinfo", "-display", args.display], capture_output=True)
         if probe.returncode != 0:
             print(f"Starting Xvfb on {args.display}…")
             subprocess.Popen(
                 ["Xvfb", args.display, "-screen", "0", "1024x768x24"],
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
             )
             time.sleep(1)
 
     pending = find_pending(BASE_DIR, args.prt)
-    total   = len(pending)
+    total = len(pending)
     print(f"Pending games: {total}")
 
     if args.dry_run:
@@ -258,17 +269,19 @@ def main():
             completed = done + failed
             if completed % 50 == 0 or completed == total:
                 elapsed = time.time() - t0
-                rate    = completed / elapsed if elapsed > 0 else 0
-                eta     = (total - completed) / rate if rate > 0 else 0
-                print(f"  [{completed}/{total}]  done={done}  partial={partial}"
-                      f"  failed={failed}  {rate:.1f}/s  ETA {eta/60:.0f}m",
-                      flush=True)
+                rate = completed / elapsed if elapsed > 0 else 0
+                eta = (total - completed) / rate if rate > 0 else 0
+                print(
+                    f"  [{completed}/{total}]  done={done}  partial={partial}"
+                    f"  failed={failed}  {rate:.1f}/s  ETA {eta / 60:.0f}m",
+                    flush=True,
+                )
 
     print(f"\nFinished: {done} generated ({partial} partial), {failed} failed")
     if failed:
         print(f"See {errors_log}")
     if partial:
-        print(f"Partial games (homeworld placement cut on small maps) are normal.")
+        print("Partial games (homeworld placement cut on small maps) are normal.")
 
 
 if __name__ == "__main__":

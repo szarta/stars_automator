@@ -36,29 +36,31 @@ import json
 import os
 import shutil
 import subprocess
-import sys
 import tempfile
 
 from stars_automator.config import (
-    DEFAULT_RESEARCH_DIR, DEFAULT_PARSER_DIR,
-    DEFAULT_STARS_EXE, DEFAULT_WINEPREFIX, DEFAULT_DISPLAY,
+    DEFAULT_DISPLAY,
+    DEFAULT_PARSER_DIR,
+    DEFAULT_RESEARCH_DIR,
+    DEFAULT_STARS_EXE,
+    DEFAULT_WINEPREFIX,
 )
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-RESEARCH   = DEFAULT_RESEARCH_DIR
+RESEARCH = DEFAULT_RESEARCH_DIR
 PARSER_DIR = DEFAULT_PARSER_DIR
 
-STARS_EXE   = DEFAULT_STARS_EXE
-JSON_TO_R1  = os.path.join(PARSER_DIR, "json_to_r1")
+STARS_EXE = DEFAULT_STARS_EXE
+JSON_TO_R1 = os.path.join(PARSER_DIR, "json_to_r1")
 JSON_TO_DEF = os.path.join(PARSER_DIR, "json_to_def")
-M1_TO_JSON  = os.path.join(PARSER_DIR, "m1_to_json")
+M1_TO_JSON = os.path.join(PARSER_DIR, "m1_to_json")
 
 WINE_ENV = {
     **os.environ,
     "WINEPREFIX": DEFAULT_WINEPREFIX,
-    "WINEARCH":   "win32",
-    "DISPLAY":    DEFAULT_DISPLAY,
+    "WINEARCH": "win32",
+    "DISPLAY": DEFAULT_DISPLAY,
 }
 
 # ── Base race template ────────────────────────────────────────────────────────
@@ -71,9 +73,9 @@ BASE_RACE = {
     "prt": "JOAT",
     "lrts": [],
     "hab": {
-        "gravity":     {"immune": False, "min": 0.22, "max": 4.40},
+        "gravity": {"immune": False, "min": 0.22, "max": 4.40},
         "temperature": {"immune": False, "min": -140.0, "max": 140.0},
-        "radiation":   {"immune": False, "min": 15.0,  "max": 85.0},
+        "radiation": {"immune": False, "min": 15.0, "max": 85.0},
     },
     "economy": {
         "resource_production": 1000,
@@ -87,9 +89,13 @@ BASE_RACE = {
         "growth_rate": 15,
     },
     "research_costs": {
-        "energy": "normal", "weapons": "normal", "propulsion": "normal",
-        "construction": "normal", "electronics": "normal",
-        "biotechnology": "normal", "expensive_tech_start_at_4": False,
+        "energy": "normal",
+        "weapons": "normal",
+        "propulsion": "normal",
+        "construction": "normal",
+        "electronics": "normal",
+        "biotechnology": "normal",
+        "expensive_tech_start_at_4": False,
     },
     "leftover_spend": "surface_minerals",
     "icon_index": 0,
@@ -97,10 +103,9 @@ BASE_RACE = {
 
 # ── Oracle runner ─────────────────────────────────────────────────────────────
 
+
 def wine_path(linux_path):
-    return subprocess.check_output(
-        ["winepath", "-w", linux_path], env=WINE_ENV
-    ).decode().strip()
+    return subprocess.check_output(["winepath", "-w", linux_path], env=WINE_ENV).decode().strip()
 
 
 def run_oracle(race_json, map_size="tiny", ai_difficulty=2, seed=42, num_ai=1):
@@ -112,16 +117,15 @@ def run_oracle(race_json, map_size="tiny", ai_difficulty=2, seed=42, num_ai=1):
     """
     with tempfile.TemporaryDirectory() as workdir:
         race_json_path = os.path.join(workdir, "race.json")
-        r1_path        = os.path.join(workdir, "race.r1")
+        r1_path = os.path.join(workdir, "race.r1")
         with open(race_json_path, "w") as f:
             json.dump(race_json, f)
-        result = subprocess.run([JSON_TO_R1, race_json_path, r1_path],
-                                capture_output=True)
+        result = subprocess.run([JSON_TO_R1, race_json_path, r1_path], capture_output=True)
         if result.returncode != 0:
             return None, f"json_to_r1 failed: {result.stderr.decode()}"
 
-        r1_wine  = wine_path(r1_path)
-        xy_wine  = wine_path(os.path.join(workdir, "Game.xy"))
+        r1_wine = wine_path(r1_path)
+        xy_wine = wine_path(os.path.join(workdir, "Game.xy"))
 
         players = [{"human": {"race_file": r1_wine}}]
         for _ in range(num_ai):
@@ -136,19 +140,23 @@ def run_oracle(race_json, map_size="tiny", ai_difficulty=2, seed=42, num_ai=1):
                 "seed": seed,
             },
             "options": {
-                "max_minerals": False, "slow_tech": False, "bbs_play": False,
-                "galaxy_clumping": False, "computer_alliances": False,
-                "no_random_events": True, "public_scores": False,
+                "max_minerals": False,
+                "slow_tech": False,
+                "bbs_play": False,
+                "galaxy_clumping": False,
+                "computer_alliances": False,
+                "no_random_events": True,
+                "public_scores": False,
             },
             "players": players,
             "victory": {
-                "planets":         {"enabled": True,  "percent": 60},
-                "tech":            {"enabled": True,  "level": 26, "fields": 4},
-                "score":           {"enabled": False, "score": 5000},
+                "planets": {"enabled": True, "percent": 60},
+                "tech": {"enabled": True, "level": 26, "fields": 4},
+                "score": {"enabled": False, "score": 5000},
                 "exceeds_nearest": {"enabled": False, "percent": 150},
-                "production":      {"enabled": False, "capacity": 100},
-                "capital_ships":   {"enabled": False, "number": 100},
-                "turns":           {"enabled": False, "years": 100},
+                "production": {"enabled": False, "capacity": 100},
+                "capital_ships": {"enabled": False, "number": 100},
+                "turns": {"enabled": False, "years": 100},
                 "must_meet": 1,
                 "min_years": 50,
             },
@@ -156,11 +164,10 @@ def run_oracle(race_json, map_size="tiny", ai_difficulty=2, seed=42, num_ai=1):
         }
 
         def_json_path = os.path.join(workdir, "game.json")
-        def_path      = os.path.join(workdir, "game.def")
+        def_path = os.path.join(workdir, "game.def")
         with open(def_json_path, "w") as f:
             json.dump(game_def, f)
-        result = subprocess.run([JSON_TO_DEF, def_json_path, def_path],
-                                capture_output=True)
+        result = subprocess.run([JSON_TO_DEF, def_json_path, def_path], capture_output=True)
         if result.returncode != 0:
             return None, f"json_to_def failed: {result.stderr.decode()}"
 
@@ -170,8 +177,10 @@ def run_oracle(race_json, map_size="tiny", ai_difficulty=2, seed=42, num_ai=1):
         with open(os.devnull, "w") as devnull:
             subprocess.run(
                 ["wine", "stars.exe", "-a", "game.def"],
-                cwd=workdir, env=WINE_ENV,
-                stdout=devnull, stderr=devnull,
+                cwd=workdir,
+                env=WINE_ENV,
+                stdout=devnull,
+                stderr=devnull,
             )
 
         m1_path = os.path.join(workdir, "Game.m1")
@@ -205,11 +214,13 @@ def homeworld_pop(m1_data):
 
 def all_planet_pops(m1_data):
     """Return list of (planet_index, population) for all colonised planets."""
-    return [(p["planet_index"], p.get("population"))
-            for p in m1_data["planets"] if p.get("colonized")]
+    return [
+        (p["planet_index"], p.get("population")) for p in m1_data["planets"] if p.get("colonized")
+    ]
 
 
 # ── Test suite 1: Starting population formula (R2.1) ─────────────────────────
+
 
 def test_starting_population():
     print("=" * 60)
@@ -226,7 +237,7 @@ def test_starting_population():
             print(f"  JOAT GR={gr:2d}% no-LSP          ERROR: {err}")
         else:
             pop = homeworld_pop(data)
-            print(f"  JOAT GR={gr:2d}% no-LSP          {pop:>7d}  {pop*100:>10d}")
+            print(f"  JOAT GR={gr:2d}% no-LSP          {pop:>7d}  {pop * 100:>10d}")
 
     print("\n--- B. LSP effect (JOAT GR=15%, Tiny map) ---")
     for lrts, label in [([], "no LSP"), (["LSP"], "+LSP")]:
@@ -237,7 +248,7 @@ def test_starting_population():
             print(f"  JOAT GR=15% {label:<8s}  ERROR: {err}")
         else:
             pop = homeworld_pop(data)
-            print(f"  JOAT GR=15% {label:<8s}  pop={pop} ({pop*100} colonists)")
+            print(f"  JOAT GR=15% {label:<8s}  pop={pop} ({pop * 100} colonists)")
 
     print("\n--- C. PRT variation (GR=15%, no LSP, Tiny map) ---")
     for prt in ["JOAT", "HE", "SS", "WM", "CA", "IS", "SD", "IT", "AR"]:
@@ -248,7 +259,7 @@ def test_starting_population():
             print(f"  {prt:<6s} GR=15% no-LSP    ERROR: {err}")
         else:
             pop = homeworld_pop(data)
-            print(f"  {prt:<6s} GR=15% no-LSP    pop={pop} ({pop*100} colonists)")
+            print(f"  {prt:<6s} GR=15% no-LSP    pop={pop} ({pop * 100} colonists)")
 
     print("\n--- D. IS/CA with LSP (GR=15%, Tiny map) ---")
     for prt in ["IS", "CA"]:
@@ -261,7 +272,7 @@ def test_starting_population():
                 print(f"  {prt} GR=15% {label:<8s}  ERROR: {err}")
             else:
                 pop = homeworld_pop(data)
-                print(f"  {prt} GR=15% {label:<8s}  pop={pop} ({pop*100} colonists)")
+                print(f"  {prt} GR=15% {label:<8s}  pop={pop} ({pop * 100} colonists)")
 
     print("\n--- E. PP with LSP (GR=15%, Small map — 2 starting worlds) ---")
     for lrts, label in [([], "no LSP"), (["LSP"], "+LSP")]:
@@ -273,9 +284,11 @@ def test_starting_population():
             print(f"  PP GR=15% {label:<8s}  ERROR: {err}")
         else:
             planets = all_planet_pops(data)
-            hw_pop  = homeworld_pop(data)
-            print(f"  PP GR=15% {label:<8s}  homeworld={hw_pop} ({hw_pop*100} col)  "
-                  f"all colonised planets: {planets}")
+            hw_pop = homeworld_pop(data)
+            print(
+                f"  PP GR=15% {label:<8s}  homeworld={hw_pop} ({hw_pop * 100} col)  "
+                f"all colonised planets: {planets}"
+            )
 
     print("\n--- F. AR growth-rate variation (no LSP, Tiny map) ---")
     for gr in [1, 5, 10, 15, 17, 19, 20]:
@@ -287,10 +300,13 @@ def test_starting_population():
             print(f"  AR GR={gr:2d}% no-LSP          ERROR: {err}")
         else:
             pop = homeworld_pop(data)
-            print(f"  AR GR={gr:2d}% no-LSP          {pop:>7d}  ({pop*100 if pop else '?'} colonists)")
+            print(
+                f"  AR GR={gr:2d}% no-LSP          {pop:>7d}  ({pop * 100 if pop else '?'} colonists)"
+            )
 
 
 # ── Test suite 2: Starting tech levels per PRT (R2.2 verification) ───────────
+
 
 def test_starting_tech():
     print("\n" + "=" * 60)
@@ -299,9 +315,9 @@ def test_starting_tech():
 
     known = {
         "JOAT": dict(energy=3, weapons=3, propulsion=3, construction=3, electronics=3, biology=3),
-        "SS":   dict(electronics=5),
-        "CA":   dict(biology=6),
-        "IT":   dict(propulsion=5, construction=5),
+        "SS": dict(electronics=5),
+        "CA": dict(biology=6),
+        "IT": dict(propulsion=5, construction=5),
     }
 
     header = f"{'PRT':<6s}  {'en':>3s}  {'we':>3s}  {'pr':>3s}  {'co':>3s}  {'el':>3s}  {'bi':>3s}  notes"
@@ -315,19 +331,31 @@ def test_starting_tech():
             print(f"  {prt:<6s}  ERROR: {err}")
             continue
         p = data["player"]
-        en = p["tech_energy"]; we = p["tech_weapons"]; pr = p["tech_propulsion"]
-        co = p["tech_construction"]; el = p["tech_electronics"]; bi = p["tech_biology"]
+        en = p["tech_energy"]
+        we = p["tech_weapons"]
+        pr = p["tech_propulsion"]
+        co = p["tech_construction"]
+        el = p["tech_electronics"]
+        bi = p["tech_biology"]
         notes = []
         exp = known.get(prt, {})
-        for field, val, label in [(en, exp.get("energy", 0), "en"), (we, exp.get("weapons", 0), "we"),
-                                   (pr, exp.get("propulsion", 0), "pr"), (co, exp.get("construction", 0), "co"),
-                                   (el, exp.get("electronics", 0), "el"), (bi, exp.get("biology", 0), "bi")]:
+        for field, val, label in [
+            (en, exp.get("energy", 0), "en"),
+            (we, exp.get("weapons", 0), "we"),
+            (pr, exp.get("propulsion", 0), "pr"),
+            (co, exp.get("construction", 0), "co"),
+            (el, exp.get("electronics", 0), "el"),
+            (bi, exp.get("biology", 0), "bi"),
+        ]:
             if field < val:
                 notes.append(f"BELOW_EXPECTED({label}≥{val})")
-        print(f"  {prt:<6s}  {en:>3d}  {we:>3d}  {pr:>3d}  {co:>3d}  {el:>3d}  {bi:>3d}  {', '.join(notes) or 'ok'}")
+        print(
+            f"  {prt:<6s}  {en:>3d}  {we:>3d}  {pr:>3d}  {co:>3d}  {el:>3d}  {bi:>3d}  {', '.join(notes) or 'ok'}"
+        )
 
 
 # ── Test suite 3: AI difficulty code mapping ──────────────────────────────────
+
 
 def test_ai_difficulty():
     print("\n" + "=" * 60)
@@ -339,9 +367,7 @@ def test_ai_difficulty():
         templates_seen = []
         for seed in [10, 20, 30]:
             race = copy.deepcopy(BASE_RACE)
-            data, err = run_oracle(
-                race, map_size="tiny", ai_difficulty=diff, seed=seed, num_ai=1
-            )
+            data, err = run_oracle(race, map_size="tiny", ai_difficulty=diff, seed=seed, num_ai=1)
             if err:
                 templates_seen.append(f"ERROR({err})")
                 continue
@@ -350,23 +376,29 @@ def test_ai_difficulty():
                 templates_seen.append("NO_AI_DATA")
                 continue
             ai_race = ai["player"]["race"]
-            prt  = ai_race["prt"]
+            prt = ai_race["prt"]
             lrts = ",".join(ai_race["lrts"]) or "none"
-            gr   = ai_race["economy"]["growth_rate"]
+            gr = ai_race["economy"]["growth_rate"]
             templates_seen.append(f"{prt} [{lrts}] GR={gr}%")
 
         print(f"\n  difficulty {diff} ({label}):")
         for i, t in enumerate(templates_seen, 1):
-            print(f"    seed {i*10:2d}: {t}")
+            print(f"    seed {i * 10:2d}: {t}")
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────
 
+
 def main():
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--tests", choices=["pop", "tech", "ai", "all"], default="all",
-                        help="Which test suites to run (default: all)")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--tests",
+        choices=["pop", "tech", "ai", "all"],
+        default="all",
+        help="Which test suites to run (default: all)",
+    )
     args = parser.parse_args()
 
     if args.tests in ("pop", "all"):

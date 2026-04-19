@@ -29,10 +29,8 @@ import argparse
 import os
 import shutil
 import subprocess
-import sys
 
 from stars_automator._cli import die
-from stars_automator.config import DEFAULT_STARS_EXE
 from stars_automator.wine import ensure_xvfb, make_wine_env
 
 
@@ -41,20 +39,19 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("game_dir",  help="Directory containing the .hst file")
-    parser.add_argument("game_name", nargs="?", default="Game",
-                        help="Game name (default: Game)")
-    parser.add_argument("--turns",   type=int, default=1,
-                        help="Number of turns to generate (default: 1)")
-    parser.add_argument("--display", default=":99",
-                        help="X display for Wine (default: :99)")
-    parser.add_argument("--start-xvfb", action="store_true",
-                        help="Start Xvfb on --display if not already running")
-    parser.add_argument("--copy-exe", metavar="PATH",
-                        help="Copy stars.exe from PATH into game_dir")
+    parser.add_argument("game_dir", help="Directory containing the .hst file")
+    parser.add_argument("game_name", nargs="?", default="Game", help="Game name (default: Game)")
+    parser.add_argument(
+        "--turns", type=int, default=1, help="Number of turns to generate (default: 1)"
+    )
+    parser.add_argument("--display", default=":99", help="X display for Wine (default: :99)")
+    parser.add_argument(
+        "--start-xvfb", action="store_true", help="Start Xvfb on --display if not already running"
+    )
+    parser.add_argument("--copy-exe", metavar="PATH", help="Copy stars.exe from PATH into game_dir")
     args = parser.parse_args()
 
-    game_dir  = os.path.realpath(os.path.expanduser(args.game_dir))
+    game_dir = os.path.realpath(os.path.expanduser(args.game_dir))
     game_name = args.game_name
 
     if not os.path.isdir(game_dir):
@@ -85,15 +82,17 @@ def main():
         print("[xvfb]")
         xvfb_proc = ensure_xvfb(args.display)
 
-    flag    = f"-g{args.turns}"
+    flag = f"-g{args.turns}"
     hst_rel = f"{game_name}.hst"
     print(f"[stars.exe] running: wine stars.exe {flag} {hst_rel}  (cwd={game_dir})")
 
     with open(os.devnull, "w") as devnull:
         result = subprocess.run(
             ["wine", "stars.exe", flag, hst_rel],
-            cwd=game_dir, env=env,
-            stdout=devnull, stderr=devnull,
+            cwd=game_dir,
+            env=env,
+            stdout=devnull,
+            stderr=devnull,
         )
 
     if result.returncode != 0:
