@@ -1,0 +1,2770 @@
+{
+  "bbs_mineral_survey": {
+    "bbs_play": true,
+    "total_planets": 160,
+    "scanned_planets": 153,
+    "minerals": {
+      "Marion": {
+        "planet_name": "Marion",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Xenon": {
+        "planet_name": "Xenon",
+        "iron_conc": 70,
+        "bora_conc": 13,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "McCartney": {
+        "planet_name": "McCartney",
+        "iron_conc": 30,
+        "bora_conc": 58,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Baker": {
+        "planet_name": "Baker",
+        "iron_conc": 70,
+        "bora_conc": 45,
+        "germ_conc": 61,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Slime": {
+        "planet_name": "Slime",
+        "iron_conc": 80,
+        "bora_conc": 75,
+        "germ_conc": 80,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Chennault": {
+        "planet_name": "Chennault",
+        "iron_conc": 17,
+        "bora_conc": 76,
+        "germ_conc": 104,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Shaggy Dog": {
+        "planet_name": "Shaggy Dog",
+        "iron_conc": 50,
+        "bora_conc": 76,
+        "germ_conc": 21,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gorby": {
+        "planet_name": "Gorby",
+        "iron_conc": 59,
+        "bora_conc": 1,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tattoo": {
+        "planet_name": "Tattoo",
+        "iron_conc": 2,
+        "bora_conc": 87,
+        "germ_conc": 1,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Rho": {
+        "planet_name": "Rho",
+        "iron_conc": 22,
+        "bora_conc": 84,
+        "germ_conc": 46,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Beta": {
+        "planet_name": "Beta",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Basket Case": {
+        "planet_name": "Basket Case",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Presley": {
+        "planet_name": "Presley",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Andante": {
+        "planet_name": "Andante",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mongo": {
+        "planet_name": "Mongo",
+        "iron_conc": 24,
+        "bora_conc": 90,
+        "germ_conc": 41,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Forget-Me-Not": {
+        "planet_name": "Forget-Me-Not",
+        "iron_conc": 59,
+        "bora_conc": 73,
+        "germ_conc": 3,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Good": {
+        "planet_name": "Ursa Good",
+        "iron_conc": 58,
+        "bora_conc": 91,
+        "germ_conc": 22,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Moscow": {
+        "planet_name": "Moscow",
+        "iron_conc": 85,
+        "bora_conc": 8,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Maple Syrup": {
+        "planet_name": "Maple Syrup",
+        "iron_conc": 16,
+        "bora_conc": 45,
+        "germ_conc": 75,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Infinity Junction": {
+        "planet_name": "Infinity Junction",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Yuppie Puppy": {
+        "planet_name": "Yuppie Puppy",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gates": {
+        "planet_name": "Gates",
+        "iron_conc": 2,
+        "bora_conc": 75,
+        "germ_conc": 14,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Fluffy": {
+        "planet_name": "Fluffy",
+        "iron_conc": 16,
+        "bora_conc": 106,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Elder": {
+        "planet_name": "Elder",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Diddley": {
+        "planet_name": "Diddley",
+        "iron_conc": 23,
+        "bora_conc": 85,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Abrams": {
+        "planet_name": "Abrams",
+        "iron_conc": 42,
+        "bora_conc": 24,
+        "germ_conc": 58,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Spruance": {
+        "planet_name": "Spruance",
+        "iron_conc": 90,
+        "bora_conc": 59,
+        "germ_conc": 20,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "No Respect": {
+        "planet_name": "No Respect",
+        "iron_conc": 108,
+        "bora_conc": 9,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Iceball": {
+        "planet_name": "Iceball",
+        "iron_conc": 18,
+        "bora_conc": 64,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Puss Puss": {
+        "planet_name": "Puss Puss",
+        "iron_conc": 69,
+        "bora_conc": 59,
+        "germ_conc": 114,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nerd": {
+        "planet_name": "Nerd",
+        "iron_conc": 19,
+        "bora_conc": 54,
+        "germ_conc": 88,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kiwi": {
+        "planet_name": "Kiwi",
+        "iron_conc": 1,
+        "bora_conc": 13,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Triffid": {
+        "planet_name": "Triffid",
+        "iron_conc": 4,
+        "bora_conc": 80,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kalamazoo": {
+        "planet_name": "Kalamazoo",
+        "iron_conc": 98,
+        "bora_conc": 70,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mercury": {
+        "planet_name": "Mercury",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Carver": {
+        "planet_name": "Carver",
+        "iron_conc": 84,
+        "bora_conc": 53,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Aurora": {
+        "planet_name": "Aurora",
+        "iron_conc": 87,
+        "bora_conc": 29,
+        "germ_conc": 68,
+        "surface_iron": 2147,
+        "surface_bora": 901,
+        "surface_germ": 1764
+      },
+      "Arpeggio": {
+        "planet_name": "Arpeggio",
+        "iron_conc": 29,
+        "bora_conc": 6,
+        "germ_conc": 15,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Abacus": {
+        "planet_name": "Abacus",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bonaparte": {
+        "planet_name": "Bonaparte",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Basil": {
+        "planet_name": "Basil",
+        "iron_conc": 20,
+        "bora_conc": 73,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Slinky": {
+        "planet_name": "Slinky",
+        "iron_conc": 69,
+        "bora_conc": 77,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Phi": {
+        "planet_name": "Phi",
+        "iron_conc": 47,
+        "bora_conc": 65,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Grouse": {
+        "planet_name": "Grouse",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Marla": {
+        "planet_name": "Marla",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Major": {
+        "planet_name": "Ursa Major",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wallaby": {
+        "planet_name": "Wallaby",
+        "iron_conc": 75,
+        "bora_conc": 59,
+        "germ_conc": 45,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Turing's World": {
+        "planet_name": "Turing's World",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hyperbole": {
+        "planet_name": "Hyperbole",
+        "iron_conc": 89,
+        "bora_conc": 67,
+        "germ_conc": 58,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "PreVious": {
+        "planet_name": "PreVious",
+        "iron_conc": 62,
+        "bora_conc": 105,
+        "germ_conc": 94,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Trial": {
+        "planet_name": "Trial",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nowhere": {
+        "planet_name": "Nowhere",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bonus": {
+        "planet_name": "Bonus",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Milky Way": {
+        "planet_name": "Milky Way",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hummingbird": {
+        "planet_name": "Hummingbird",
+        "iron_conc": 93,
+        "bora_conc": 102,
+        "germ_conc": 65,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Y-Has": {
+        "planet_name": "Y-Has",
+        "iron_conc": 56,
+        "bora_conc": 19,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Reagan": {
+        "planet_name": "Reagan",
+        "iron_conc": 112,
+        "bora_conc": 50,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Flutter Valve": {
+        "planet_name": "Flutter Valve",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bakwele": {
+        "planet_name": "Bakwele",
+        "iron_conc": 8,
+        "bora_conc": 75,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Toroid": {
+        "planet_name": "Toroid",
+        "iron_conc": 18,
+        "bora_conc": 50,
+        "germ_conc": 64,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sequim 3": {
+        "planet_name": "Sequim 3",
+        "iron_conc": 81,
+        "bora_conc": 23,
+        "germ_conc": 105,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Indy": {
+        "planet_name": "Indy",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gout": {
+        "planet_name": "Gout",
+        "iron_conc": 67,
+        "bora_conc": 44,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Meade": {
+        "planet_name": "Meade",
+        "iron_conc": 91,
+        "bora_conc": 65,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "New": {
+        "planet_name": "New",
+        "iron_conc": 79,
+        "bora_conc": 15,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Fox Trot": {
+        "planet_name": "Fox Trot",
+        "iron_conc": 10,
+        "bora_conc": 91,
+        "germ_conc": 99,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Waterfall": {
+        "planet_name": "Waterfall",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pansy": {
+        "planet_name": "Pansy",
+        "iron_conc": 66,
+        "bora_conc": 26,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Relight": {
+        "planet_name": "Relight",
+        "iron_conc": 66,
+        "bora_conc": 3,
+        "germ_conc": 78,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Barbecue": {
+        "planet_name": "Barbecue",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lee": {
+        "planet_name": "Lee",
+        "iron_conc": 106,
+        "bora_conc": 67,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lazy B": {
+        "planet_name": "Lazy B",
+        "iron_conc": 84,
+        "bora_conc": 13,
+        "germ_conc": 53,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sands Of Time": {
+        "planet_name": "Sands Of Time",
+        "iron_conc": 68,
+        "bora_conc": 47,
+        "germ_conc": 109,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Callipus": {
+        "planet_name": "Callipus",
+        "iron_conc": 57,
+        "bora_conc": 62,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Alcoa": {
+        "planet_name": "Alcoa",
+        "iron_conc": 76,
+        "bora_conc": 67,
+        "germ_conc": 41,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Diamond": {
+        "planet_name": "Diamond",
+        "iron_conc": 88,
+        "bora_conc": 39,
+        "germ_conc": 24,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mars": {
+        "planet_name": "Mars",
+        "iron_conc": 60,
+        "bora_conc": 69,
+        "germ_conc": 2,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hard Ball": {
+        "planet_name": "Hard Ball",
+        "iron_conc": 52,
+        "bora_conc": 77,
+        "germ_conc": 77,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Red Storm": {
+        "planet_name": "Red Storm",
+        "iron_conc": 23,
+        "bora_conc": 70,
+        "germ_conc": 90,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Zippy": {
+        "planet_name": "Zippy",
+        "iron_conc": 70,
+        "bora_conc": 23,
+        "germ_conc": 84,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Charity": {
+        "planet_name": "Charity",
+        "iron_conc": 79,
+        "bora_conc": 25,
+        "germ_conc": 26,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Snuffles": {
+        "planet_name": "Snuffles",
+        "iron_conc": 26,
+        "bora_conc": 55,
+        "germ_conc": 70,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Forrest": {
+        "planet_name": "Forrest",
+        "iron_conc": 13,
+        "bora_conc": 69,
+        "germ_conc": 108,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nastrond": {
+        "planet_name": "Nastrond",
+        "iron_conc": 93,
+        "bora_conc": 15,
+        "germ_conc": 82,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Boethius": {
+        "planet_name": "Boethius",
+        "iron_conc": 89,
+        "bora_conc": 51,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Petra": {
+        "planet_name": "Petra",
+        "iron_conc": 96,
+        "bora_conc": 67,
+        "germ_conc": 12,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mountbatten": {
+        "planet_name": "Mountbatten",
+        "iron_conc": 12,
+        "bora_conc": 9,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mother": {
+        "planet_name": "Mother",
+        "iron_conc": 75,
+        "bora_conc": 72,
+        "germ_conc": 40,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Oop Be Gone": {
+        "planet_name": "Oop Be Gone",
+        "iron_conc": 107,
+        "bora_conc": 27,
+        "germ_conc": 9,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Maggie": {
+        "planet_name": "Maggie",
+        "iron_conc": 95,
+        "bora_conc": 3,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bruski": {
+        "planet_name": "Bruski",
+        "iron_conc": 18,
+        "bora_conc": 68,
+        "germ_conc": 84,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Zucchini": {
+        "planet_name": "Zucchini",
+        "iron_conc": 76,
+        "bora_conc": 61,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pegasus": {
+        "planet_name": "Pegasus",
+        "iron_conc": 2,
+        "bora_conc": 67,
+        "germ_conc": 54,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "LGM 1": {
+        "planet_name": "LGM 1",
+        "iron_conc": 91,
+        "bora_conc": 30,
+        "germ_conc": 70,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Olympia": {
+        "planet_name": "Olympia",
+        "iron_conc": 69,
+        "bora_conc": 56,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Red Dwarf": {
+        "planet_name": "Red Dwarf",
+        "iron_conc": 132,
+        "bora_conc": 116,
+        "germ_conc": 115,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Minor": {
+        "planet_name": "Ursa Minor",
+        "iron_conc": 63,
+        "bora_conc": 25,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Genoa": {
+        "planet_name": "Genoa",
+        "iron_conc": 50,
+        "bora_conc": 93,
+        "germ_conc": 6,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cassiopeia": {
+        "planet_name": "Cassiopeia",
+        "iron_conc": 58,
+        "bora_conc": 4,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cornwallis": {
+        "planet_name": "Cornwallis",
+        "iron_conc": 91,
+        "bora_conc": 81,
+        "germ_conc": 68,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nawk": {
+        "planet_name": "Nawk",
+        "iron_conc": 67,
+        "bora_conc": 26,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wobegon": {
+        "planet_name": "Wobegon",
+        "iron_conc": 15,
+        "bora_conc": 68,
+        "germ_conc": 12,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Muspell": {
+        "planet_name": "Muspell",
+        "iron_conc": 110,
+        "bora_conc": 106,
+        "germ_conc": 17,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wellington": {
+        "planet_name": "Wellington",
+        "iron_conc": 30,
+        "bora_conc": 17,
+        "germ_conc": 50,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Crazy Horse": {
+        "planet_name": "Crazy Horse",
+        "iron_conc": 67,
+        "bora_conc": 85,
+        "germ_conc": 82,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lambda": {
+        "planet_name": "Lambda",
+        "iron_conc": 7,
+        "bora_conc": 70,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Chlorine": {
+        "planet_name": "Chlorine",
+        "iron_conc": 49,
+        "bora_conc": 59,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cochise": {
+        "planet_name": "Cochise",
+        "iron_conc": 99,
+        "bora_conc": 29,
+        "germ_conc": 101,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Arafat": {
+        "planet_name": "Arafat",
+        "iron_conc": 39,
+        "bora_conc": 6,
+        "germ_conc": 93,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Redemption": {
+        "planet_name": "Redemption",
+        "iron_conc": 87,
+        "bora_conc": 70,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gamma": {
+        "planet_name": "Gamma",
+        "iron_conc": 56,
+        "bora_conc": 111,
+        "germ_conc": 12,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "No Exit": {
+        "planet_name": "No Exit",
+        "iron_conc": 65,
+        "bora_conc": 80,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sapphire": {
+        "planet_name": "Sapphire",
+        "iron_conc": 54,
+        "bora_conc": 27,
+        "germ_conc": 28,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Climax": {
+        "planet_name": "Climax",
+        "iron_conc": 61,
+        "bora_conc": 18,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Acid": {
+        "planet_name": "Acid",
+        "iron_conc": 109,
+        "bora_conc": 30,
+        "germ_conc": 19,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Linq": {
+        "planet_name": "Linq",
+        "iron_conc": 24,
+        "bora_conc": 99,
+        "germ_conc": 49,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tull": {
+        "planet_name": "Tull",
+        "iron_conc": 22,
+        "bora_conc": 76,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pirate": {
+        "planet_name": "Pirate",
+        "iron_conc": 25,
+        "bora_conc": 99,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Oxygen": {
+        "planet_name": "Oxygen",
+        "iron_conc": 78,
+        "bora_conc": 11,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Raster": {
+        "planet_name": "Raster",
+        "iron_conc": 43,
+        "bora_conc": 72,
+        "germ_conc": 17,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kline": {
+        "planet_name": "Kline",
+        "iron_conc": 70,
+        "bora_conc": 83,
+        "germ_conc": 66,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Canis Minor": {
+        "planet_name": "Canis Minor",
+        "iron_conc": 41,
+        "bora_conc": 75,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Neuronos": {
+        "planet_name": "Neuronos",
+        "iron_conc": 71,
+        "bora_conc": 28,
+        "germ_conc": 73,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dimna": {
+        "planet_name": "Dimna",
+        "iron_conc": 77,
+        "bora_conc": 79,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Scud": {
+        "planet_name": "Scud",
+        "iron_conc": 41,
+        "bora_conc": 66,
+        "germ_conc": 42,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hoze-O-Rama": {
+        "planet_name": "Hoze-O-Rama",
+        "iron_conc": 82,
+        "bora_conc": 10,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Midgard": {
+        "planet_name": "Midgard",
+        "iron_conc": 58,
+        "bora_conc": 30,
+        "germ_conc": 8,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Almighty": {
+        "planet_name": "Almighty",
+        "iron_conc": 84,
+        "bora_conc": 42,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Decatur": {
+        "planet_name": "Decatur",
+        "iron_conc": 9,
+        "bora_conc": 51,
+        "germ_conc": 105,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Asgard": {
+        "planet_name": "Asgard",
+        "iron_conc": 63,
+        "bora_conc": 69,
+        "germ_conc": 74,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Karhide": {
+        "planet_name": "Karhide",
+        "iron_conc": 117,
+        "bora_conc": 78,
+        "germ_conc": 97,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dawn": {
+        "planet_name": "Dawn",
+        "iron_conc": 77,
+        "bora_conc": 100,
+        "germ_conc": 10,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tongue": {
+        "planet_name": "Tongue",
+        "iron_conc": 80,
+        "bora_conc": 75,
+        "germ_conc": 68,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Neil": {
+        "planet_name": "Neil",
+        "iron_conc": 91,
+        "bora_conc": 98,
+        "germ_conc": 80,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nether Region": {
+        "planet_name": "Nether Region",
+        "iron_conc": 58,
+        "bora_conc": 42,
+        "germ_conc": 26,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wood Shed": {
+        "planet_name": "Wood Shed",
+        "iron_conc": 29,
+        "bora_conc": 9,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kulu": {
+        "planet_name": "Kulu",
+        "iron_conc": 69,
+        "bora_conc": 66,
+        "germ_conc": 37,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Angst": {
+        "planet_name": "Angst",
+        "iron_conc": 18,
+        "bora_conc": 14,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dalmatian": {
+        "planet_name": "Dalmatian",
+        "iron_conc": 7,
+        "bora_conc": 80,
+        "germ_conc": 14,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Vanilla": {
+        "planet_name": "Vanilla",
+        "iron_conc": 56,
+        "bora_conc": 71,
+        "germ_conc": 19,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Corvus": {
+        "planet_name": "Corvus",
+        "iron_conc": 49,
+        "bora_conc": 21,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Elephant Ear": {
+        "planet_name": "Elephant Ear",
+        "iron_conc": 75,
+        "bora_conc": 74,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lawrence": {
+        "planet_name": "Lawrence",
+        "iron_conc": 56,
+        "bora_conc": 8,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Darien": {
+        "planet_name": "Darien",
+        "iron_conc": 59,
+        "bora_conc": 55,
+        "germ_conc": 11,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Narnia": {
+        "planet_name": "Narnia",
+        "iron_conc": 77,
+        "bora_conc": 87,
+        "germ_conc": 21,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Speed Bump": {
+        "planet_name": "Speed Bump",
+        "iron_conc": 74,
+        "bora_conc": 71,
+        "germ_conc": 79,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Klaupaucius": {
+        "planet_name": "Klaupaucius",
+        "iron_conc": 55,
+        "bora_conc": 18,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nod": {
+        "planet_name": "Nod",
+        "iron_conc": 1,
+        "bora_conc": 71,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kludge": {
+        "planet_name": "Kludge",
+        "iron_conc": 5,
+        "bora_conc": 78,
+        "germ_conc": 101,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Memmon": {
+        "planet_name": "Memmon",
+        "iron_conc": 13,
+        "bora_conc": 62,
+        "germ_conc": 63,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Leviathan": {
+        "planet_name": "Leviathan",
+        "iron_conc": 44,
+        "bora_conc": 15,
+        "germ_conc": 64,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Resort": {
+        "planet_name": "Resort",
+        "iron_conc": 83,
+        "bora_conc": 77,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mirror": {
+        "planet_name": "Mirror",
+        "iron_conc": 6,
+        "bora_conc": 109,
+        "germ_conc": 92,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      }
+    }
+  },
+  "baseline_mineral_survey": {
+    "bbs_play": false,
+    "total_planets": 160,
+    "scanned_planets": 153,
+    "minerals": {
+      "Marion": {
+        "planet_name": "Marion",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Xenon": {
+        "planet_name": "Xenon",
+        "iron_conc": 70,
+        "bora_conc": 13,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "McCartney": {
+        "planet_name": "McCartney",
+        "iron_conc": 30,
+        "bora_conc": 58,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Baker": {
+        "planet_name": "Baker",
+        "iron_conc": 70,
+        "bora_conc": 45,
+        "germ_conc": 61,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Slime": {
+        "planet_name": "Slime",
+        "iron_conc": 80,
+        "bora_conc": 75,
+        "germ_conc": 80,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Chennault": {
+        "planet_name": "Chennault",
+        "iron_conc": 17,
+        "bora_conc": 76,
+        "germ_conc": 104,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Shaggy Dog": {
+        "planet_name": "Shaggy Dog",
+        "iron_conc": 50,
+        "bora_conc": 76,
+        "germ_conc": 21,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gorby": {
+        "planet_name": "Gorby",
+        "iron_conc": 59,
+        "bora_conc": 1,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tattoo": {
+        "planet_name": "Tattoo",
+        "iron_conc": 2,
+        "bora_conc": 87,
+        "germ_conc": 1,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Rho": {
+        "planet_name": "Rho",
+        "iron_conc": 22,
+        "bora_conc": 84,
+        "germ_conc": 46,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Beta": {
+        "planet_name": "Beta",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Basket Case": {
+        "planet_name": "Basket Case",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Presley": {
+        "planet_name": "Presley",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Andante": {
+        "planet_name": "Andante",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mongo": {
+        "planet_name": "Mongo",
+        "iron_conc": 24,
+        "bora_conc": 90,
+        "germ_conc": 36,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Forget-Me-Not": {
+        "planet_name": "Forget-Me-Not",
+        "iron_conc": 59,
+        "bora_conc": 73,
+        "germ_conc": 3,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Good": {
+        "planet_name": "Ursa Good",
+        "iron_conc": 58,
+        "bora_conc": 91,
+        "germ_conc": 22,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Moscow": {
+        "planet_name": "Moscow",
+        "iron_conc": 85,
+        "bora_conc": 8,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Maple Syrup": {
+        "planet_name": "Maple Syrup",
+        "iron_conc": 16,
+        "bora_conc": 45,
+        "germ_conc": 75,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Infinity Junction": {
+        "planet_name": "Infinity Junction",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Yuppie Puppy": {
+        "planet_name": "Yuppie Puppy",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gates": {
+        "planet_name": "Gates",
+        "iron_conc": 2,
+        "bora_conc": 75,
+        "germ_conc": 14,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Fluffy": {
+        "planet_name": "Fluffy",
+        "iron_conc": 16,
+        "bora_conc": 106,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Elder": {
+        "planet_name": "Elder",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Diddley": {
+        "planet_name": "Diddley",
+        "iron_conc": 23,
+        "bora_conc": 85,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Abrams": {
+        "planet_name": "Abrams",
+        "iron_conc": 42,
+        "bora_conc": 24,
+        "germ_conc": 58,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Spruance": {
+        "planet_name": "Spruance",
+        "iron_conc": 90,
+        "bora_conc": 59,
+        "germ_conc": 20,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "No Respect": {
+        "planet_name": "No Respect",
+        "iron_conc": 108,
+        "bora_conc": 9,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Iceball": {
+        "planet_name": "Iceball",
+        "iron_conc": 18,
+        "bora_conc": 64,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Puss Puss": {
+        "planet_name": "Puss Puss",
+        "iron_conc": 69,
+        "bora_conc": 59,
+        "germ_conc": 114,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nerd": {
+        "planet_name": "Nerd",
+        "iron_conc": 19,
+        "bora_conc": 54,
+        "germ_conc": 88,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kiwi": {
+        "planet_name": "Kiwi",
+        "iron_conc": 1,
+        "bora_conc": 13,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Triffid": {
+        "planet_name": "Triffid",
+        "iron_conc": 4,
+        "bora_conc": 80,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kalamazoo": {
+        "planet_name": "Kalamazoo",
+        "iron_conc": 98,
+        "bora_conc": 70,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mercury": {
+        "planet_name": "Mercury",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Carver": {
+        "planet_name": "Carver",
+        "iron_conc": 84,
+        "bora_conc": 53,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Aurora": {
+        "planet_name": "Aurora",
+        "iron_conc": 87,
+        "bora_conc": 29,
+        "germ_conc": 68,
+        "surface_iron": 1961,
+        "surface_bora": 843,
+        "surface_germ": 1603
+      },
+      "Arpeggio": {
+        "planet_name": "Arpeggio",
+        "iron_conc": 29,
+        "bora_conc": 6,
+        "germ_conc": 15,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Abacus": {
+        "planet_name": "Abacus",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bonaparte": {
+        "planet_name": "Bonaparte",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Basil": {
+        "planet_name": "Basil",
+        "iron_conc": 20,
+        "bora_conc": 73,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Slinky": {
+        "planet_name": "Slinky",
+        "iron_conc": 69,
+        "bora_conc": 77,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Phi": {
+        "planet_name": "Phi",
+        "iron_conc": 47,
+        "bora_conc": 65,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Grouse": {
+        "planet_name": "Grouse",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Marla": {
+        "planet_name": "Marla",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Major": {
+        "planet_name": "Ursa Major",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wallaby": {
+        "planet_name": "Wallaby",
+        "iron_conc": 75,
+        "bora_conc": 59,
+        "germ_conc": 45,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Turing's World": {
+        "planet_name": "Turing's World",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hyperbole": {
+        "planet_name": "Hyperbole",
+        "iron_conc": 89,
+        "bora_conc": 67,
+        "germ_conc": 58,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "PreVious": {
+        "planet_name": "PreVious",
+        "iron_conc": 62,
+        "bora_conc": 105,
+        "germ_conc": 94,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Trial": {
+        "planet_name": "Trial",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nowhere": {
+        "planet_name": "Nowhere",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bonus": {
+        "planet_name": "Bonus",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Milky Way": {
+        "planet_name": "Milky Way",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hummingbird": {
+        "planet_name": "Hummingbird",
+        "iron_conc": 93,
+        "bora_conc": 102,
+        "germ_conc": 65,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Y-Has": {
+        "planet_name": "Y-Has",
+        "iron_conc": 63,
+        "bora_conc": 19,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Reagan": {
+        "planet_name": "Reagan",
+        "iron_conc": 112,
+        "bora_conc": 50,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Flutter Valve": {
+        "planet_name": "Flutter Valve",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bakwele": {
+        "planet_name": "Bakwele",
+        "iron_conc": 8,
+        "bora_conc": 75,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Toroid": {
+        "planet_name": "Toroid",
+        "iron_conc": 18,
+        "bora_conc": 50,
+        "germ_conc": 64,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sequim 3": {
+        "planet_name": "Sequim 3",
+        "iron_conc": 81,
+        "bora_conc": 23,
+        "germ_conc": 105,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Indy": {
+        "planet_name": "Indy",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gout": {
+        "planet_name": "Gout",
+        "iron_conc": 67,
+        "bora_conc": 39,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Meade": {
+        "planet_name": "Meade",
+        "iron_conc": 91,
+        "bora_conc": 65,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "New": {
+        "planet_name": "New",
+        "iron_conc": 79,
+        "bora_conc": 15,
+        "germ_conc": 16,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Fox Trot": {
+        "planet_name": "Fox Trot",
+        "iron_conc": 10,
+        "bora_conc": 91,
+        "germ_conc": 99,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Waterfall": {
+        "planet_name": "Waterfall",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pansy": {
+        "planet_name": "Pansy",
+        "iron_conc": 66,
+        "bora_conc": 26,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Relight": {
+        "planet_name": "Relight",
+        "iron_conc": 66,
+        "bora_conc": 3,
+        "germ_conc": 78,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Barbecue": {
+        "planet_name": "Barbecue",
+        "iron_conc": 0,
+        "bora_conc": 0,
+        "germ_conc": 0,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lee": {
+        "planet_name": "Lee",
+        "iron_conc": 106,
+        "bora_conc": 67,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lazy B": {
+        "planet_name": "Lazy B",
+        "iron_conc": 84,
+        "bora_conc": 13,
+        "germ_conc": 53,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sands Of Time": {
+        "planet_name": "Sands Of Time",
+        "iron_conc": 68,
+        "bora_conc": 47,
+        "germ_conc": 109,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Callipus": {
+        "planet_name": "Callipus",
+        "iron_conc": 57,
+        "bora_conc": 62,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Alcoa": {
+        "planet_name": "Alcoa",
+        "iron_conc": 76,
+        "bora_conc": 67,
+        "germ_conc": 41,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Diamond": {
+        "planet_name": "Diamond",
+        "iron_conc": 88,
+        "bora_conc": 34,
+        "germ_conc": 24,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mars": {
+        "planet_name": "Mars",
+        "iron_conc": 60,
+        "bora_conc": 69,
+        "germ_conc": 2,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hard Ball": {
+        "planet_name": "Hard Ball",
+        "iron_conc": 52,
+        "bora_conc": 77,
+        "germ_conc": 77,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Red Storm": {
+        "planet_name": "Red Storm",
+        "iron_conc": 23,
+        "bora_conc": 70,
+        "germ_conc": 90,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Zippy": {
+        "planet_name": "Zippy",
+        "iron_conc": 70,
+        "bora_conc": 23,
+        "germ_conc": 84,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Charity": {
+        "planet_name": "Charity",
+        "iron_conc": 79,
+        "bora_conc": 25,
+        "germ_conc": 26,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Snuffles": {
+        "planet_name": "Snuffles",
+        "iron_conc": 26,
+        "bora_conc": 55,
+        "germ_conc": 70,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Forrest": {
+        "planet_name": "Forrest",
+        "iron_conc": 26,
+        "bora_conc": 69,
+        "germ_conc": 108,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nastrond": {
+        "planet_name": "Nastrond",
+        "iron_conc": 93,
+        "bora_conc": 15,
+        "germ_conc": 82,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Boethius": {
+        "planet_name": "Boethius",
+        "iron_conc": 89,
+        "bora_conc": 51,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Petra": {
+        "planet_name": "Petra",
+        "iron_conc": 96,
+        "bora_conc": 67,
+        "germ_conc": 12,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mountbatten": {
+        "planet_name": "Mountbatten",
+        "iron_conc": 12,
+        "bora_conc": 9,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mother": {
+        "planet_name": "Mother",
+        "iron_conc": 75,
+        "bora_conc": 72,
+        "germ_conc": 40,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Oop Be Gone": {
+        "planet_name": "Oop Be Gone",
+        "iron_conc": 107,
+        "bora_conc": 27,
+        "germ_conc": 9,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Maggie": {
+        "planet_name": "Maggie",
+        "iron_conc": 95,
+        "bora_conc": 3,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Bruski": {
+        "planet_name": "Bruski",
+        "iron_conc": 18,
+        "bora_conc": 68,
+        "germ_conc": 84,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Zucchini": {
+        "planet_name": "Zucchini",
+        "iron_conc": 76,
+        "bora_conc": 61,
+        "germ_conc": 33,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pegasus": {
+        "planet_name": "Pegasus",
+        "iron_conc": 2,
+        "bora_conc": 67,
+        "germ_conc": 54,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "LGM 1": {
+        "planet_name": "LGM 1",
+        "iron_conc": 91,
+        "bora_conc": 30,
+        "germ_conc": 70,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Olympia": {
+        "planet_name": "Olympia",
+        "iron_conc": 69,
+        "bora_conc": 56,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Red Dwarf": {
+        "planet_name": "Red Dwarf",
+        "iron_conc": 5,
+        "bora_conc": 43,
+        "germ_conc": 10,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Ursa Minor": {
+        "planet_name": "Ursa Minor",
+        "iron_conc": 63,
+        "bora_conc": 25,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Genoa": {
+        "planet_name": "Genoa",
+        "iron_conc": 50,
+        "bora_conc": 93,
+        "germ_conc": 6,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cassiopeia": {
+        "planet_name": "Cassiopeia",
+        "iron_conc": 58,
+        "bora_conc": 4,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cornwallis": {
+        "planet_name": "Cornwallis",
+        "iron_conc": 91,
+        "bora_conc": 81,
+        "germ_conc": 68,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nawk": {
+        "planet_name": "Nawk",
+        "iron_conc": 67,
+        "bora_conc": 26,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wobegon": {
+        "planet_name": "Wobegon",
+        "iron_conc": 15,
+        "bora_conc": 68,
+        "germ_conc": 12,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Muspell": {
+        "planet_name": "Muspell",
+        "iron_conc": 110,
+        "bora_conc": 106,
+        "germ_conc": 17,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wellington": {
+        "planet_name": "Wellington",
+        "iron_conc": 30,
+        "bora_conc": 17,
+        "germ_conc": 50,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Crazy Horse": {
+        "planet_name": "Crazy Horse",
+        "iron_conc": 67,
+        "bora_conc": 85,
+        "germ_conc": 82,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lambda": {
+        "planet_name": "Lambda",
+        "iron_conc": 7,
+        "bora_conc": 70,
+        "germ_conc": 18,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Chlorine": {
+        "planet_name": "Chlorine",
+        "iron_conc": 49,
+        "bora_conc": 59,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Cochise": {
+        "planet_name": "Cochise",
+        "iron_conc": 99,
+        "bora_conc": 29,
+        "germ_conc": 101,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Arafat": {
+        "planet_name": "Arafat",
+        "iron_conc": 34,
+        "bora_conc": 6,
+        "germ_conc": 93,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Redemption": {
+        "planet_name": "Redemption",
+        "iron_conc": 87,
+        "bora_conc": 64,
+        "germ_conc": 25,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Gamma": {
+        "planet_name": "Gamma",
+        "iron_conc": 110,
+        "bora_conc": 190,
+        "germ_conc": 79,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "No Exit": {
+        "planet_name": "No Exit",
+        "iron_conc": 65,
+        "bora_conc": 146,
+        "germ_conc": 169,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Sapphire": {
+        "planet_name": "Sapphire",
+        "iron_conc": 54,
+        "bora_conc": 27,
+        "germ_conc": 28,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Climax": {
+        "planet_name": "Climax",
+        "iron_conc": 61,
+        "bora_conc": 18,
+        "germ_conc": 67,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Acid": {
+        "planet_name": "Acid",
+        "iron_conc": 109,
+        "bora_conc": 30,
+        "germ_conc": 19,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Linq": {
+        "planet_name": "Linq",
+        "iron_conc": 24,
+        "bora_conc": 99,
+        "germ_conc": 49,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tull": {
+        "planet_name": "Tull",
+        "iron_conc": 22,
+        "bora_conc": 76,
+        "germ_conc": 72,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Pirate": {
+        "planet_name": "Pirate",
+        "iron_conc": 25,
+        "bora_conc": 99,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Oxygen": {
+        "planet_name": "Oxygen",
+        "iron_conc": 78,
+        "bora_conc": 11,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Raster": {
+        "planet_name": "Raster",
+        "iron_conc": 38,
+        "bora_conc": 72,
+        "germ_conc": 17,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kline": {
+        "planet_name": "Kline",
+        "iron_conc": 70,
+        "bora_conc": 83,
+        "germ_conc": 66,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Canis Minor": {
+        "planet_name": "Canis Minor",
+        "iron_conc": 41,
+        "bora_conc": 75,
+        "germ_conc": 59,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Neuronos": {
+        "planet_name": "Neuronos",
+        "iron_conc": 71,
+        "bora_conc": 28,
+        "germ_conc": 73,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dimna": {
+        "planet_name": "Dimna",
+        "iron_conc": 77,
+        "bora_conc": 79,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Scud": {
+        "planet_name": "Scud",
+        "iron_conc": 96,
+        "bora_conc": 132,
+        "germ_conc": 104,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Hoze-O-Rama": {
+        "planet_name": "Hoze-O-Rama",
+        "iron_conc": 82,
+        "bora_conc": 10,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Midgard": {
+        "planet_name": "Midgard",
+        "iron_conc": 58,
+        "bora_conc": 30,
+        "germ_conc": 8,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Almighty": {
+        "planet_name": "Almighty",
+        "iron_conc": 84,
+        "bora_conc": 42,
+        "germ_conc": 76,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Decatur": {
+        "planet_name": "Decatur",
+        "iron_conc": 9,
+        "bora_conc": 51,
+        "germ_conc": 105,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Asgard": {
+        "planet_name": "Asgard",
+        "iron_conc": 63,
+        "bora_conc": 69,
+        "germ_conc": 74,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Karhide": {
+        "planet_name": "Karhide",
+        "iron_conc": 117,
+        "bora_conc": 78,
+        "germ_conc": 97,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dawn": {
+        "planet_name": "Dawn",
+        "iron_conc": 77,
+        "bora_conc": 100,
+        "germ_conc": 10,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Tongue": {
+        "planet_name": "Tongue",
+        "iron_conc": 80,
+        "bora_conc": 75,
+        "germ_conc": 68,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Neil": {
+        "planet_name": "Neil",
+        "iron_conc": 91,
+        "bora_conc": 98,
+        "germ_conc": 80,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nether Region": {
+        "planet_name": "Nether Region",
+        "iron_conc": 58,
+        "bora_conc": 37,
+        "germ_conc": 26,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Wood Shed": {
+        "planet_name": "Wood Shed",
+        "iron_conc": 29,
+        "bora_conc": 9,
+        "germ_conc": 87,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kulu": {
+        "planet_name": "Kulu",
+        "iron_conc": 69,
+        "bora_conc": 66,
+        "germ_conc": 32,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Angst": {
+        "planet_name": "Angst",
+        "iron_conc": 18,
+        "bora_conc": 14,
+        "germ_conc": 57,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Dalmatian": {
+        "planet_name": "Dalmatian",
+        "iron_conc": 7,
+        "bora_conc": 80,
+        "germ_conc": 14,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Vanilla": {
+        "planet_name": "Vanilla",
+        "iron_conc": 56,
+        "bora_conc": 71,
+        "germ_conc": 19,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Corvus": {
+        "planet_name": "Corvus",
+        "iron_conc": 49,
+        "bora_conc": 21,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Elephant Ear": {
+        "planet_name": "Elephant Ear",
+        "iron_conc": 75,
+        "bora_conc": 74,
+        "germ_conc": 56,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Lawrence": {
+        "planet_name": "Lawrence",
+        "iron_conc": 56,
+        "bora_conc": 8,
+        "germ_conc": 48,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Darien": {
+        "planet_name": "Darien",
+        "iron_conc": 59,
+        "bora_conc": 55,
+        "germ_conc": 11,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Narnia": {
+        "planet_name": "Narnia",
+        "iron_conc": 77,
+        "bora_conc": 87,
+        "germ_conc": 21,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Speed Bump": {
+        "planet_name": "Speed Bump",
+        "iron_conc": 74,
+        "bora_conc": 71,
+        "germ_conc": 79,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Klaupaucius": {
+        "planet_name": "Klaupaucius",
+        "iron_conc": 55,
+        "bora_conc": 18,
+        "germ_conc": 81,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Nod": {
+        "planet_name": "Nod",
+        "iron_conc": 1,
+        "bora_conc": 71,
+        "germ_conc": 83,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Kludge": {
+        "planet_name": "Kludge",
+        "iron_conc": 5,
+        "bora_conc": 78,
+        "germ_conc": 101,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Memmon": {
+        "planet_name": "Memmon",
+        "iron_conc": 13,
+        "bora_conc": 62,
+        "germ_conc": 63,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Leviathan": {
+        "planet_name": "Leviathan",
+        "iron_conc": 44,
+        "bora_conc": 15,
+        "germ_conc": 64,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Resort": {
+        "planet_name": "Resort",
+        "iron_conc": 83,
+        "bora_conc": 77,
+        "germ_conc": 23,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      },
+      "Mirror": {
+        "planet_name": "Mirror",
+        "iron_conc": 6,
+        "bora_conc": 109,
+        "germ_conc": 92,
+        "surface_iron": 0,
+        "surface_bora": 0,
+        "surface_germ": 0
+      }
+    }
+  }
+}
