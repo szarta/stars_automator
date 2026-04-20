@@ -7,3 +7,4 @@ build/
 .eggs/
 *.egg
 stars_automator.local.cfg
+.todo-sqlite-cli

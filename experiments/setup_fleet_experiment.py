@@ -41,7 +41,11 @@ STARS_EXE = Path(DEFAULT_STARS_EXE)
 
 PRTS = ["HE", "SS", "WM", "CA", "IS", "SD", "PP", "IT", "AR", "JOAT"]
 SIZES = ["tiny", "small", "medium", "large", "huge"]
-DENSITIES = ["sparse", "normal", "dense", "packed"]
+DENSITIES = [
+    "sparse",
+    "normal",
+    "dense",
+]  # "packed" omitted: stars.exe -a silently produces no output files in headless mode with density=packed
 POSITIONS = ["close", "moderate", "farther", "distant"]
 PLAYERS_PER_GAME = 16
 EXPECTED_PER_PRT = 6144  # 96 LRT combos × 64 tech combos
