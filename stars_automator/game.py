@@ -21,7 +21,7 @@ Configuration file schema (JSON):
     "universe": {
       "map_size":        "tiny|small|medium|large|huge",   # required
       "density":         "sparse|normal|dense|packed",     # required; NOTE: "packed" fails silently in headless mode — stars.exe -a produces no output files; use "dense" instead
-      "player_positions":"close|random|farther|distant",   # required
+      "player_positions":"close|moderate|farther|distant",  # required
       "seed":            12345                             # required
     },
 

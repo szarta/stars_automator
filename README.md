@@ -159,6 +159,14 @@ invocations via this library:
 - **stdout/stderr must be suppressed** — piping Wine output with
   `capture_output=True` causes silent failure.  Both streams are redirected to
   `/dev/null` in all tools here.
+- **Corrupt x1 = blocking Win32 dialog, not a crash** — when Stars! rejects a
+  `.x1` file (wrong cipher, wrong game fingerprint, etc.) it shows a
+  `MessageBoxA` dialog and waits indefinitely for a click.  `subprocess.run()`
+  with a short timeout will raise `TimeoutExpired`; the process does NOT exit
+  with a non-zero code.  The dialog text is "Player log file `<name>.x1` appears
+  to be corrupt, unable to load file."  Diagnose by checking the x1 type-8
+  bytes 0–11 (must match the game's `.m1`/`.hst`) and byte[14] (must be
+  `0x01` for x files, not `0x03` from a copied m1 header).
 
 ---
 
@@ -240,15 +248,21 @@ write_x1(
 
 ### Key format facts (hard-won)
 
-**Type-8 header — game fingerprint (bytes 0–11 must be copied from the game file)**
+**Type-8 header — game fingerprint (bytes 0–11) and file-type discriminator (byte 14)**
 
 The 16-byte Type-8 payload is split:
 - Bytes 0–11: game-specific fingerprint, identical across every file in the same
   game (`.hst`, `.m1`, `.x1`, etc.).  Stars! validates these on x1 import and
   **silently discards the entire file** if they don't match.
   → Always read them from an existing game file with `read_game_type8_prefix()`.
-- Bytes 12–15: chosen freely; bytes 12–13 (`seed_word`) determine the LCG seeds
-  via `derive_seeds()`; bytes 14–15 contribute to `pre_advance`.
+- Bytes 12–15: file-type-specific, NOT a copy of the `.m1` bytes 12–15.
+  Byte 14 is a **file-type discriminator**: `0x01`=x order files, `0x02`=hst,
+  `0x03`=m player files, `0x04`=archived h files.  A `.x1` built by copying
+  all 16 bytes from `.m1` will have `0x03` at byte 14, which Stars! detects
+  as the wrong file type and rejects with a corrupt-file dialog.
+  Bytes 12–13 (`seed_word`) determine the LCG seeds via `derive_seeds()`;
+  bytes 14–15 also contribute to `pre_advance`.  The correct fixed constant
+  for turn-1 single-player x files is `_TYPE8_SEED_BYTES = c0dd0100`.
 
 **Cipher seeding**
 
@@ -287,3 +301,39 @@ Field index → tech field:
 (Stars! slider values: 0, 15, 25, 35, 45, 55, 65, 75, 100).  Set `next_field=6`
 to stay on the same field indefinitely, or `next_field=4` when directing
 Electronics indefinitely.
+
+### ManualLoadUnload — immediate cargo transfer
+
+```python
+from stars_automator.x1 import ManualLoadUnload, LOAD_OPCODE, UNLOAD_OPCODE, write_x1
+
+write_x1(
+    "Game.x1",
+    waypoints=[],
+    game_file="Game.m1",
+    load_unloads=[
+        ManualLoadUnload(fleet_num=2, planet_id=8, opcode=LOAD_OPCODE,   cargo={0: 50}),
+        ManualLoadUnload(fleet_num=3, planet_id=8, opcode=UNLOAD_OPCODE, cargo={0: 25}),
+    ],
+)
+```
+
+Payload format (type-1 ManualSmallLoadUnloadTaskBlock, confirmed 2026-04-20/21):
+
+| Bytes | Field         | Notes                                            |
+|-------|---------------|--------------------------------------------------|
+| 0–1   | fleet_num     | LE uint16, 9-bit (matches type-16 fleet record)  |
+| 2–3   | planet_id     | LE uint16 (matches orbit-planet field in type-16)|
+| 4     | opcode        | `LOAD_OPCODE=0x12`, `UNLOAD_OPCODE=0x02`         |
+| 5     | resource_mask | bit 0=ironium, 1=boranium, 2=germanium, 3=col    |
+| 6+    | amounts       | 1 byte per set bit, ascending resource order     |
+
+Opcodes 0x12 (load) and 0x02 (unload) differ by bit 4.  `cargo` is a dict of
+`{bit_position: amount_kT}` where amounts must fit in one byte (0–255).
+
+**Oracle design note:** Stars! maintains a type-12 m1 record that registers
+which fleet is eligible for manual cargo operations at each planet.  This
+registration is set at game creation for fleets with initial cargo, and is not
+automatically updated when cargo is loaded via `ManualLoadUnload`.  Oracles that
+load cargo in turn 1 then test unload in turn 2 will find the unload silently
+ignored; use a game configuration where the target fleet starts with cargo.

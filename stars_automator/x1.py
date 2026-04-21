@@ -16,9 +16,9 @@ Cipher notes:
   payloads are XOR-encrypted with the keystream.
 
   Bytes 0-11 of the Type-8 header are game-specific (same across all files in
-  a game: hst, m1, x1, etc.).  Bytes 12-15 are chosen freely and control the
-  cipher seeds and pre_advance.  Stars! validates bytes 0-11 against the game
-  record — wrong bytes cause silent order rejection.
+  a game: hst, m1, x1, etc.).  Bytes 12-15 control the cipher seeds and
+  pre_advance and must match the current .m1 file — Stars! validates all 16
+  bytes and silently rejects mismatches.
 
   We derive seeds and pre_advance from the actual header using the same
   algorithm as the Rust parser (derive_seeds / derive_pre_advance).
@@ -176,11 +176,7 @@ assert len(_TYPE9_HASH) == 15
 
 
 def read_game_type8_prefix(game_file: str | Path) -> bytes:
-    """Read bytes 0-11 of the Type-8 header from any Stars! game file (m1, hst, etc.).
-
-    These bytes are game-specific and must appear verbatim in the x1 Type-8
-    header.  Stars! validates them on x1 import and silently rejects mismatches.
-    """
+    """Read bytes 0-11 of the Type-8 header from any Stars! game file (m1, hst, etc.)."""
     data = Path(game_file).read_bytes()
     hdr_word = struct.unpack_from("<H", data, 0)[0]
     rtype = hdr_word >> 10
@@ -188,6 +184,24 @@ def read_game_type8_prefix(game_file: str | Path) -> bytes:
     if rtype != 8 or rlen < 12:
         raise ValueError(f"{game_file}: expected type-8 header, got type={rtype} len={rlen}")
     return data[2:14]  # bytes 0-11 of the payload
+
+
+def read_game_type8_header(game_file: str | Path) -> bytes:
+    """Read all 16 bytes of the Type-8 payload from any Stars! game file.
+
+    The x1 Type-8 payload must use all 16 bytes verbatim from the current .m1 file.
+    Stars! validates bytes 0-11 (game/turn identity) and bytes 12-15 (cipher seeds)
+    against its stored game state and silently rejects mismatches.
+    """
+    data = Path(game_file).read_bytes()
+    hdr_word = struct.unpack_from("<H", data, 0)[0]
+    rtype = hdr_word >> 10
+    rlen = hdr_word & 0x3FF
+    if rtype != 8 or rlen < 16:
+        raise ValueError(
+            f"{game_file}: expected type-8 header with ≥16 bytes, got type={rtype} len={rlen}"
+        )
+    return data[2:18]  # all 16 bytes of the payload
 
 
 # ── ResearchChange record ─────────────────────────────────────────────────────
@@ -237,6 +251,43 @@ class WaypointAdd:
         )
 
 
+# ── ManualSmallLoadUnloadTask record ─────────────────────────────────────────
+
+LOAD_OPCODE = 0x12
+# Confirmed via research oracle Game.x1 (2026-04-21): fleet with cargo placed an
+# opcode=0x02 unload order; fleet disappeared from the next m-file (0kT cargo, no
+# waypoints → Stars! omits it).  LOAD=0x12, UNLOAD=0x02 (differ by bit 4).
+UNLOAD_OPCODE = 0x02
+
+
+@dataclass
+class ManualLoadUnload:
+    """A type-1 ManualSmallLoadUnloadTask order (amounts ≤ 255 kT per cargo type).
+
+    Payload layout (confirmed by oracle, 2026-04-20/21):
+      b0-b1: fleet_id (LE uint16, 9-bit)
+      b2-b3: planet_id (LE uint16) — planet where load/unload occurs
+      b4:    opcode (0x12 = load; 0x02 = unload)
+      b5:    cargo type bitmask (bit 0=ironium, 1=boranium, 2=germanium, 3=colonists)
+      b6+:   amount per cargo type (1 byte each, in ascending bit order)
+    """
+
+    fleet_num: int
+    planet_id: int
+    opcode: int  # LOAD_OPCODE=0x12 or UNLOAD_OPCODE=0x02
+    cargo: dict[int, int]  # bit_position (0-3) → amount (0-255)
+
+    def payload(self) -> bytes:
+        mask = 0
+        amounts = []
+        for bit in sorted(self.cargo):
+            mask |= 1 << bit
+            amounts.append(self.cargo[bit] & 0xFF)
+        return struct.pack("<HHBB", self.fleet_num, self.planet_id, self.opcode, mask) + bytes(
+            amounts
+        )
+
+
 # ── File writer ───────────────────────────────────────────────────────────────
 
 
@@ -257,12 +308,15 @@ def build_x1(
     waypoints: list[WaypointAdd],
     game_file: str | Path,
     research: list[ResearchChange] | None = None,
+    load_unloads: list[ManualLoadUnload] | None = None,
 ) -> bytes:
     """Assemble a Stars! .x1 file containing the given orders.
 
-    game_file must be any Stars! file from the same game (e.g. the .m1 or .hst
-    file) so that the game-specific bytes 0-11 of the Type-8 header can be read.
-    Stars! validates these bytes on x1 import; a mismatch causes silent rejection.
+    game_file must be the current-turn .m1 file for this player.  Bytes 0-11 of
+    the Type-8 header encode the game/turn identity and are read from the .m1
+    file.  Bytes 12-15 are x1-file-specific cipher parameters (_TYPE8_SEED_BYTES)
+    and differ from the .m1 file's bytes 12-15 — the m1 uses byte[14]=0x03 (m
+    file type) whereas x1 requires byte[14]=0x01.
 
     Each WaypointAdd emits a type-4 (WaypointAdd) AND type-5 (WaypointChangeTask)
     pair, as Stars! always writes both. For task=None movement both records are
@@ -270,8 +324,7 @@ def build_x1(
 
     Returns the complete file content as bytes.
     """
-    game_prefix = read_game_type8_prefix(game_file)  # bytes 0-11 (game-specific)
-    type8_payload = game_prefix + _TYPE8_SEED_BYTES  # bytes 12-15 (cipher choice)
+    type8_payload = read_game_type8_prefix(game_file) + _TYPE8_SEED_BYTES
     assert len(type8_payload) == 16
 
     lcg = _make_lcg_from_header(type8_payload)
@@ -284,8 +337,11 @@ def build_x1(
     # Type-9 FileInfo: compute LengthOfFollowingBlocks
     # Each WaypointAdd = type-4 + type-5 = 2*(2+12) = 28 bytes.
     # Each ResearchChange = 2+2 = 4 bytes.
+    # Each ManualLoadUnload = 2 + len(payload) bytes.
     research = research or []
-    following_bytes = len(research) * 4 + len(waypoints) * 28
+    load_unloads = load_unloads or []
+    lu_bytes = sum(2 + len(lu.payload()) for lu in load_unloads)
+    following_bytes = len(research) * 4 + lu_bytes + len(waypoints) * 28
     type9_plain = struct.pack("<H", following_bytes) + _TYPE9_HASH
     assert len(type9_plain) == 17
     type9_enc = bytearray(type9_plain)
@@ -298,6 +354,14 @@ def build_x1(
         pl = bytearray(rc.payload())
         lcg.encrypt_inplace(pl, 2)
         out += _record_header(34, 2)
+        out += bytes(pl)
+
+    # Type-1 ManualSmallLoadUnloadTask records
+    for lu in load_unloads:
+        payload = lu.payload()
+        pl = bytearray(payload)
+        lcg.encrypt_inplace(pl, len(pl))
+        out += _record_header(1, len(pl))
         out += bytes(pl)
 
     # Type-4 (WaypointAdd) + Type-5 (WaypointChangeTask) pairs
@@ -320,9 +384,10 @@ def write_x1(
     waypoints: list[WaypointAdd],
     game_file: str | Path,
     research: list[ResearchChange] | None = None,
+    load_unloads: list[ManualLoadUnload] | None = None,
 ) -> None:
     """Write an x1 file containing the given orders.
 
     game_file is any Stars! file from the same game (e.g. the .m1 or .hst).
     """
-    Path(path).write_bytes(build_x1(waypoints, game_file, research))
+    Path(path).write_bytes(build_x1(waypoints, game_file, research, load_unloads))
