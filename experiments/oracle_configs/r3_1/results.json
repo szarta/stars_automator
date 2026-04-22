@@ -1,0 +1,2570 @@
+{
+  "experiment": "R3.1 homeworld placement",
+  "map_size": "small",
+  "density": "normal",
+  "n_players": 6,
+  "n_seeds": 10,
+  "base_seed": 31000,
+  "results": [
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 96,
+          "x": 1481,
+          "y": 1354
+        },
+        {
+          "player": 2,
+          "planet_idx": 88,
+          "x": 1422,
+          "y": 1430
+        },
+        {
+          "player": 3,
+          "planet_idx": 86,
+          "x": 1416,
+          "y": 1356
+        },
+        {
+          "player": 4,
+          "planet_idx": 118,
+          "x": 1585,
+          "y": 1316
+        },
+        {
+          "player": 5,
+          "planet_idx": 110,
+          "x": 1552,
+          "y": 1250
+        },
+        {
+          "player": 6,
+          "planet_idx": 109,
+          "x": 1547,
+          "y": 1369
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        65.03,
+        65.22,
+        67.68,
+        73.79,
+        74.24,
+        96.21,
+        110.72,
+        119.1,
+        125.92,
+        131.64,
+        139.09,
+        172.43,
+        173.67,
+        198.91,
+        222.04
+      ],
+      "min_dist": 65.03,
+      "max_dist": 222.04,
+      "mean_dist": 122.38,
+      "median_dist": 119.1,
+      "setting": "close",
+      "seed": 31000
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 92,
+          "x": 1482,
+          "y": 1712
+        },
+        {
+          "player": 2,
+          "planet_idx": 73,
+          "x": 1358,
+          "y": 1686
+        },
+        {
+          "player": 3,
+          "planet_idx": 75,
+          "x": 1370,
+          "y": 1623
+        },
+        {
+          "player": 4,
+          "planet_idx": 82,
+          "x": 1419,
+          "y": 1712
+        },
+        {
+          "player": 5,
+          "planet_idx": 76,
+          "x": 1377,
+          "y": 1516
+        },
+        {
+          "player": 6,
+          "planet_idx": 61,
+          "x": 1321,
+          "y": 1562
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        63.0,
+        64.13,
+        66.31,
+        72.47,
+        78.24,
+        101.6,
+        107.23,
+        126.7,
+        129.4,
+        143.06,
+        171.06,
+        179.18,
+        200.45,
+        220.05,
+        222.35
+      ],
+      "min_dist": 63.0,
+      "max_dist": 222.35,
+      "mean_dist": 129.68,
+      "median_dist": 126.7,
+      "setting": "close",
+      "seed": 31001
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 32,
+          "x": 1152,
+          "y": 1387
+        },
+        {
+          "player": 2,
+          "planet_idx": 41,
+          "x": 1193,
+          "y": 1191
+        },
+        {
+          "player": 3,
+          "planet_idx": 52,
+          "x": 1256,
+          "y": 1357
+        },
+        {
+          "player": 4,
+          "planet_idx": 37,
+          "x": 1173,
+          "y": 1263
+        },
+        {
+          "player": 5,
+          "planet_idx": 45,
+          "x": 1215,
+          "y": 1419
+        },
+        {
+          "player": 6,
+          "planet_idx": 30,
+          "x": 1132,
+          "y": 1316
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        67.01,
+        70.66,
+        73.76,
+        74.33,
+        74.73,
+        108.24,
+        125.4,
+        125.77,
+        130.6,
+        132.28,
+        139.09,
+        161.55,
+        177.55,
+        200.24,
+        229.06
+      ],
+      "min_dist": 67.01,
+      "max_dist": 229.06,
+      "mean_dist": 126.02,
+      "median_dist": 125.77,
+      "setting": "close",
+      "seed": 31002
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 76,
+          "x": 1328,
+          "y": 1243
+        },
+        {
+          "player": 2,
+          "planet_idx": 66,
+          "x": 1266,
+          "y": 1261
+        },
+        {
+          "player": 3,
+          "planet_idx": 84,
+          "x": 1375,
+          "y": 1184
+        },
+        {
+          "player": 4,
+          "planet_idx": 96,
+          "x": 1435,
+          "y": 1170
+        },
+        {
+          "player": 5,
+          "planet_idx": 97,
+          "x": 1446,
+          "y": 1233
+        },
+        {
+          "player": 6,
+          "planet_idx": 105,
+          "x": 1488,
+          "y": 1133
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        61.61,
+        63.95,
+        64.56,
+        64.64,
+        75.43,
+        86.27,
+        108.46,
+        118.42,
+        123.98,
+        129.53,
+        133.45,
+        182.16,
+        191.94,
+        194.16,
+        256.26
+      ],
+      "min_dist": 61.61,
+      "max_dist": 256.26,
+      "mean_dist": 123.65,
+      "median_dist": 118.42,
+      "setting": "close",
+      "seed": 31003
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 102,
+          "x": 1579,
+          "y": 1236
+        },
+        {
+          "player": 2,
+          "planet_idx": 84,
+          "x": 1477,
+          "y": 1162
+        },
+        {
+          "player": 3,
+          "planet_idx": 78,
+          "x": 1436,
+          "y": 1110
+        },
+        {
+          "player": 4,
+          "planet_idx": 117,
+          "x": 1618,
+          "y": 1124
+        },
+        {
+          "player": 5,
+          "planet_idx": 90,
+          "x": 1522,
+          "y": 1105
+        },
+        {
+          "player": 6,
+          "planet_idx": 96,
+          "x": 1559,
+          "y": 1170
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        66.22,
+        68.96,
+        72.62,
+        74.79,
+        74.81,
+        82.39,
+        86.15,
+        97.86,
+        118.6,
+        126.02,
+        136.85,
+        142.86,
+        146.03,
+        182.54,
+        190.59
+      ],
+      "min_dist": 66.22,
+      "max_dist": 190.59,
+      "mean_dist": 111.15,
+      "median_dist": 97.86,
+      "setting": "close",
+      "seed": 31004
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 28,
+          "x": 1138,
+          "y": 1258
+        },
+        {
+          "player": 2,
+          "planet_idx": 42,
+          "x": 1208,
+          "y": 1284
+        },
+        {
+          "player": 3,
+          "planet_idx": 57,
+          "x": 1266,
+          "y": 1307
+        },
+        {
+          "player": 4,
+          "planet_idx": 43,
+          "x": 1216,
+          "y": 1209
+        },
+        {
+          "player": 5,
+          "planet_idx": 61,
+          "x": 1275,
+          "y": 1422
+        },
+        {
+          "player": 6,
+          "planet_idx": 65,
+          "x": 1309,
+          "y": 1363
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        62.39,
+        68.1,
+        70.6,
+        74.67,
+        75.43,
+        92.11,
+        110.02,
+        115.35,
+        128.23,
+        137.06,
+        153.4,
+        179.9,
+        200.66,
+        213.69,
+        221.02
+      ],
+      "min_dist": 62.39,
+      "max_dist": 221.02,
+      "mean_dist": 126.84,
+      "median_dist": 115.35,
+      "setting": "close",
+      "seed": 31005
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 43,
+          "x": 1242,
+          "y": 1374
+        },
+        {
+          "player": 2,
+          "planet_idx": 64,
+          "x": 1357,
+          "y": 1449
+        },
+        {
+          "player": 3,
+          "planet_idx": 27,
+          "x": 1136,
+          "y": 1418
+        },
+        {
+          "player": 4,
+          "planet_idx": 37,
+          "x": 1180,
+          "y": 1356
+        },
+        {
+          "player": 5,
+          "planet_idx": 68,
+          "x": 1370,
+          "y": 1362
+        },
+        {
+          "player": 6,
+          "planet_idx": 54,
+          "x": 1311,
+          "y": 1389
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        64.56,
+        64.88,
+        70.61,
+        75.6,
+        76.03,
+        87.97,
+        114.77,
+        128.56,
+        135.09,
+        137.3,
+        177.39,
+        190.09,
+        199.94,
+        223.16,
+        240.61
+      ],
+      "min_dist": 64.56,
+      "max_dist": 240.61,
+      "mean_dist": 132.44,
+      "median_dist": 128.56,
+      "setting": "close",
+      "seed": 31006
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 83,
+          "x": 1389,
+          "y": 1286
+        },
+        {
+          "player": 2,
+          "planet_idx": 76,
+          "x": 1338,
+          "y": 1338
+        },
+        {
+          "player": 3,
+          "planet_idx": 91,
+          "x": 1407,
+          "y": 1359
+        },
+        {
+          "player": 4,
+          "planet_idx": 48,
+          "x": 1259,
+          "y": 1336
+        },
+        {
+          "player": 5,
+          "planet_idx": 59,
+          "x": 1292,
+          "y": 1397
+        },
+        {
+          "player": 6,
+          "planet_idx": 39,
+          "x": 1229,
+          "y": 1270
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        69.35,
+        72.12,
+        72.5,
+        72.84,
+        74.81,
+        75.19,
+        79.03,
+        121.12,
+        128.47,
+        139.28,
+        141.77,
+        147.41,
+        149.78,
+        160.8,
+        199.01
+      ],
+      "min_dist": 69.35,
+      "max_dist": 199.01,
+      "mean_dist": 113.57,
+      "median_dist": 121.12,
+      "setting": "close",
+      "seed": 31007
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 70,
+          "x": 1349,
+          "y": 1278
+        },
+        {
+          "player": 2,
+          "planet_idx": 86,
+          "x": 1427,
+          "y": 1389
+        },
+        {
+          "player": 3,
+          "planet_idx": 75,
+          "x": 1364,
+          "y": 1349
+        },
+        {
+          "player": 4,
+          "planet_idx": 32,
+          "x": 1190,
+          "y": 1439
+        },
+        {
+          "player": 5,
+          "planet_idx": 48,
+          "x": 1256,
+          "y": 1426
+        },
+        {
+          "player": 6,
+          "planet_idx": 67,
+          "x": 1326,
+          "y": 1408
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        67.27,
+        70.18,
+        72.28,
+        72.57,
+        74.63,
+        102.77,
+        132.02,
+        132.64,
+        135.67,
+        139.49,
+        174.79,
+        174.96,
+        195.9,
+        226.28,
+        242.22
+      ],
+      "min_dist": 67.27,
+      "max_dist": 242.22,
+      "mean_dist": 134.24,
+      "median_dist": 132.64,
+      "setting": "close",
+      "seed": 31008
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 78,
+          "x": 1383,
+          "y": 1372
+        },
+        {
+          "player": 2,
+          "planet_idx": 60,
+          "x": 1311,
+          "y": 1363
+        },
+        {
+          "player": 3,
+          "planet_idx": 46,
+          "x": 1225,
+          "y": 1362
+        },
+        {
+          "player": 4,
+          "planet_idx": 50,
+          "x": 1251,
+          "y": 1433
+        },
+        {
+          "player": 5,
+          "planet_idx": 58,
+          "x": 1296,
+          "y": 1298
+        },
+        {
+          "player": 6,
+          "planet_idx": 62,
+          "x": 1322,
+          "y": 1437
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        66.71,
+        71.11,
+        72.56,
+        74.81,
+        75.61,
+        86.01,
+        89.14,
+        92.2,
+        95.59,
+        114.21,
+        122.61,
+        141.41,
+        142.3,
+        145.41,
+        158.32
+      ],
+      "min_dist": 66.71,
+      "max_dist": 158.32,
+      "mean_dist": 103.2,
+      "median_dist": 92.2,
+      "setting": "close",
+      "seed": 31009
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 79,
+          "x": 1374,
+          "y": 1735
+        },
+        {
+          "player": 2,
+          "planet_idx": 138,
+          "x": 1698,
+          "y": 1384
+        },
+        {
+          "player": 3,
+          "planet_idx": 96,
+          "x": 1481,
+          "y": 1354
+        },
+        {
+          "player": 4,
+          "planet_idx": 87,
+          "x": 1422,
+          "y": 1545
+        },
+        {
+          "player": 5,
+          "planet_idx": 124,
+          "x": 1615,
+          "y": 1208
+        },
+        {
+          "player": 6,
+          "planet_idx": 111,
+          "x": 1559,
+          "y": 1716
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        185.97,
+        194.59,
+        195.97,
+        198.17,
+        199.9,
+        219.06,
+        219.11,
+        319.53,
+        359.92,
+        370.31,
+        388.35,
+        395.74,
+        477.68,
+        511.08,
+        579.49
+      ],
+      "min_dist": 185.97,
+      "max_dist": 579.49,
+      "mean_dist": 320.99,
+      "median_dist": 319.53,
+      "setting": "moderate",
+      "seed": 31000
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 127,
+          "x": 1592,
+          "y": 1108
+        },
+        {
+          "player": 2,
+          "planet_idx": 62,
+          "x": 1321,
+          "y": 1175
+        },
+        {
+          "player": 3,
+          "planet_idx": 100,
+          "x": 1501,
+          "y": 1265
+        },
+        {
+          "player": 4,
+          "planet_idx": 11,
+          "x": 1075,
+          "y": 1287
+        },
+        {
+          "player": 5,
+          "planet_idx": 25,
+          "x": 1140,
+          "y": 1494
+        },
+        {
+          "player": 6,
+          "planet_idx": 49,
+          "x": 1259,
+          "y": 1349
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        181.47,
+        184.72,
+        187.58,
+        194.16,
+        201.25,
+        216.97,
+        256.16,
+        270.3,
+        279.16,
+        366.77,
+        411.06,
+        426.57,
+        427.51,
+        547.11,
+        594.39
+      ],
+      "min_dist": 181.47,
+      "max_dist": 594.39,
+      "mean_dist": 316.35,
+      "median_dist": 270.3,
+      "setting": "moderate",
+      "seed": 31001
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 27,
+          "x": 1119,
+          "y": 1045
+        },
+        {
+          "player": 2,
+          "planet_idx": 14,
+          "x": 1066,
+          "y": 1373
+        },
+        {
+          "player": 3,
+          "planet_idx": 69,
+          "x": 1336,
+          "y": 1732
+        },
+        {
+          "player": 4,
+          "planet_idx": 52,
+          "x": 1256,
+          "y": 1357
+        },
+        {
+          "player": 5,
+          "planet_idx": 58,
+          "x": 1294,
+          "y": 1541
+        },
+        {
+          "player": 6,
+          "planet_idx": 54,
+          "x": 1272,
+          "y": 1175
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        182.7,
+        187.88,
+        190.67,
+        195.56,
+        200.77,
+        283.21,
+        285.73,
+        332.25,
+        340.75,
+        366.66,
+        383.44,
+        449.2,
+        525.97,
+        560.66,
+        720.46
+      ],
+      "min_dist": 182.7,
+      "max_dist": 720.46,
+      "mean_dist": 347.06,
+      "median_dist": 332.25,
+      "setting": "moderate",
+      "seed": 31002
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 85,
+          "x": 1381,
+          "y": 1380
+        },
+        {
+          "player": 2,
+          "planet_idx": 28,
+          "x": 1094,
+          "y": 1467
+        },
+        {
+          "player": 3,
+          "planet_idx": 69,
+          "x": 1277,
+          "y": 1553
+        },
+        {
+          "player": 4,
+          "planet_idx": 118,
+          "x": 1567,
+          "y": 1400
+        },
+        {
+          "player": 5,
+          "planet_idx": 32,
+          "x": 1130,
+          "y": 1273
+        },
+        {
+          "player": 6,
+          "planet_idx": 20,
+          "x": 1068,
+          "y": 1647
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        181.87,
+        187.07,
+        197.31,
+        201.85,
+        202.2,
+        229.17,
+        272.86,
+        299.9,
+        316.24,
+        327.89,
+        379.1,
+        411.41,
+        455.08,
+        477.72,
+        556.79
+      ],
+      "min_dist": 181.87,
+      "max_dist": 556.79,
+      "mean_dist": 313.1,
+      "median_dist": 299.9,
+      "setting": "moderate",
+      "seed": 31003
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 139,
+          "x": 1709,
+          "y": 1578
+        },
+        {
+          "player": 2,
+          "planet_idx": 102,
+          "x": 1579,
+          "y": 1236
+        },
+        {
+          "player": 3,
+          "planet_idx": 137,
+          "x": 1699,
+          "y": 1085
+        },
+        {
+          "player": 4,
+          "planet_idx": 98,
+          "x": 1567,
+          "y": 1699
+        },
+        {
+          "player": 5,
+          "planet_idx": 112,
+          "x": 1602,
+          "y": 1432
+        },
+        {
+          "player": 6,
+          "planet_idx": 78,
+          "x": 1436,
+          "y": 1110
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        181.01,
+        186.56,
+        190.59,
+        192.88,
+        197.34,
+        264.19,
+        269.28,
+        360.3,
+        362.27,
+        365.87,
+        463.16,
+        493.1,
+        541.81,
+        603.39,
+        628.03
+      ],
+      "min_dist": 181.01,
+      "max_dist": 628.03,
+      "mean_dist": 353.32,
+      "median_dist": 360.3,
+      "setting": "moderate",
+      "seed": 31004
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 83,
+          "x": 1437,
+          "y": 1098
+        },
+        {
+          "player": 2,
+          "planet_idx": 90,
+          "x": 1462,
+          "y": 1462
+        },
+        {
+          "player": 3,
+          "planet_idx": 24,
+          "x": 1123,
+          "y": 1335
+        },
+        {
+          "player": 4,
+          "planet_idx": 110,
+          "x": 1586,
+          "y": 1224
+        },
+        {
+          "player": 5,
+          "planet_idx": 58,
+          "x": 1267,
+          "y": 1175
+        },
+        {
+          "player": 6,
+          "planet_idx": 65,
+          "x": 1309,
+          "y": 1363
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        182.24,
+        186.63,
+        188.1,
+        192.63,
+        195.13,
+        215.26,
+        268.37,
+        294.29,
+        309.92,
+        322.74,
+        346.98,
+        362.01,
+        364.86,
+        393.4,
+        476.12
+      ],
+      "min_dist": 182.24,
+      "max_dist": 476.12,
+      "mean_dist": 286.58,
+      "median_dist": 294.29,
+      "setting": "moderate",
+      "seed": 31005
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 37,
+          "x": 1180,
+          "y": 1356
+        },
+        {
+          "player": 2,
+          "planet_idx": 9,
+          "x": 1059,
+          "y": 1224
+        },
+        {
+          "player": 3,
+          "planet_idx": 64,
+          "x": 1357,
+          "y": 1449
+        },
+        {
+          "player": 4,
+          "planet_idx": 143,
+          "x": 1737,
+          "y": 1401
+        },
+        {
+          "player": 5,
+          "planet_idx": 103,
+          "x": 1545,
+          "y": 1262
+        },
+        {
+          "player": 6,
+          "planet_idx": 102,
+          "x": 1543,
+          "y": 1452
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        179.07,
+        186.02,
+        190.01,
+        199.94,
+        200.59,
+        237.03,
+        265.17,
+        373.4,
+        375.48,
+        376.91,
+        383.02,
+        487.48,
+        535.01,
+        558.81,
+        700.72
+      ],
+      "min_dist": 179.07,
+      "max_dist": 700.72,
+      "mean_dist": 349.91,
+      "median_dist": 373.4,
+      "setting": "moderate",
+      "seed": 31006
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 95,
+          "x": 1420,
+          "y": 1139
+        },
+        {
+          "player": 2,
+          "planet_idx": 48,
+          "x": 1259,
+          "y": 1336
+        },
+        {
+          "player": 3,
+          "planet_idx": 63,
+          "x": 1304,
+          "y": 1682
+        },
+        {
+          "player": 4,
+          "planet_idx": 77,
+          "x": 1340,
+          "y": 1507
+        },
+        {
+          "player": 5,
+          "planet_idx": 119,
+          "x": 1564,
+          "y": 1252
+        },
+        {
+          "player": 6,
+          "planet_idx": 36,
+          "x": 1222,
+          "y": 1155
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        178.66,
+        183.04,
+        184.74,
+        189.21,
+        198.65,
+        254.42,
+        316.36,
+        339.41,
+        348.91,
+        355.49,
+        371.25,
+        376.6,
+        502.49,
+        533.34,
+        555.25
+      ],
+      "min_dist": 178.66,
+      "max_dist": 555.25,
+      "mean_dist": 325.85,
+      "median_dist": 339.41,
+      "setting": "moderate",
+      "seed": 31007
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 42,
+          "x": 1233,
+          "y": 1518
+        },
+        {
+          "player": 2,
+          "planet_idx": 75,
+          "x": 1364,
+          "y": 1349
+        },
+        {
+          "player": 3,
+          "planet_idx": 142,
+          "x": 1700,
+          "y": 1304
+        },
+        {
+          "player": 4,
+          "planet_idx": 127,
+          "x": 1596,
+          "y": 1152
+        },
+        {
+          "player": 5,
+          "planet_idx": 31,
+          "x": 1187,
+          "y": 1326
+        },
+        {
+          "player": 6,
+          "planet_idx": 83,
+          "x": 1402,
+          "y": 1152
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        178.49,
+        184.17,
+        194.0,
+        197.43,
+        200.63,
+        213.83,
+        276.59,
+        304.36,
+        334.53,
+        339.0,
+        403.13,
+        444.47,
+        513.47,
+        513.7,
+        515.49
+      ],
+      "min_dist": 178.49,
+      "max_dist": 515.49,
+      "mean_dist": 320.89,
+      "median_dist": 304.36,
+      "setting": "moderate",
+      "seed": 31008
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 78,
+          "x": 1383,
+          "y": 1372
+        },
+        {
+          "player": 2,
+          "planet_idx": 64,
+          "x": 1327,
+          "y": 1750
+        },
+        {
+          "player": 3,
+          "planet_idx": 51,
+          "x": 1256,
+          "y": 1512
+        },
+        {
+          "player": 4,
+          "planet_idx": 107,
+          "x": 1581,
+          "y": 1411
+        },
+        {
+          "player": 5,
+          "planet_idx": 145,
+          "x": 1728,
+          "y": 1305
+        },
+        {
+          "player": 6,
+          "planet_idx": 87,
+          "x": 1422,
+          "y": 1584
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        180.94,
+        181.23,
+        189.02,
+        191.26,
+        201.8,
+        215.56,
+        234.97,
+        248.36,
+        340.33,
+        351.45,
+        382.13,
+        414.1,
+        423.6,
+        515.4,
+        599.02
+      ],
+      "min_dist": 180.94,
+      "max_dist": 599.02,
+      "mean_dist": 311.28,
+      "median_dist": 248.36,
+      "setting": "moderate",
+      "seed": 31009
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 46,
+          "x": 1239,
+          "y": 1414
+        },
+        {
+          "player": 2,
+          "planet_idx": 28,
+          "x": 1144,
+          "y": 1176
+        },
+        {
+          "player": 3,
+          "planet_idx": 96,
+          "x": 1481,
+          "y": 1354
+        },
+        {
+          "player": 4,
+          "planet_idx": 148,
+          "x": 1740,
+          "y": 1423
+        },
+        {
+          "player": 5,
+          "planet_idx": 126,
+          "x": 1621,
+          "y": 1119
+        },
+        {
+          "player": 6,
+          "planet_idx": 125,
+          "x": 1615,
+          "y": 1669
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        249.33,
+        256.26,
+        268.03,
+        273.54,
+        275.94,
+        326.46,
+        342.32,
+        381.12,
+        454.31,
+        480.39,
+        482.65,
+        501.08,
+        550.03,
+        645.16,
+        681.83
+      ],
+      "min_dist": 249.33,
+      "max_dist": 681.83,
+      "mean_dist": 411.23,
+      "median_dist": 381.12,
+      "setting": "farther",
+      "seed": 31000
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 79,
+          "x": 1397,
+          "y": 1722
+        },
+        {
+          "player": 2,
+          "planet_idx": 100,
+          "x": 1501,
+          "y": 1265
+        },
+        {
+          "player": 3,
+          "planet_idx": 18,
+          "x": 1109,
+          "y": 1579
+        },
+        {
+          "player": 4,
+          "planet_idx": 142,
+          "x": 1707,
+          "y": 1092
+        },
+        {
+          "player": 5,
+          "planet_idx": 66,
+          "x": 1341,
+          "y": 1478
+        },
+        {
+          "player": 6,
+          "planet_idx": 48,
+          "x": 1254,
+          "y": 1140
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        250.34,
+        253.03,
+        266.4,
+        269.01,
+        276.83,
+        321.55,
+        349.02,
+        455.54,
+        462.33,
+        468.68,
+        502.25,
+        531.93,
+        599.31,
+        702.14,
+        771.22
+      ],
+      "min_dist": 250.34,
+      "max_dist": 771.22,
+      "mean_dist": 431.97,
+      "median_dist": 455.54,
+      "setting": "farther",
+      "seed": 31001
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 74,
+          "x": 1382,
+          "y": 1126
+        },
+        {
+          "player": 2,
+          "planet_idx": 111,
+          "x": 1565,
+          "y": 1311
+        },
+        {
+          "player": 3,
+          "planet_idx": 15,
+          "x": 1081,
+          "y": 1543
+        },
+        {
+          "player": 4,
+          "planet_idx": 52,
+          "x": 1256,
+          "y": 1357
+        },
+        {
+          "player": 5,
+          "planet_idx": 19,
+          "x": 1090,
+          "y": 1153
+        },
+        {
+          "player": 6,
+          "planet_idx": 86,
+          "x": 1474,
+          "y": 1569
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        255.38,
+        260.22,
+        263.01,
+        263.13,
+        273.58,
+        293.25,
+        304.09,
+        312.41,
+        390.1,
+        393.86,
+        452.45,
+        500.59,
+        514.29,
+        536.73,
+        566.14
+      ],
+      "min_dist": 255.38,
+      "max_dist": 566.14,
+      "mean_dist": 371.95,
+      "median_dist": 312.41,
+      "setting": "farther",
+      "seed": 31002
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 81,
+          "x": 1356,
+          "y": 1078
+        },
+        {
+          "player": 2,
+          "planet_idx": 31,
+          "x": 1128,
+          "y": 1168
+        },
+        {
+          "player": 3,
+          "planet_idx": 118,
+          "x": 1567,
+          "y": 1400
+        },
+        {
+          "player": 4,
+          "planet_idx": 87,
+          "x": 1382,
+          "y": 1581
+        },
+        {
+          "player": 5,
+          "planet_idx": 23,
+          "x": 1072,
+          "y": 1426
+        },
+        {
+          "player": 6,
+          "planet_idx": 124,
+          "x": 1603,
+          "y": 1140
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        245.12,
+        254.66,
+        258.82,
+        262.48,
+        264.01,
+        346.59,
+        384.97,
+        449.18,
+        475.82,
+        484.86,
+        493.28,
+        495.68,
+        496.53,
+        503.67,
+        603.12
+      ],
+      "min_dist": 245.12,
+      "max_dist": 603.12,
+      "mean_dist": 401.25,
+      "median_dist": 449.18,
+      "setting": "farther",
+      "seed": 31003
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 102,
+          "x": 1579,
+          "y": 1236
+        },
+        {
+          "player": 2,
+          "planet_idx": 98,
+          "x": 1567,
+          "y": 1699
+        },
+        {
+          "player": 3,
+          "planet_idx": 74,
+          "x": 1432,
+          "y": 1463
+        },
+        {
+          "player": 4,
+          "planet_idx": 6,
+          "x": 1041,
+          "y": 1753
+        },
+        {
+          "player": 5,
+          "planet_idx": 150,
+          "x": 1742,
+          "y": 1434
+        },
+        {
+          "player": 6,
+          "planet_idx": 56,
+          "x": 1313,
+          "y": 1708
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        254.16,
+        256.46,
+        270.44,
+        271.88,
+        272.37,
+        275.7,
+        311.35,
+        317.57,
+        463.16,
+        486.81,
+        509.04,
+        528.76,
+        541.79,
+        746.15,
+        770.17
+      ],
+      "min_dist": 254.16,
+      "max_dist": 770.17,
+      "mean_dist": 418.39,
+      "median_dist": 317.57,
+      "setting": "farther",
+      "seed": 31004
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 99,
+          "x": 1523,
+          "y": 1533
+        },
+        {
+          "player": 2,
+          "planet_idx": 139,
+          "x": 1709,
+          "y": 1184
+        },
+        {
+          "player": 3,
+          "planet_idx": 65,
+          "x": 1309,
+          "y": 1363
+        },
+        {
+          "player": 4,
+          "planet_idx": 34,
+          "x": 1156,
+          "y": 1573
+        },
+        {
+          "player": 5,
+          "planet_idx": 45,
+          "x": 1221,
+          "y": 1116
+        },
+        {
+          "player": 6,
+          "planet_idx": 95,
+          "x": 1486,
+          "y": 1058
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        256.13,
+        259.82,
+        262.21,
+        271.27,
+        273.31,
+        352.64,
+        369.17,
+        395.47,
+        438.22,
+        461.6,
+        476.44,
+        492.71,
+        514.87,
+        611.66,
+        676.11
+      ],
+      "min_dist": 256.13,
+      "max_dist": 676.11,
+      "mean_dist": 407.44,
+      "median_dist": 395.47,
+      "setting": "farther",
+      "seed": 31005
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 102,
+          "x": 1543,
+          "y": 1452
+        },
+        {
+          "player": 2,
+          "planet_idx": 107,
+          "x": 1566,
+          "y": 1724
+        },
+        {
+          "player": 3,
+          "planet_idx": 58,
+          "x": 1319,
+          "y": 1569
+        },
+        {
+          "player": 4,
+          "planet_idx": 9,
+          "x": 1059,
+          "y": 1224
+        },
+        {
+          "player": 5,
+          "planet_idx": 123,
+          "x": 1653,
+          "y": 1199
+        },
+        {
+          "player": 6,
+          "planet_idx": 14,
+          "x": 1083,
+          "y": 1472
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        249.16,
+        252.72,
+        255.16,
+        272.97,
+        275.88,
+        291.61,
+        432.0,
+        460.43,
+        498.45,
+        532.16,
+        535.01,
+        544.79,
+        594.53,
+        632.0,
+        712.07
+      ],
+      "min_dist": 249.16,
+      "max_dist": 712.07,
+      "mean_dist": 435.93,
+      "median_dist": 460.43,
+      "setting": "farther",
+      "seed": 31006
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 145,
+          "x": 1698,
+          "y": 1389
+        },
+        {
+          "player": 2,
+          "planet_idx": 95,
+          "x": 1420,
+          "y": 1139
+        },
+        {
+          "player": 3,
+          "planet_idx": 137,
+          "x": 1673,
+          "y": 1119
+        },
+        {
+          "player": 4,
+          "planet_idx": 18,
+          "x": 1149,
+          "y": 1745
+        },
+        {
+          "player": 5,
+          "planet_idx": 4,
+          "x": 1052,
+          "y": 1488
+        },
+        {
+          "player": 6,
+          "planet_idx": 48,
+          "x": 1259,
+          "y": 1336
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        253.79,
+        254.42,
+        256.81,
+        271.15,
+        274.7,
+        373.88,
+        423.53,
+        442.19,
+        467.42,
+        507.17,
+        653.54,
+        654.32,
+        663.84,
+        722.36,
+        816.37
+      ],
+      "min_dist": 253.79,
+      "max_dist": 816.37,
+      "mean_dist": 469.03,
+      "median_dist": 442.19,
+      "setting": "farther",
+      "seed": 31007
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 43,
+          "x": 1234,
+          "y": 1557
+        },
+        {
+          "player": 2,
+          "planet_idx": 75,
+          "x": 1364,
+          "y": 1349
+        },
+        {
+          "player": 3,
+          "planet_idx": 117,
+          "x": 1547,
+          "y": 1166
+        },
+        {
+          "player": 4,
+          "planet_idx": 103,
+          "x": 1488,
+          "y": 1611
+        },
+        {
+          "player": 5,
+          "planet_idx": 141,
+          "x": 1700,
+          "y": 1746
+        },
+        {
+          "player": 6,
+          "planet_idx": 144,
+          "x": 1702,
+          "y": 1372
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        245.28,
+        251.33,
+        257.8,
+        258.8,
+        259.68,
+        289.86,
+        320.81,
+        338.78,
+        374.01,
+        448.89,
+        500.85,
+        502.87,
+        503.24,
+        520.1,
+        599.84
+      ],
+      "min_dist": 245.28,
+      "max_dist": 599.84,
+      "mean_dist": 378.14,
+      "median_dist": 338.78,
+      "setting": "farther",
+      "seed": 31008
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 75,
+          "x": 1370,
+          "y": 1241
+        },
+        {
+          "player": 2,
+          "planet_idx": 96,
+          "x": 1471,
+          "y": 1646
+        },
+        {
+          "player": 3,
+          "planet_idx": 146,
+          "x": 1728,
+          "y": 1703
+        },
+        {
+          "player": 4,
+          "planet_idx": 16,
+          "x": 1096,
+          "y": 1260
+        },
+        {
+          "player": 5,
+          "planet_idx": 39,
+          "x": 1208,
+          "y": 1584
+        },
+        {
+          "player": 6,
+          "planet_idx": 107,
+          "x": 1581,
+          "y": 1411
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        259.47,
+        263.25,
+        270.21,
+        270.96,
+        274.66,
+        326.91,
+        342.81,
+        379.33,
+        411.17,
+        417.4,
+        507.96,
+        533.44,
+        538.16,
+        584.47,
+        771.8
+      ],
+      "min_dist": 259.47,
+      "max_dist": 771.8,
+      "mean_dist": 410.13,
+      "median_dist": 379.33,
+      "setting": "farther",
+      "seed": 31009
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 96,
+          "x": 1481,
+          "y": 1354
+        },
+        {
+          "player": 2,
+          "planet_idx": 17,
+          "x": 1107,
+          "y": 1352
+        },
+        {
+          "player": 3,
+          "planet_idx": 146,
+          "x": 1731,
+          "y": 1556
+        },
+        {
+          "player": 4,
+          "planet_idx": 80,
+          "x": 1378,
+          "y": 1671
+        },
+        {
+          "player": 5,
+          "planet_idx": 57,
+          "x": 1288,
+          "y": 1119
+        },
+        {
+          "player": 6,
+          "planet_idx": 144,
+          "x": 1721,
+          "y": 1131
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        295.04,
+        304.1,
+        321.41,
+        327.61,
+        333.31,
+        371.26,
+        374.01,
+        418.57,
+        425.12,
+        433.17,
+        559.29,
+        622.27,
+        639.73,
+        652.56,
+        656.5
+      ],
+      "min_dist": 295.04,
+      "max_dist": 656.5,
+      "mean_dist": 448.93,
+      "median_dist": 418.57,
+      "setting": "distant",
+      "seed": 31000
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 152,
+          "x": 1746,
+          "y": 1128
+        },
+        {
+          "player": 2,
+          "planet_idx": 53,
+          "x": 1270,
+          "y": 1064
+        },
+        {
+          "player": 3,
+          "planet_idx": 99,
+          "x": 1499,
+          "y": 1318
+        },
+        {
+          "player": 4,
+          "planet_idx": 56,
+          "x": 1286,
+          "y": 1550
+        },
+        {
+          "player": 5,
+          "planet_idx": 111,
+          "x": 1540,
+          "y": 1724
+        },
+        {
+          "player": 6,
+          "planet_idx": 11,
+          "x": 1075,
+          "y": 1287
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        296.23,
+        307.88,
+        311.62,
+        314.95,
+        337.18,
+        341.99,
+        408.06,
+        425.13,
+        480.28,
+        486.26,
+        624.25,
+        630.6,
+        638.12,
+        689.58,
+        713.09
+      ],
+      "min_dist": 296.23,
+      "max_dist": 713.09,
+      "mean_dist": 467.01,
+      "median_dist": 425.13,
+      "setting": "distant",
+      "seed": 31001
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 50,
+          "x": 1251,
+          "y": 1652
+        },
+        {
+          "player": 2,
+          "planet_idx": 52,
+          "x": 1256,
+          "y": 1357
+        },
+        {
+          "player": 3,
+          "planet_idx": 105,
+          "x": 1545,
+          "y": 1481
+        },
+        {
+          "player": 4,
+          "planet_idx": 28,
+          "x": 1121,
+          "y": 1071
+        },
+        {
+          "player": 5,
+          "planet_idx": 135,
+          "x": 1695,
+          "y": 1741
+        },
+        {
+          "player": 6,
+          "planet_idx": 99,
+          "x": 1529,
+          "y": 1152
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        295.04,
+        300.17,
+        314.48,
+        316.26,
+        329.39,
+        340.11,
+        341.4,
+        415.96,
+        452.83,
+        572.09,
+        583.25,
+        589.81,
+        595.37,
+        611.95,
+        882.26
+      ],
+      "min_dist": 295.04,
+      "max_dist": 882.26,
+      "mean_dist": 462.69,
+      "median_dist": 415.96,
+      "setting": "distant",
+      "seed": 31002
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 114,
+          "x": 1535,
+          "y": 1696
+        },
+        {
+          "player": 2,
+          "planet_idx": 51,
+          "x": 1204,
+          "y": 1159
+        },
+        {
+          "player": 3,
+          "planet_idx": 16,
+          "x": 1048,
+          "y": 1477
+        },
+        {
+          "player": 4,
+          "planet_idx": 135,
+          "x": 1647,
+          "y": 1279
+        },
+        {
+          "player": 5,
+          "planet_idx": 60,
+          "x": 1236,
+          "y": 1718
+        },
+        {
+          "player": 6,
+          "planet_idx": 80,
+          "x": 1341,
+          "y": 1425
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        297.58,
+        299.21,
+        299.81,
+        305.66,
+        311.25,
+        333.28,
+        339.05,
+        354.2,
+        431.78,
+        458.97,
+        533.98,
+        559.92,
+        601.37,
+        630.82,
+        630.88
+      ],
+      "min_dist": 297.58,
+      "max_dist": 630.88,
+      "mean_dist": 425.85,
+      "median_dist": 354.2,
+      "setting": "distant",
+      "seed": 31003
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 38,
+          "x": 1236,
+          "y": 1483
+        },
+        {
+          "player": 2,
+          "planet_idx": 102,
+          "x": 1579,
+          "y": 1236
+        },
+        {
+          "player": 3,
+          "planet_idx": 146,
+          "x": 1732,
+          "y": 1521
+        },
+        {
+          "player": 4,
+          "planet_idx": 6,
+          "x": 1041,
+          "y": 1753
+        },
+        {
+          "player": 5,
+          "planet_idx": 48,
+          "x": 1259,
+          "y": 1154
+        },
+        {
+          "player": 6,
+          "planet_idx": 82,
+          "x": 1467,
+          "y": 1669
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        296.58,
+        303.53,
+        323.47,
+        329.8,
+        330.34,
+        333.05,
+        422.68,
+        434.2,
+        447.25,
+        497.45,
+        555.42,
+        598.68,
+        637.44,
+        728.91,
+        746.15
+      ],
+      "min_dist": 296.58,
+      "max_dist": 746.15,
+      "mean_dist": 465.66,
+      "median_dist": 434.2,
+      "setting": "distant",
+      "seed": 31004
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 79,
+          "x": 1405,
+          "y": 1759
+        },
+        {
+          "player": 2,
+          "planet_idx": 124,
+          "x": 1640,
+          "y": 1318
+        },
+        {
+          "player": 3,
+          "planet_idx": 34,
+          "x": 1156,
+          "y": 1573
+        },
+        {
+          "player": 4,
+          "planet_idx": 67,
+          "x": 1328,
+          "y": 1338
+        },
+        {
+          "player": 5,
+          "planet_idx": 133,
+          "x": 1701,
+          "y": 1753
+        },
+        {
+          "player": 6,
+          "planet_idx": 66,
+          "x": 1319,
+          "y": 1049
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        289.14,
+        291.22,
+        296.06,
+        310.8,
+        312.64,
+        418.81,
+        427.98,
+        439.26,
+        499.71,
+        547.07,
+        548.77,
+        557.99,
+        573.96,
+        715.19,
+        800.96
+      ],
+      "min_dist": 289.14,
+      "max_dist": 800.96,
+      "mean_dist": 468.64,
+      "median_dist": 439.26,
+      "setting": "distant",
+      "seed": 31005
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 43,
+          "x": 1242,
+          "y": 1374
+        },
+        {
+          "player": 2,
+          "planet_idx": 112,
+          "x": 1600,
+          "y": 1124
+        },
+        {
+          "player": 3,
+          "planet_idx": 133,
+          "x": 1698,
+          "y": 1743
+        },
+        {
+          "player": 4,
+          "planet_idx": 102,
+          "x": 1543,
+          "y": 1452
+        },
+        {
+          "player": 5,
+          "planet_idx": 5,
+          "x": 1045,
+          "y": 1148
+        },
+        {
+          "player": 6,
+          "planet_idx": 44,
+          "x": 1276,
+          "y": 1676
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        299.81,
+        303.91,
+        310.94,
+        329.71,
+        332.92,
+        348.52,
+        427.29,
+        436.65,
+        555.52,
+        576.32,
+        583.46,
+        586.6,
+        626.71,
+        640.06,
+        883.42
+      ],
+      "min_dist": 299.81,
+      "max_dist": 883.42,
+      "mean_dist": 482.79,
+      "median_dist": 436.65,
+      "setting": "distant",
+      "seed": 31006
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 106,
+          "x": 1482,
+          "y": 1546
+        },
+        {
+          "player": 2,
+          "planet_idx": 48,
+          "x": 1259,
+          "y": 1336
+        },
+        {
+          "player": 3,
+          "planet_idx": 14,
+          "x": 1138,
+          "y": 1048
+        },
+        {
+          "player": 4,
+          "planet_idx": 43,
+          "x": 1232,
+          "y": 1714
+        },
+        {
+          "player": 5,
+          "planet_idx": 101,
+          "x": 1451,
+          "y": 1054
+        },
+        {
+          "player": 6,
+          "planet_idx": 142,
+          "x": 1690,
+          "y": 1294
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        301.2,
+        306.32,
+        312.39,
+        313.06,
+        326.75,
+        338.7,
+        341.16,
+        378.96,
+        433.04,
+        492.98,
+        604.33,
+        605.26,
+        621.42,
+        672.6,
+        695.39
+      ],
+      "min_dist": 301.2,
+      "max_dist": 695.39,
+      "mean_dist": 449.57,
+      "median_dist": 378.96,
+      "setting": "distant",
+      "seed": 31007
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 51,
+          "x": 1265,
+          "y": 1690
+        },
+        {
+          "player": 2,
+          "planet_idx": 127,
+          "x": 1596,
+          "y": 1152
+        },
+        {
+          "player": 3,
+          "planet_idx": 7,
+          "x": 1058,
+          "y": 1442
+        },
+        {
+          "player": 4,
+          "planet_idx": 26,
+          "x": 1159,
+          "y": 1091
+        },
+        {
+          "player": 5,
+          "planet_idx": 124,
+          "x": 1576,
+          "y": 1598
+        },
+        {
+          "player": 6,
+          "planet_idx": 75,
+          "x": 1364,
+          "y": 1349
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        304.36,
+        319.82,
+        323.04,
+        324.32,
+        327.02,
+        329.53,
+        355.08,
+        365.24,
+        441.24,
+        446.45,
+        540.98,
+        608.31,
+        611.18,
+        631.67,
+        656.46
+      ],
+      "min_dist": 304.36,
+      "max_dist": 656.46,
+      "mean_dist": 438.98,
+      "median_dist": 365.24,
+      "setting": "distant",
+      "seed": 31008
+    },
+    {
+      "homeworlds": [
+        {
+          "player": 1,
+          "planet_idx": 107,
+          "x": 1581,
+          "y": 1411
+        },
+        {
+          "player": 2,
+          "planet_idx": 17,
+          "x": 1100,
+          "y": 1711
+        },
+        {
+          "player": 3,
+          "planet_idx": 104,
+          "x": 1561,
+          "y": 1734
+        },
+        {
+          "player": 4,
+          "planet_idx": 50,
+          "x": 1251,
+          "y": 1433
+        },
+        {
+          "player": 5,
+          "planet_idx": 59,
+          "x": 1307,
+          "y": 1045
+        },
+        {
+          "player": 6,
+          "planet_idx": 8,
+          "x": 1052,
+          "y": 1193
+        }
+      ],
+      "n_homeworlds": 6,
+      "distances": [
+        294.84,
+        311.77,
+        316.36,
+        323.62,
+        330.73,
+        392.02,
+        432.09,
+        457.2,
+        461.57,
+        520.22,
+        566.89,
+        572.16,
+        697.43,
+        734.33,
+        742.81
+      ],
+      "min_dist": 294.84,
+      "max_dist": 742.81,
+      "mean_dist": 476.94,
+      "median_dist": 457.2,
+      "setting": "distant",
+      "seed": 31009
+    }
+  ]
+}

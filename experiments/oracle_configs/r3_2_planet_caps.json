@@ -1,0 +1,31 @@
+{
+  "experiment": "R3.2 planet count caps",
+  "base_seed": 50000,
+  "seeds_per_combo": 10,
+  "results": {
+    "huge/dense": [
+      943,
+      946,
+      939,
+      945,
+      958,
+      950,
+      954,
+      946,
+      946,
+      952
+    ],
+    "large/dense": [
+      920,
+      919,
+      908,
+      925,
+      923,
+      928,
+      922,
+      922,
+      926,
+      917
+    ]
+  }
+}
