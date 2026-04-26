@@ -1,0 +1,3010 @@
+{
+  "experiment": "R3.6 Part C \u2014 PP/IT second starting planet",
+  "player_positions": "moderate",
+  "density": "normal",
+  "n_players": 2,
+  "n_seeds": 15,
+  "base_seed": 37000,
+  "results": [
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 134,
+        "x": 1642,
+        "y": 1310,
+        "nx": 0.8025,
+        "ny": 0.3875,
+        "centre_dist": 0.3227,
+        "edge_dist": 0.1975
+      },
+      "second_planet": {
+        "planet_idx": 104,
+        "x": 1519,
+        "y": 1378,
+        "nx": 0.6488,
+        "ny": 0.4725,
+        "centre_dist": 0.1513,
+        "edge_dist": 0.3512
+      },
+      "inter_planet_dist": 140.55,
+      "inter_planet_dist_norm": 0.1757
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 40,
+        "x": 1217,
+        "y": 1226,
+        "nx": 0.2712,
+        "ny": 0.2825,
+        "centre_dist": 0.3156,
+        "edge_dist": 0.2712
+      },
+      "second_planet": {
+        "planet_idx": 64,
+        "x": 1338,
+        "y": 1297,
+        "nx": 0.4225,
+        "ny": 0.3713,
+        "centre_dist": 0.1503,
+        "edge_dist": 0.3713
+      },
+      "inter_planet_dist": 140.29,
+      "inter_planet_dist_norm": 0.1754
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 94,
+        "x": 1425,
+        "y": 1229,
+        "nx": 0.5312,
+        "ny": 0.2863,
+        "centre_dist": 0.216,
+        "edge_dist": 0.2863
+      },
+      "second_planet": {
+        "planet_idx": 71,
+        "x": 1324,
+        "y": 1157,
+        "nx": 0.405,
+        "ny": 0.1963,
+        "centre_dist": 0.3183,
+        "edge_dist": 0.1963
+      },
+      "inter_planet_dist": 124.04,
+      "inter_planet_dist_norm": 0.155
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 73,
+        "x": 1371,
+        "y": 1367,
+        "nx": 0.4637,
+        "ny": 0.4587,
+        "centre_dist": 0.0549,
+        "edge_dist": 0.4587
+      },
+      "second_planet": {
+        "planet_idx": 85,
+        "x": 1460,
+        "y": 1476,
+        "nx": 0.575,
+        "ny": 0.595,
+        "centre_dist": 0.121,
+        "edge_dist": 0.405
+      },
+      "inter_planet_dist": 140.72,
+      "inter_planet_dist_norm": 0.1759
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 44,
+        "x": 1221,
+        "y": 1418,
+        "nx": 0.2762,
+        "ny": 0.5225,
+        "centre_dist": 0.2249,
+        "edge_dist": 0.2762
+      },
+      "second_planet": {
+        "planet_idx": 62,
+        "x": 1298,
+        "y": 1311,
+        "nx": 0.3725,
+        "ny": 0.3887,
+        "centre_dist": 0.1692,
+        "edge_dist": 0.3725
+      },
+      "inter_planet_dist": 131.83,
+      "inter_planet_dist_norm": 0.1648
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 61,
+        "x": 1326,
+        "y": 1494,
+        "nx": 0.4075,
+        "ny": 0.6175,
+        "centre_dist": 0.1495,
+        "edge_dist": 0.3825
+      },
+      "second_planet": {
+        "planet_idx": 45,
+        "x": 1204,
+        "y": 1434,
+        "nx": 0.255,
+        "ny": 0.5425,
+        "centre_dist": 0.2487,
+        "edge_dist": 0.255
+      },
+      "inter_planet_dist": 135.96,
+      "inter_planet_dist_norm": 0.1699
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 89,
+        "x": 1405,
+        "y": 1549,
+        "nx": 0.5062,
+        "ny": 0.6863,
+        "centre_dist": 0.1864,
+        "edge_dist": 0.3137
+      },
+      "second_planet": {
+        "planet_idx": 106,
+        "x": 1507,
+        "y": 1680,
+        "nx": 0.6338,
+        "ny": 0.85,
+        "centre_dist": 0.3747,
+        "edge_dist": 0.15
+      },
+      "inter_planet_dist": 166.03,
+      "inter_planet_dist_norm": 0.2075
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 115,
+        "x": 1600,
+        "y": 1252,
+        "nx": 0.75,
+        "ny": 0.315,
+        "centre_dist": 0.311,
+        "edge_dist": 0.25
+      },
+      "second_planet": {
+        "planet_idx": 136,
+        "x": 1671,
+        "y": 1108,
+        "nx": 0.8387,
+        "ny": 0.135,
+        "centre_dist": 0.498,
+        "edge_dist": 0.135
+      },
+      "inter_planet_dist": 160.55,
+      "inter_planet_dist_norm": 0.2007
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 113,
+        "x": 1547,
+        "y": 1323,
+        "nx": 0.6837,
+        "ny": 0.4037,
+        "centre_dist": 0.2074,
+        "edge_dist": 0.3163
+      },
+      "second_planet": {
+        "planet_idx": 136,
+        "x": 1655,
+        "y": 1448,
+        "nx": 0.8187,
+        "ny": 0.56,
+        "centre_dist": 0.3243,
+        "edge_dist": 0.1813
+      },
+      "inter_planet_dist": 165.19,
+      "inter_planet_dist_norm": 0.2065
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 30,
+        "x": 1155,
+        "y": 1256,
+        "nx": 0.1938,
+        "ny": 0.32,
+        "centre_dist": 0.3552,
+        "edge_dist": 0.1938
+      },
+      "second_planet": {
+        "planet_idx": 34,
+        "x": 1197,
+        "y": 1423,
+        "nx": 0.2462,
+        "ny": 0.5288,
+        "centre_dist": 0.2554,
+        "edge_dist": 0.2462
+      },
+      "inter_planet_dist": 172.2,
+      "inter_planet_dist_norm": 0.2153
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 102,
+        "x": 1599,
+        "y": 1260,
+        "nx": 0.7488,
+        "ny": 0.325,
+        "centre_dist": 0.3041,
+        "edge_dist": 0.2512
+      },
+      "second_planet": {
+        "planet_idx": 104,
+        "x": 1603,
+        "y": 1417,
+        "nx": 0.7538,
+        "ny": 0.5212,
+        "centre_dist": 0.2546,
+        "edge_dist": 0.2462
+      },
+      "inter_planet_dist": 157.05,
+      "inter_planet_dist_norm": 0.1963
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 95,
+        "x": 1509,
+        "y": 1305,
+        "nx": 0.6362,
+        "ny": 0.3812,
+        "centre_dist": 0.1807,
+        "edge_dist": 0.3638
+      },
+      "second_planet": {
+        "planet_idx": 64,
+        "x": 1332,
+        "y": 1298,
+        "nx": 0.415,
+        "ny": 0.3725,
+        "centre_dist": 0.1532,
+        "edge_dist": 0.3725
+      },
+      "inter_planet_dist": 177.14,
+      "inter_planet_dist_norm": 0.2214
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 130,
+        "x": 1632,
+        "y": 1513,
+        "nx": 0.79,
+        "ny": 0.6412,
+        "centre_dist": 0.3226,
+        "edge_dist": 0.21
+      },
+      "second_planet": {
+        "planet_idx": 102,
+        "x": 1520,
+        "y": 1645,
+        "nx": 0.65,
+        "ny": 0.8063,
+        "centre_dist": 0.341,
+        "edge_dist": 0.1937
+      },
+      "inter_planet_dist": 173.11,
+      "inter_planet_dist_norm": 0.2164
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 84,
+        "x": 1426,
+        "y": 1541,
+        "nx": 0.5325,
+        "ny": 0.6763,
+        "centre_dist": 0.1792,
+        "edge_dist": 0.3237
+      },
+      "second_planet": {
+        "planet_idx": 123,
+        "x": 1585,
+        "y": 1464,
+        "nx": 0.7312,
+        "ny": 0.58,
+        "centre_dist": 0.2447,
+        "edge_dist": 0.2688
+      },
+      "inter_planet_dist": 176.66,
+      "inter_planet_dist_norm": 0.2208
+    },
+    {
+      "prt": "PP",
+      "map_size": "small",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 49,
+        "x": 1286,
+        "y": 1203,
+        "nx": 0.3575,
+        "ny": 0.2537,
+        "centre_dist": 0.2845,
+        "edge_dist": 0.2537
+      },
+      "second_planet": {
+        "planet_idx": 61,
+        "x": 1349,
+        "y": 1036,
+        "nx": 0.4363,
+        "ny": 0.045,
+        "centre_dist": 0.4594,
+        "edge_dist": 0.045
+      },
+      "inter_planet_dist": 178.49,
+      "inter_planet_dist_norm": 0.2231
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 206,
+        "x": 1629,
+        "y": 1796,
+        "nx": 0.5242,
+        "ny": 0.6633,
+        "centre_dist": 0.1651,
+        "edge_dist": 0.3367
+      },
+      "second_planet": {
+        "planet_idx": 210,
+        "x": 1647,
+        "y": 1585,
+        "nx": 0.5392,
+        "ny": 0.4875,
+        "centre_dist": 0.0411,
+        "edge_dist": 0.4608
+      },
+      "inter_planet_dist": 211.77,
+      "inter_planet_dist_norm": 0.1765
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 225,
+        "x": 1696,
+        "y": 1429,
+        "nx": 0.58,
+        "ny": 0.3575,
+        "centre_dist": 0.1634,
+        "edge_dist": 0.3575
+      },
+      "second_planet": {
+        "planet_idx": 273,
+        "x": 1908,
+        "y": 1533,
+        "nx": 0.7567,
+        "ny": 0.4442,
+        "centre_dist": 0.2627,
+        "edge_dist": 0.2433
+      },
+      "inter_planet_dist": 236.14,
+      "inter_planet_dist_norm": 0.1968
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 289,
+        "x": 1978,
+        "y": 1444,
+        "nx": 0.815,
+        "ny": 0.37,
+        "centre_dist": 0.3408,
+        "edge_dist": 0.185
+      },
+      "second_planet": {
+        "planet_idx": 341,
+        "x": 2139,
+        "y": 1547,
+        "nx": 0.9492,
+        "ny": 0.4558,
+        "centre_dist": 0.4513,
+        "edge_dist": 0.0508
+      },
+      "inter_planet_dist": 191.13,
+      "inter_planet_dist_norm": 0.1593
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 92,
+        "x": 1334,
+        "y": 1780,
+        "nx": 0.2783,
+        "ny": 0.65,
+        "centre_dist": 0.2676,
+        "edge_dist": 0.2783
+      },
+      "second_planet": {
+        "planet_idx": 161,
+        "x": 1542,
+        "y": 1649,
+        "nx": 0.4517,
+        "ny": 0.5408,
+        "centre_dist": 0.0633,
+        "edge_dist": 0.4517
+      },
+      "inter_planet_dist": 245.81,
+      "inter_planet_dist_norm": 0.2048
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 201,
+        "x": 1662,
+        "y": 1771,
+        "nx": 0.5517,
+        "ny": 0.6425,
+        "centre_dist": 0.1516,
+        "edge_dist": 0.3575
+      },
+      "second_planet": {
+        "planet_idx": 254,
+        "x": 1803,
+        "y": 1632,
+        "nx": 0.6692,
+        "ny": 0.5267,
+        "centre_dist": 0.1713,
+        "edge_dist": 0.3308
+      },
+      "inter_planet_dist": 197.99,
+      "inter_planet_dist_norm": 0.165
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 272,
+        "x": 1931,
+        "y": 1391,
+        "nx": 0.7758,
+        "ny": 0.3258,
+        "centre_dist": 0.3262,
+        "edge_dist": 0.2242
+      },
+      "second_planet": {
+        "planet_idx": 258,
+        "x": 1894,
+        "y": 1203,
+        "nx": 0.745,
+        "ny": 0.1692,
+        "centre_dist": 0.4117,
+        "edge_dist": 0.1692
+      },
+      "inter_planet_dist": 191.61,
+      "inter_planet_dist_norm": 0.1597
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 204,
+        "x": 1617,
+        "y": 1831,
+        "nx": 0.5142,
+        "ny": 0.6925,
+        "centre_dist": 0.193,
+        "edge_dist": 0.3075
+      },
+      "second_planet": {
+        "planet_idx": 152,
+        "x": 1438,
+        "y": 1626,
+        "nx": 0.365,
+        "ny": 0.5217,
+        "centre_dist": 0.1367,
+        "edge_dist": 0.365
+      },
+      "inter_planet_dist": 272.15,
+      "inter_planet_dist_norm": 0.2268
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 249,
+        "x": 1855,
+        "y": 1541,
+        "nx": 0.7125,
+        "ny": 0.4508,
+        "centre_dist": 0.2181,
+        "edge_dist": 0.2875
+      },
+      "second_planet": {
+        "planet_idx": 335,
+        "x": 2125,
+        "y": 1549,
+        "nx": 0.9375,
+        "ny": 0.4575,
+        "centre_dist": 0.4396,
+        "edge_dist": 0.0625
+      },
+      "inter_planet_dist": 270.12,
+      "inter_planet_dist_norm": 0.2251
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 188,
+        "x": 1605,
+        "y": 1391,
+        "nx": 0.5042,
+        "ny": 0.3258,
+        "centre_dist": 0.1742,
+        "edge_dist": 0.3258
+      },
+      "second_planet": {
+        "planet_idx": 245,
+        "x": 1832,
+        "y": 1440,
+        "nx": 0.6933,
+        "ny": 0.3667,
+        "centre_dist": 0.2349,
+        "edge_dist": 0.3067
+      },
+      "inter_planet_dist": 232.23,
+      "inter_planet_dist_norm": 0.1935
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 203,
+        "x": 1679,
+        "y": 1951,
+        "nx": 0.5658,
+        "ny": 0.7925,
+        "centre_dist": 0.2998,
+        "edge_dist": 0.2075
+      },
+      "second_planet": {
+        "planet_idx": 248,
+        "x": 1821,
+        "y": 1780,
+        "nx": 0.6842,
+        "ny": 0.65,
+        "centre_dist": 0.2375,
+        "edge_dist": 0.3158
+      },
+      "inter_planet_dist": 222.27,
+      "inter_planet_dist_norm": 0.1852
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 257,
+        "x": 1865,
+        "y": 1461,
+        "nx": 0.7208,
+        "ny": 0.3842,
+        "centre_dist": 0.2494,
+        "edge_dist": 0.2792
+      },
+      "second_planet": {
+        "planet_idx": 220,
+        "x": 1743,
+        "y": 1260,
+        "nx": 0.6192,
+        "ny": 0.2167,
+        "centre_dist": 0.3074,
+        "edge_dist": 0.2167
+      },
+      "inter_planet_dist": 235.13,
+      "inter_planet_dist_norm": 0.1959
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 244,
+        "x": 1832,
+        "y": 1651,
+        "nx": 0.6933,
+        "ny": 0.5425,
+        "centre_dist": 0.1979,
+        "edge_dist": 0.3067
+      },
+      "second_planet": {
+        "planet_idx": 196,
+        "x": 1720,
+        "y": 1892,
+        "nx": 0.6,
+        "ny": 0.7433,
+        "centre_dist": 0.2631,
+        "edge_dist": 0.2567
+      },
+      "inter_planet_dist": 265.75,
+      "inter_planet_dist_norm": 0.2215
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 124,
+        "x": 1358,
+        "y": 1717,
+        "nx": 0.2983,
+        "ny": 0.5975,
+        "centre_dist": 0.224,
+        "edge_dist": 0.2983
+      },
+      "second_planet": {
+        "planet_idx": 91,
+        "x": 1259,
+        "y": 1948,
+        "nx": 0.2158,
+        "ny": 0.79,
+        "centre_dist": 0.406,
+        "edge_dist": 0.21
+      },
+      "inter_planet_dist": 251.32,
+      "inter_planet_dist_norm": 0.2094
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 261,
+        "x": 1854,
+        "y": 1807,
+        "nx": 0.7117,
+        "ny": 0.6725,
+        "centre_dist": 0.2731,
+        "edge_dist": 0.2883
+      },
+      "second_planet": {
+        "planet_idx": 315,
+        "x": 2039,
+        "y": 1744,
+        "nx": 0.8658,
+        "ny": 0.62,
+        "centre_dist": 0.385,
+        "edge_dist": 0.1342
+      },
+      "inter_planet_dist": 195.43,
+      "inter_planet_dist_norm": 0.1629
+    },
+    {
+      "prt": "PP",
+      "map_size": "medium",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 275,
+        "x": 1899,
+        "y": 1607,
+        "nx": 0.7492,
+        "ny": 0.5058,
+        "centre_dist": 0.2492,
+        "edge_dist": 0.2508
+      },
+      "second_planet": {
+        "planet_idx": 209,
+        "x": 1692,
+        "y": 1631,
+        "nx": 0.5767,
+        "ny": 0.5258,
+        "centre_dist": 0.0809,
+        "edge_dist": 0.4233
+      },
+      "inter_planet_dist": 208.39,
+      "inter_planet_dist_norm": 0.1737
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 93,
+        "x": 1259,
+        "y": 2157,
+        "nx": 0.1619,
+        "ny": 0.7231,
+        "centre_dist": 0.4051,
+        "edge_dist": 0.1619
+      },
+      "second_planet": {
+        "planet_idx": 77,
+        "x": 1226,
+        "y": 1802,
+        "nx": 0.1412,
+        "ny": 0.5012,
+        "centre_dist": 0.3588,
+        "edge_dist": 0.1412
+      },
+      "inter_planet_dist": 356.53,
+      "inter_planet_dist_norm": 0.2228
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 379,
+        "x": 1954,
+        "y": 2303,
+        "nx": 0.5962,
+        "ny": 0.8144,
+        "centre_dist": 0.3288,
+        "edge_dist": 0.1856
+      },
+      "second_planet": {
+        "planet_idx": 405,
+        "x": 2011,
+        "y": 2563,
+        "nx": 0.6319,
+        "ny": 0.9769,
+        "centre_dist": 0.4948,
+        "edge_dist": 0.0231
+      },
+      "inter_planet_dist": 266.17,
+      "inter_planet_dist_norm": 0.1664
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 314,
+        "x": 1744,
+        "y": 2091,
+        "nx": 0.465,
+        "ny": 0.6819,
+        "centre_dist": 0.1852,
+        "edge_dist": 0.3181
+      },
+      "second_planet": {
+        "planet_idx": 428,
+        "x": 2063,
+        "y": 2023,
+        "nx": 0.6644,
+        "ny": 0.6394,
+        "centre_dist": 0.2155,
+        "edge_dist": 0.3356
+      },
+      "inter_planet_dist": 326.17,
+      "inter_planet_dist_norm": 0.2039
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 127,
+        "x": 1407,
+        "y": 1733,
+        "nx": 0.2544,
+        "ny": 0.4581,
+        "centre_dist": 0.2492,
+        "edge_dist": 0.2544
+      },
+      "second_planet": {
+        "planet_idx": 84,
+        "x": 1282,
+        "y": 1421,
+        "nx": 0.1762,
+        "ny": 0.2631,
+        "centre_dist": 0.4012,
+        "edge_dist": 0.1762
+      },
+      "inter_planet_dist": 336.11,
+      "inter_planet_dist_norm": 0.2101
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 455,
+        "x": 2127,
+        "y": 1770,
+        "nx": 0.7044,
+        "ny": 0.4813,
+        "centre_dist": 0.2052,
+        "edge_dist": 0.2956
+      },
+      "second_planet": {
+        "planet_idx": 523,
+        "x": 2344,
+        "y": 1948,
+        "nx": 0.84,
+        "ny": 0.5925,
+        "centre_dist": 0.3524,
+        "edge_dist": 0.16
+      },
+      "inter_planet_dist": 280.67,
+      "inter_planet_dist_norm": 0.1754
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 512,
+        "x": 2222,
+        "y": 1947,
+        "nx": 0.7638,
+        "ny": 0.5919,
+        "centre_dist": 0.2793,
+        "edge_dist": 0.2362
+      },
+      "second_planet": {
+        "planet_idx": 399,
+        "x": 1956,
+        "y": 2008,
+        "nx": 0.5975,
+        "ny": 0.63,
+        "centre_dist": 0.1625,
+        "edge_dist": 0.37
+      },
+      "inter_planet_dist": 272.9,
+      "inter_planet_dist_norm": 0.1706
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 381,
+        "x": 1946,
+        "y": 1666,
+        "nx": 0.5913,
+        "ny": 0.4163,
+        "centre_dist": 0.1239,
+        "edge_dist": 0.4087
+      },
+      "second_planet": {
+        "planet_idx": 457,
+        "x": 2153,
+        "y": 1389,
+        "nx": 0.7206,
+        "ny": 0.2431,
+        "centre_dist": 0.3386,
+        "edge_dist": 0.2431
+      },
+      "inter_planet_dist": 345.8,
+      "inter_planet_dist_norm": 0.2161
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 388,
+        "x": 2030,
+        "y": 1677,
+        "nx": 0.6438,
+        "ny": 0.4231,
+        "centre_dist": 0.163,
+        "edge_dist": 0.3562
+      },
+      "second_planet": {
+        "planet_idx": 438,
+        "x": 2137,
+        "y": 1404,
+        "nx": 0.7106,
+        "ny": 0.2525,
+        "centre_dist": 0.325,
+        "edge_dist": 0.2525
+      },
+      "inter_planet_dist": 293.22,
+      "inter_planet_dist_norm": 0.1833
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 216,
+        "x": 1447,
+        "y": 1964,
+        "nx": 0.2794,
+        "ny": 0.6025,
+        "centre_dist": 0.2433,
+        "edge_dist": 0.2794
+      },
+      "second_planet": {
+        "planet_idx": 327,
+        "x": 1732,
+        "y": 1789,
+        "nx": 0.4575,
+        "ny": 0.4931,
+        "centre_dist": 0.0431,
+        "edge_dist": 0.4575
+      },
+      "inter_planet_dist": 334.44,
+      "inter_planet_dist_norm": 0.209
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 206,
+        "x": 1638,
+        "y": 1614,
+        "nx": 0.3987,
+        "ny": 0.3837,
+        "centre_dist": 0.1542,
+        "edge_dist": 0.3837
+      },
+      "second_planet": {
+        "planet_idx": 324,
+        "x": 1878,
+        "y": 1850,
+        "nx": 0.5487,
+        "ny": 0.5312,
+        "centre_dist": 0.0579,
+        "edge_dist": 0.4513
+      },
+      "inter_planet_dist": 336.59,
+      "inter_planet_dist_norm": 0.2104
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 294,
+        "x": 1738,
+        "y": 1305,
+        "nx": 0.4612,
+        "ny": 0.1906,
+        "centre_dist": 0.3118,
+        "edge_dist": 0.1906
+      },
+      "second_planet": {
+        "planet_idx": 218,
+        "x": 1562,
+        "y": 1525,
+        "nx": 0.3513,
+        "ny": 0.3281,
+        "centre_dist": 0.2273,
+        "edge_dist": 0.3281
+      },
+      "inter_planet_dist": 281.74,
+      "inter_planet_dist_norm": 0.1761
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 341,
+        "x": 1846,
+        "y": 1951,
+        "nx": 0.5288,
+        "ny": 0.5944,
+        "centre_dist": 0.0987,
+        "edge_dist": 0.4056
+      },
+      "second_planet": {
+        "planet_idx": 411,
+        "x": 2004,
+        "y": 2205,
+        "nx": 0.6275,
+        "ny": 0.7531,
+        "centre_dist": 0.2834,
+        "edge_dist": 0.2469
+      },
+      "inter_planet_dist": 299.13,
+      "inter_planet_dist_norm": 0.187
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 119,
+        "x": 1313,
+        "y": 1787,
+        "nx": 0.1956,
+        "ny": 0.4919,
+        "centre_dist": 0.3045,
+        "edge_dist": 0.1956
+      },
+      "second_planet": {
+        "planet_idx": 55,
+        "x": 1171,
+        "y": 2091,
+        "nx": 0.1069,
+        "ny": 0.6819,
+        "centre_dist": 0.4332,
+        "edge_dist": 0.1069
+      },
+      "inter_planet_dist": 335.53,
+      "inter_planet_dist_norm": 0.2097
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 303,
+        "x": 1728,
+        "y": 1802,
+        "nx": 0.455,
+        "ny": 0.5012,
+        "centre_dist": 0.045,
+        "edge_dist": 0.455
+      },
+      "second_planet": {
+        "planet_idx": 335,
+        "x": 1816,
+        "y": 2035,
+        "nx": 0.51,
+        "ny": 0.6469,
+        "centre_dist": 0.1472,
+        "edge_dist": 0.3531
+      },
+      "inter_planet_dist": 249.06,
+      "inter_planet_dist_norm": 0.1557
+    },
+    {
+      "prt": "PP",
+      "map_size": "large",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 367,
+        "x": 1954,
+        "y": 1497,
+        "nx": 0.5962,
+        "ny": 0.3106,
+        "centre_dist": 0.2124,
+        "edge_dist": 0.3106
+      },
+      "second_planet": {
+        "planet_idx": 480,
+        "x": 2213,
+        "y": 1754,
+        "nx": 0.7581,
+        "ny": 0.4713,
+        "centre_dist": 0.2597,
+        "edge_dist": 0.2419
+      },
+      "inter_planet_dist": 364.87,
+      "inter_planet_dist_norm": 0.228
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 248,
+        "x": 1522,
+        "y": 1668,
+        "nx": 0.261,
+        "ny": 0.334,
+        "centre_dist": 0.291,
+        "edge_dist": 0.261
+      },
+      "second_planet": {
+        "planet_idx": 429,
+        "x": 1917,
+        "y": 1493,
+        "nx": 0.4585,
+        "ny": 0.2465,
+        "centre_dist": 0.2569,
+        "edge_dist": 0.2465
+      },
+      "inter_planet_dist": 432.03,
+      "inter_planet_dist_norm": 0.216
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 315,
+        "x": 1755,
+        "y": 2407,
+        "nx": 0.3775,
+        "ny": 0.7035,
+        "centre_dist": 0.2375,
+        "edge_dist": 0.2965
+      },
+      "second_planet": {
+        "planet_idx": 212,
+        "x": 1511,
+        "y": 2585,
+        "nx": 0.2555,
+        "ny": 0.7925,
+        "centre_dist": 0.3812,
+        "edge_dist": 0.2075
+      },
+      "inter_planet_dist": 302.03,
+      "inter_planet_dist_norm": 0.151
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 606,
+        "x": 2286,
+        "y": 2039,
+        "nx": 0.643,
+        "ny": 0.5195,
+        "centre_dist": 0.1443,
+        "edge_dist": 0.357
+      },
+      "second_planet": {
+        "planet_idx": 402,
+        "x": 1846,
+        "y": 2141,
+        "nx": 0.423,
+        "ny": 0.5705,
+        "centre_dist": 0.1044,
+        "edge_dist": 0.423
+      },
+      "inter_planet_dist": 451.67,
+      "inter_planet_dist_norm": 0.2258
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 293,
+        "x": 1614,
+        "y": 1999,
+        "nx": 0.307,
+        "ny": 0.4995,
+        "centre_dist": 0.193,
+        "edge_dist": 0.307
+      },
+      "second_planet": {
+        "planet_idx": 428,
+        "x": 1909,
+        "y": 1722,
+        "nx": 0.4545,
+        "ny": 0.361,
+        "centre_dist": 0.1463,
+        "edge_dist": 0.361
+      },
+      "inter_planet_dist": 404.67,
+      "inter_planet_dist_norm": 0.2023
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 568,
+        "x": 2198,
+        "y": 1724,
+        "nx": 0.599,
+        "ny": 0.362,
+        "centre_dist": 0.1698,
+        "edge_dist": 0.362
+      },
+      "second_planet": {
+        "planet_idx": 656,
+        "x": 2381,
+        "y": 1307,
+        "nx": 0.6905,
+        "ny": 0.1535,
+        "centre_dist": 0.3954,
+        "edge_dist": 0.1535
+      },
+      "inter_planet_dist": 455.39,
+      "inter_planet_dist_norm": 0.2277
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 773,
+        "x": 2621,
+        "y": 1903,
+        "nx": 0.8105,
+        "ny": 0.4515,
+        "centre_dist": 0.3143,
+        "edge_dist": 0.1895
+      },
+      "second_planet": {
+        "planet_idx": 619,
+        "x": 2326,
+        "y": 1644,
+        "nx": 0.663,
+        "ny": 0.322,
+        "centre_dist": 0.2414,
+        "edge_dist": 0.322
+      },
+      "inter_planet_dist": 392.56,
+      "inter_planet_dist_norm": 0.1963
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 734,
+        "x": 2535,
+        "y": 1700,
+        "nx": 0.7675,
+        "ny": 0.35,
+        "centre_dist": 0.3067,
+        "edge_dist": 0.2325
+      },
+      "second_planet": {
+        "planet_idx": 540,
+        "x": 2170,
+        "y": 1722,
+        "nx": 0.585,
+        "ny": 0.361,
+        "centre_dist": 0.1629,
+        "edge_dist": 0.361
+      },
+      "inter_planet_dist": 365.66,
+      "inter_planet_dist_norm": 0.1828
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 627,
+        "x": 2334,
+        "y": 1541,
+        "nx": 0.667,
+        "ny": 0.2705,
+        "centre_dist": 0.2838,
+        "edge_dist": 0.2705
+      },
+      "second_planet": {
+        "planet_idx": 481,
+        "x": 2019,
+        "y": 1776,
+        "nx": 0.5095,
+        "ny": 0.388,
+        "centre_dist": 0.1124,
+        "edge_dist": 0.388
+      },
+      "inter_planet_dist": 393.0,
+      "inter_planet_dist_norm": 0.1965
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 457,
+        "x": 1981,
+        "y": 1591,
+        "nx": 0.4905,
+        "ny": 0.2955,
+        "centre_dist": 0.2047,
+        "edge_dist": 0.2955
+      },
+      "second_planet": {
+        "planet_idx": 538,
+        "x": 2123,
+        "y": 1240,
+        "nx": 0.5615,
+        "ny": 0.12,
+        "centre_dist": 0.3849,
+        "edge_dist": 0.12
+      },
+      "inter_planet_dist": 378.64,
+      "inter_planet_dist_norm": 0.1893
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 326,
+        "x": 1666,
+        "y": 2295,
+        "nx": 0.333,
+        "ny": 0.6475,
+        "centre_dist": 0.2228,
+        "edge_dist": 0.333
+      },
+      "second_planet": {
+        "planet_idx": 290,
+        "x": 1593,
+        "y": 2000,
+        "nx": 0.2965,
+        "ny": 0.5,
+        "centre_dist": 0.2035,
+        "edge_dist": 0.2965
+      },
+      "inter_planet_dist": 303.9,
+      "inter_planet_dist_norm": 0.1519
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 346,
+        "x": 1752,
+        "y": 2263,
+        "nx": 0.376,
+        "ny": 0.6315,
+        "centre_dist": 0.1807,
+        "edge_dist": 0.3685
+      },
+      "second_planet": {
+        "planet_idx": 536,
+        "x": 2154,
+        "y": 2245,
+        "nx": 0.577,
+        "ny": 0.6225,
+        "centre_dist": 0.1447,
+        "edge_dist": 0.3775
+      },
+      "inter_planet_dist": 402.4,
+      "inter_planet_dist_norm": 0.2012
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 363,
+        "x": 1808,
+        "y": 2288,
+        "nx": 0.404,
+        "ny": 0.644,
+        "centre_dist": 0.1731,
+        "edge_dist": 0.356
+      },
+      "second_planet": {
+        "planet_idx": 199,
+        "x": 1452,
+        "y": 2070,
+        "nx": 0.226,
+        "ny": 0.535,
+        "centre_dist": 0.2762,
+        "edge_dist": 0.226
+      },
+      "inter_planet_dist": 417.44,
+      "inter_planet_dist_norm": 0.2087
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 506,
+        "x": 2052,
+        "y": 2360,
+        "nx": 0.526,
+        "ny": 0.68,
+        "centre_dist": 0.1819,
+        "edge_dist": 0.32
+      },
+      "second_planet": {
+        "planet_idx": 408,
+        "x": 1851,
+        "y": 1983,
+        "nx": 0.4255,
+        "ny": 0.4915,
+        "centre_dist": 0.075,
+        "edge_dist": 0.4255
+      },
+      "inter_planet_dist": 427.24,
+      "inter_planet_dist_norm": 0.2136
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 489,
+        "x": 2066,
+        "y": 2162,
+        "nx": 0.533,
+        "ny": 0.581,
+        "centre_dist": 0.0875,
+        "edge_dist": 0.419
+      },
+      "second_planet": {
+        "planet_idx": 378,
+        "x": 1806,
+        "y": 1966,
+        "nx": 0.403,
+        "ny": 0.483,
+        "centre_dist": 0.0985,
+        "edge_dist": 0.403
+      },
+      "inter_planet_dist": 325.6,
+      "inter_planet_dist_norm": 0.1628
+    },
+    {
+      "prt": "PP",
+      "map_size": "huge",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 493,
+        "x": 2039,
+        "y": 2516,
+        "nx": 0.5195,
+        "ny": 0.758,
+        "centre_dist": 0.2587,
+        "edge_dist": 0.242
+      },
+      "second_planet": {
+        "planet_idx": 630,
+        "x": 2289,
+        "y": 2291,
+        "nx": 0.6445,
+        "ny": 0.6455,
+        "centre_dist": 0.2051,
+        "edge_dist": 0.3545
+      },
+      "inter_planet_dist": 336.34,
+      "inter_planet_dist_norm": 0.1682
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 134,
+        "x": 1642,
+        "y": 1310,
+        "nx": 0.8025,
+        "ny": 0.3875,
+        "centre_dist": 0.3227,
+        "edge_dist": 0.1975
+      },
+      "second_planet": {
+        "planet_idx": 104,
+        "x": 1519,
+        "y": 1378,
+        "nx": 0.6488,
+        "ny": 0.4725,
+        "centre_dist": 0.1513,
+        "edge_dist": 0.3512
+      },
+      "inter_planet_dist": 140.55,
+      "inter_planet_dist_norm": 0.1757
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 40,
+        "x": 1217,
+        "y": 1226,
+        "nx": 0.2712,
+        "ny": 0.2825,
+        "centre_dist": 0.3156,
+        "edge_dist": 0.2712
+      },
+      "second_planet": {
+        "planet_idx": 64,
+        "x": 1338,
+        "y": 1297,
+        "nx": 0.4225,
+        "ny": 0.3713,
+        "centre_dist": 0.1503,
+        "edge_dist": 0.3713
+      },
+      "inter_planet_dist": 140.29,
+      "inter_planet_dist_norm": 0.1754
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 94,
+        "x": 1425,
+        "y": 1229,
+        "nx": 0.5312,
+        "ny": 0.2863,
+        "centre_dist": 0.216,
+        "edge_dist": 0.2863
+      },
+      "second_planet": {
+        "planet_idx": 71,
+        "x": 1324,
+        "y": 1157,
+        "nx": 0.405,
+        "ny": 0.1963,
+        "centre_dist": 0.3183,
+        "edge_dist": 0.1963
+      },
+      "inter_planet_dist": 124.04,
+      "inter_planet_dist_norm": 0.155
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 73,
+        "x": 1371,
+        "y": 1367,
+        "nx": 0.4637,
+        "ny": 0.4587,
+        "centre_dist": 0.0549,
+        "edge_dist": 0.4587
+      },
+      "second_planet": {
+        "planet_idx": 85,
+        "x": 1460,
+        "y": 1476,
+        "nx": 0.575,
+        "ny": 0.595,
+        "centre_dist": 0.121,
+        "edge_dist": 0.405
+      },
+      "inter_planet_dist": 140.72,
+      "inter_planet_dist_norm": 0.1759
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 44,
+        "x": 1221,
+        "y": 1418,
+        "nx": 0.2762,
+        "ny": 0.5225,
+        "centre_dist": 0.2249,
+        "edge_dist": 0.2762
+      },
+      "second_planet": {
+        "planet_idx": 62,
+        "x": 1298,
+        "y": 1311,
+        "nx": 0.3725,
+        "ny": 0.3887,
+        "centre_dist": 0.1692,
+        "edge_dist": 0.3725
+      },
+      "inter_planet_dist": 131.83,
+      "inter_planet_dist_norm": 0.1648
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 61,
+        "x": 1326,
+        "y": 1494,
+        "nx": 0.4075,
+        "ny": 0.6175,
+        "centre_dist": 0.1495,
+        "edge_dist": 0.3825
+      },
+      "second_planet": {
+        "planet_idx": 45,
+        "x": 1204,
+        "y": 1434,
+        "nx": 0.255,
+        "ny": 0.5425,
+        "centre_dist": 0.2487,
+        "edge_dist": 0.255
+      },
+      "inter_planet_dist": 135.96,
+      "inter_planet_dist_norm": 0.1699
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 89,
+        "x": 1405,
+        "y": 1549,
+        "nx": 0.5062,
+        "ny": 0.6863,
+        "centre_dist": 0.1864,
+        "edge_dist": 0.3137
+      },
+      "second_planet": {
+        "planet_idx": 106,
+        "x": 1507,
+        "y": 1680,
+        "nx": 0.6338,
+        "ny": 0.85,
+        "centre_dist": 0.3747,
+        "edge_dist": 0.15
+      },
+      "inter_planet_dist": 166.03,
+      "inter_planet_dist_norm": 0.2075
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 115,
+        "x": 1600,
+        "y": 1252,
+        "nx": 0.75,
+        "ny": 0.315,
+        "centre_dist": 0.311,
+        "edge_dist": 0.25
+      },
+      "second_planet": {
+        "planet_idx": 136,
+        "x": 1671,
+        "y": 1108,
+        "nx": 0.8387,
+        "ny": 0.135,
+        "centre_dist": 0.498,
+        "edge_dist": 0.135
+      },
+      "inter_planet_dist": 160.55,
+      "inter_planet_dist_norm": 0.2007
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 113,
+        "x": 1547,
+        "y": 1323,
+        "nx": 0.6837,
+        "ny": 0.4037,
+        "centre_dist": 0.2074,
+        "edge_dist": 0.3163
+      },
+      "second_planet": {
+        "planet_idx": 136,
+        "x": 1655,
+        "y": 1448,
+        "nx": 0.8187,
+        "ny": 0.56,
+        "centre_dist": 0.3243,
+        "edge_dist": 0.1813
+      },
+      "inter_planet_dist": 165.19,
+      "inter_planet_dist_norm": 0.2065
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 30,
+        "x": 1155,
+        "y": 1256,
+        "nx": 0.1938,
+        "ny": 0.32,
+        "centre_dist": 0.3552,
+        "edge_dist": 0.1938
+      },
+      "second_planet": {
+        "planet_idx": 34,
+        "x": 1197,
+        "y": 1423,
+        "nx": 0.2462,
+        "ny": 0.5288,
+        "centre_dist": 0.2554,
+        "edge_dist": 0.2462
+      },
+      "inter_planet_dist": 172.2,
+      "inter_planet_dist_norm": 0.2153
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 102,
+        "x": 1599,
+        "y": 1260,
+        "nx": 0.7488,
+        "ny": 0.325,
+        "centre_dist": 0.3041,
+        "edge_dist": 0.2512
+      },
+      "second_planet": {
+        "planet_idx": 104,
+        "x": 1603,
+        "y": 1417,
+        "nx": 0.7538,
+        "ny": 0.5212,
+        "centre_dist": 0.2546,
+        "edge_dist": 0.2462
+      },
+      "inter_planet_dist": 157.05,
+      "inter_planet_dist_norm": 0.1963
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 95,
+        "x": 1509,
+        "y": 1305,
+        "nx": 0.6362,
+        "ny": 0.3812,
+        "centre_dist": 0.1807,
+        "edge_dist": 0.3638
+      },
+      "second_planet": {
+        "planet_idx": 64,
+        "x": 1332,
+        "y": 1298,
+        "nx": 0.415,
+        "ny": 0.3725,
+        "centre_dist": 0.1532,
+        "edge_dist": 0.3725
+      },
+      "inter_planet_dist": 177.14,
+      "inter_planet_dist_norm": 0.2214
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 130,
+        "x": 1632,
+        "y": 1513,
+        "nx": 0.79,
+        "ny": 0.6412,
+        "centre_dist": 0.3226,
+        "edge_dist": 0.21
+      },
+      "second_planet": {
+        "planet_idx": 102,
+        "x": 1520,
+        "y": 1645,
+        "nx": 0.65,
+        "ny": 0.8063,
+        "centre_dist": 0.341,
+        "edge_dist": 0.1937
+      },
+      "inter_planet_dist": 173.11,
+      "inter_planet_dist_norm": 0.2164
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 84,
+        "x": 1426,
+        "y": 1541,
+        "nx": 0.5325,
+        "ny": 0.6763,
+        "centre_dist": 0.1792,
+        "edge_dist": 0.3237
+      },
+      "second_planet": {
+        "planet_idx": 123,
+        "x": 1585,
+        "y": 1464,
+        "nx": 0.7312,
+        "ny": 0.58,
+        "centre_dist": 0.2447,
+        "edge_dist": 0.2688
+      },
+      "inter_planet_dist": 176.66,
+      "inter_planet_dist_norm": 0.2208
+    },
+    {
+      "prt": "IT",
+      "map_size": "small",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 49,
+        "x": 1286,
+        "y": 1203,
+        "nx": 0.3575,
+        "ny": 0.2537,
+        "centre_dist": 0.2845,
+        "edge_dist": 0.2537
+      },
+      "second_planet": {
+        "planet_idx": 61,
+        "x": 1349,
+        "y": 1036,
+        "nx": 0.4363,
+        "ny": 0.045,
+        "centre_dist": 0.4594,
+        "edge_dist": 0.045
+      },
+      "inter_planet_dist": 178.49,
+      "inter_planet_dist_norm": 0.2231
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 206,
+        "x": 1629,
+        "y": 1796,
+        "nx": 0.5242,
+        "ny": 0.6633,
+        "centre_dist": 0.1651,
+        "edge_dist": 0.3367
+      },
+      "second_planet": {
+        "planet_idx": 210,
+        "x": 1647,
+        "y": 1585,
+        "nx": 0.5392,
+        "ny": 0.4875,
+        "centre_dist": 0.0411,
+        "edge_dist": 0.4608
+      },
+      "inter_planet_dist": 211.77,
+      "inter_planet_dist_norm": 0.1765
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 225,
+        "x": 1696,
+        "y": 1429,
+        "nx": 0.58,
+        "ny": 0.3575,
+        "centre_dist": 0.1634,
+        "edge_dist": 0.3575
+      },
+      "second_planet": {
+        "planet_idx": 273,
+        "x": 1908,
+        "y": 1533,
+        "nx": 0.7567,
+        "ny": 0.4442,
+        "centre_dist": 0.2627,
+        "edge_dist": 0.2433
+      },
+      "inter_planet_dist": 236.14,
+      "inter_planet_dist_norm": 0.1968
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 289,
+        "x": 1978,
+        "y": 1444,
+        "nx": 0.815,
+        "ny": 0.37,
+        "centre_dist": 0.3408,
+        "edge_dist": 0.185
+      },
+      "second_planet": {
+        "planet_idx": 341,
+        "x": 2139,
+        "y": 1547,
+        "nx": 0.9492,
+        "ny": 0.4558,
+        "centre_dist": 0.4513,
+        "edge_dist": 0.0508
+      },
+      "inter_planet_dist": 191.13,
+      "inter_planet_dist_norm": 0.1593
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 92,
+        "x": 1334,
+        "y": 1780,
+        "nx": 0.2783,
+        "ny": 0.65,
+        "centre_dist": 0.2676,
+        "edge_dist": 0.2783
+      },
+      "second_planet": {
+        "planet_idx": 161,
+        "x": 1542,
+        "y": 1649,
+        "nx": 0.4517,
+        "ny": 0.5408,
+        "centre_dist": 0.0633,
+        "edge_dist": 0.4517
+      },
+      "inter_planet_dist": 245.81,
+      "inter_planet_dist_norm": 0.2048
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 201,
+        "x": 1662,
+        "y": 1771,
+        "nx": 0.5517,
+        "ny": 0.6425,
+        "centre_dist": 0.1516,
+        "edge_dist": 0.3575
+      },
+      "second_planet": {
+        "planet_idx": 254,
+        "x": 1803,
+        "y": 1632,
+        "nx": 0.6692,
+        "ny": 0.5267,
+        "centre_dist": 0.1713,
+        "edge_dist": 0.3308
+      },
+      "inter_planet_dist": 197.99,
+      "inter_planet_dist_norm": 0.165
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 272,
+        "x": 1931,
+        "y": 1391,
+        "nx": 0.7758,
+        "ny": 0.3258,
+        "centre_dist": 0.3262,
+        "edge_dist": 0.2242
+      },
+      "second_planet": {
+        "planet_idx": 258,
+        "x": 1894,
+        "y": 1203,
+        "nx": 0.745,
+        "ny": 0.1692,
+        "centre_dist": 0.4117,
+        "edge_dist": 0.1692
+      },
+      "inter_planet_dist": 191.61,
+      "inter_planet_dist_norm": 0.1597
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 204,
+        "x": 1617,
+        "y": 1831,
+        "nx": 0.5142,
+        "ny": 0.6925,
+        "centre_dist": 0.193,
+        "edge_dist": 0.3075
+      },
+      "second_planet": {
+        "planet_idx": 152,
+        "x": 1438,
+        "y": 1626,
+        "nx": 0.365,
+        "ny": 0.5217,
+        "centre_dist": 0.1367,
+        "edge_dist": 0.365
+      },
+      "inter_planet_dist": 272.15,
+      "inter_planet_dist_norm": 0.2268
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 249,
+        "x": 1855,
+        "y": 1541,
+        "nx": 0.7125,
+        "ny": 0.4508,
+        "centre_dist": 0.2181,
+        "edge_dist": 0.2875
+      },
+      "second_planet": {
+        "planet_idx": 335,
+        "x": 2125,
+        "y": 1549,
+        "nx": 0.9375,
+        "ny": 0.4575,
+        "centre_dist": 0.4396,
+        "edge_dist": 0.0625
+      },
+      "inter_planet_dist": 270.12,
+      "inter_planet_dist_norm": 0.2251
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 188,
+        "x": 1605,
+        "y": 1391,
+        "nx": 0.5042,
+        "ny": 0.3258,
+        "centre_dist": 0.1742,
+        "edge_dist": 0.3258
+      },
+      "second_planet": {
+        "planet_idx": 245,
+        "x": 1832,
+        "y": 1440,
+        "nx": 0.6933,
+        "ny": 0.3667,
+        "centre_dist": 0.2349,
+        "edge_dist": 0.3067
+      },
+      "inter_planet_dist": 232.23,
+      "inter_planet_dist_norm": 0.1935
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 203,
+        "x": 1679,
+        "y": 1951,
+        "nx": 0.5658,
+        "ny": 0.7925,
+        "centre_dist": 0.2998,
+        "edge_dist": 0.2075
+      },
+      "second_planet": {
+        "planet_idx": 248,
+        "x": 1821,
+        "y": 1780,
+        "nx": 0.6842,
+        "ny": 0.65,
+        "centre_dist": 0.2375,
+        "edge_dist": 0.3158
+      },
+      "inter_planet_dist": 222.27,
+      "inter_planet_dist_norm": 0.1852
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 257,
+        "x": 1865,
+        "y": 1461,
+        "nx": 0.7208,
+        "ny": 0.3842,
+        "centre_dist": 0.2494,
+        "edge_dist": 0.2792
+      },
+      "second_planet": {
+        "planet_idx": 220,
+        "x": 1743,
+        "y": 1260,
+        "nx": 0.6192,
+        "ny": 0.2167,
+        "centre_dist": 0.3074,
+        "edge_dist": 0.2167
+      },
+      "inter_planet_dist": 235.13,
+      "inter_planet_dist_norm": 0.1959
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 244,
+        "x": 1832,
+        "y": 1651,
+        "nx": 0.6933,
+        "ny": 0.5425,
+        "centre_dist": 0.1979,
+        "edge_dist": 0.3067
+      },
+      "second_planet": {
+        "planet_idx": 196,
+        "x": 1720,
+        "y": 1892,
+        "nx": 0.6,
+        "ny": 0.7433,
+        "centre_dist": 0.2631,
+        "edge_dist": 0.2567
+      },
+      "inter_planet_dist": 265.75,
+      "inter_planet_dist_norm": 0.2215
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 124,
+        "x": 1358,
+        "y": 1717,
+        "nx": 0.2983,
+        "ny": 0.5975,
+        "centre_dist": 0.224,
+        "edge_dist": 0.2983
+      },
+      "second_planet": {
+        "planet_idx": 91,
+        "x": 1259,
+        "y": 1948,
+        "nx": 0.2158,
+        "ny": 0.79,
+        "centre_dist": 0.406,
+        "edge_dist": 0.21
+      },
+      "inter_planet_dist": 251.32,
+      "inter_planet_dist_norm": 0.2094
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 261,
+        "x": 1854,
+        "y": 1807,
+        "nx": 0.7117,
+        "ny": 0.6725,
+        "centre_dist": 0.2731,
+        "edge_dist": 0.2883
+      },
+      "second_planet": {
+        "planet_idx": 315,
+        "x": 2039,
+        "y": 1744,
+        "nx": 0.8658,
+        "ny": 0.62,
+        "centre_dist": 0.385,
+        "edge_dist": 0.1342
+      },
+      "inter_planet_dist": 195.43,
+      "inter_planet_dist_norm": 0.1629
+    },
+    {
+      "prt": "IT",
+      "map_size": "medium",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 275,
+        "x": 1899,
+        "y": 1607,
+        "nx": 0.7492,
+        "ny": 0.5058,
+        "centre_dist": 0.2492,
+        "edge_dist": 0.2508
+      },
+      "second_planet": {
+        "planet_idx": 209,
+        "x": 1692,
+        "y": 1631,
+        "nx": 0.5767,
+        "ny": 0.5258,
+        "centre_dist": 0.0809,
+        "edge_dist": 0.4233
+      },
+      "inter_planet_dist": 208.39,
+      "inter_planet_dist_norm": 0.1737
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 93,
+        "x": 1259,
+        "y": 2157,
+        "nx": 0.1619,
+        "ny": 0.7231,
+        "centre_dist": 0.4051,
+        "edge_dist": 0.1619
+      },
+      "second_planet": {
+        "planet_idx": 77,
+        "x": 1226,
+        "y": 1802,
+        "nx": 0.1412,
+        "ny": 0.5012,
+        "centre_dist": 0.3588,
+        "edge_dist": 0.1412
+      },
+      "inter_planet_dist": 356.53,
+      "inter_planet_dist_norm": 0.2228
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 379,
+        "x": 1954,
+        "y": 2303,
+        "nx": 0.5962,
+        "ny": 0.8144,
+        "centre_dist": 0.3288,
+        "edge_dist": 0.1856
+      },
+      "second_planet": {
+        "planet_idx": 405,
+        "x": 2011,
+        "y": 2563,
+        "nx": 0.6319,
+        "ny": 0.9769,
+        "centre_dist": 0.4948,
+        "edge_dist": 0.0231
+      },
+      "inter_planet_dist": 266.17,
+      "inter_planet_dist_norm": 0.1664
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 314,
+        "x": 1744,
+        "y": 2091,
+        "nx": 0.465,
+        "ny": 0.6819,
+        "centre_dist": 0.1852,
+        "edge_dist": 0.3181
+      },
+      "second_planet": {
+        "planet_idx": 428,
+        "x": 2063,
+        "y": 2023,
+        "nx": 0.6644,
+        "ny": 0.6394,
+        "centre_dist": 0.2155,
+        "edge_dist": 0.3356
+      },
+      "inter_planet_dist": 326.17,
+      "inter_planet_dist_norm": 0.2039
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 127,
+        "x": 1407,
+        "y": 1733,
+        "nx": 0.2544,
+        "ny": 0.4581,
+        "centre_dist": 0.2492,
+        "edge_dist": 0.2544
+      },
+      "second_planet": {
+        "planet_idx": 84,
+        "x": 1282,
+        "y": 1421,
+        "nx": 0.1762,
+        "ny": 0.2631,
+        "centre_dist": 0.4012,
+        "edge_dist": 0.1762
+      },
+      "inter_planet_dist": 336.11,
+      "inter_planet_dist_norm": 0.2101
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 455,
+        "x": 2127,
+        "y": 1770,
+        "nx": 0.7044,
+        "ny": 0.4813,
+        "centre_dist": 0.2052,
+        "edge_dist": 0.2956
+      },
+      "second_planet": {
+        "planet_idx": 523,
+        "x": 2344,
+        "y": 1948,
+        "nx": 0.84,
+        "ny": 0.5925,
+        "centre_dist": 0.3524,
+        "edge_dist": 0.16
+      },
+      "inter_planet_dist": 280.67,
+      "inter_planet_dist_norm": 0.1754
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 512,
+        "x": 2222,
+        "y": 1947,
+        "nx": 0.7638,
+        "ny": 0.5919,
+        "centre_dist": 0.2793,
+        "edge_dist": 0.2362
+      },
+      "second_planet": {
+        "planet_idx": 399,
+        "x": 1956,
+        "y": 2008,
+        "nx": 0.5975,
+        "ny": 0.63,
+        "centre_dist": 0.1625,
+        "edge_dist": 0.37
+      },
+      "inter_planet_dist": 272.9,
+      "inter_planet_dist_norm": 0.1706
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 381,
+        "x": 1946,
+        "y": 1666,
+        "nx": 0.5913,
+        "ny": 0.4163,
+        "centre_dist": 0.1239,
+        "edge_dist": 0.4087
+      },
+      "second_planet": {
+        "planet_idx": 457,
+        "x": 2153,
+        "y": 1389,
+        "nx": 0.7206,
+        "ny": 0.2431,
+        "centre_dist": 0.3386,
+        "edge_dist": 0.2431
+      },
+      "inter_planet_dist": 345.8,
+      "inter_planet_dist_norm": 0.2161
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 388,
+        "x": 2030,
+        "y": 1677,
+        "nx": 0.6438,
+        "ny": 0.4231,
+        "centre_dist": 0.163,
+        "edge_dist": 0.3562
+      },
+      "second_planet": {
+        "planet_idx": 438,
+        "x": 2137,
+        "y": 1404,
+        "nx": 0.7106,
+        "ny": 0.2525,
+        "centre_dist": 0.325,
+        "edge_dist": 0.2525
+      },
+      "inter_planet_dist": 293.22,
+      "inter_planet_dist_norm": 0.1833
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 216,
+        "x": 1447,
+        "y": 1964,
+        "nx": 0.2794,
+        "ny": 0.6025,
+        "centre_dist": 0.2433,
+        "edge_dist": 0.2794
+      },
+      "second_planet": {
+        "planet_idx": 327,
+        "x": 1732,
+        "y": 1789,
+        "nx": 0.4575,
+        "ny": 0.4931,
+        "centre_dist": 0.0431,
+        "edge_dist": 0.4575
+      },
+      "inter_planet_dist": 334.44,
+      "inter_planet_dist_norm": 0.209
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 206,
+        "x": 1638,
+        "y": 1614,
+        "nx": 0.3987,
+        "ny": 0.3837,
+        "centre_dist": 0.1542,
+        "edge_dist": 0.3837
+      },
+      "second_planet": {
+        "planet_idx": 324,
+        "x": 1878,
+        "y": 1850,
+        "nx": 0.5487,
+        "ny": 0.5312,
+        "centre_dist": 0.0579,
+        "edge_dist": 0.4513
+      },
+      "inter_planet_dist": 336.59,
+      "inter_planet_dist_norm": 0.2104
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 294,
+        "x": 1738,
+        "y": 1305,
+        "nx": 0.4612,
+        "ny": 0.1906,
+        "centre_dist": 0.3118,
+        "edge_dist": 0.1906
+      },
+      "second_planet": {
+        "planet_idx": 218,
+        "x": 1562,
+        "y": 1525,
+        "nx": 0.3513,
+        "ny": 0.3281,
+        "centre_dist": 0.2273,
+        "edge_dist": 0.3281
+      },
+      "inter_planet_dist": 281.74,
+      "inter_planet_dist_norm": 0.1761
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 341,
+        "x": 1846,
+        "y": 1951,
+        "nx": 0.5288,
+        "ny": 0.5944,
+        "centre_dist": 0.0987,
+        "edge_dist": 0.4056
+      },
+      "second_planet": {
+        "planet_idx": 411,
+        "x": 2004,
+        "y": 2205,
+        "nx": 0.6275,
+        "ny": 0.7531,
+        "centre_dist": 0.2834,
+        "edge_dist": 0.2469
+      },
+      "inter_planet_dist": 299.13,
+      "inter_planet_dist_norm": 0.187
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 119,
+        "x": 1313,
+        "y": 1787,
+        "nx": 0.1956,
+        "ny": 0.4919,
+        "centre_dist": 0.3045,
+        "edge_dist": 0.1956
+      },
+      "second_planet": {
+        "planet_idx": 55,
+        "x": 1171,
+        "y": 2091,
+        "nx": 0.1069,
+        "ny": 0.6819,
+        "centre_dist": 0.4332,
+        "edge_dist": 0.1069
+      },
+      "inter_planet_dist": 335.53,
+      "inter_planet_dist_norm": 0.2097
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 303,
+        "x": 1728,
+        "y": 1802,
+        "nx": 0.455,
+        "ny": 0.5012,
+        "centre_dist": 0.045,
+        "edge_dist": 0.455
+      },
+      "second_planet": {
+        "planet_idx": 335,
+        "x": 1816,
+        "y": 2035,
+        "nx": 0.51,
+        "ny": 0.6469,
+        "centre_dist": 0.1472,
+        "edge_dist": 0.3531
+      },
+      "inter_planet_dist": 249.06,
+      "inter_planet_dist_norm": 0.1557
+    },
+    {
+      "prt": "IT",
+      "map_size": "large",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 367,
+        "x": 1954,
+        "y": 1497,
+        "nx": 0.5962,
+        "ny": 0.3106,
+        "centre_dist": 0.2124,
+        "edge_dist": 0.3106
+      },
+      "second_planet": {
+        "planet_idx": 480,
+        "x": 2213,
+        "y": 1754,
+        "nx": 0.7581,
+        "ny": 0.4713,
+        "centre_dist": 0.2597,
+        "edge_dist": 0.2419
+      },
+      "inter_planet_dist": 364.87,
+      "inter_planet_dist_norm": 0.228
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37000,
+      "homeworld": {
+        "planet_idx": 248,
+        "x": 1522,
+        "y": 1668,
+        "nx": 0.261,
+        "ny": 0.334,
+        "centre_dist": 0.291,
+        "edge_dist": 0.261
+      },
+      "second_planet": {
+        "planet_idx": 429,
+        "x": 1917,
+        "y": 1493,
+        "nx": 0.4585,
+        "ny": 0.2465,
+        "centre_dist": 0.2569,
+        "edge_dist": 0.2465
+      },
+      "inter_planet_dist": 432.03,
+      "inter_planet_dist_norm": 0.216
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37001,
+      "homeworld": {
+        "planet_idx": 315,
+        "x": 1755,
+        "y": 2407,
+        "nx": 0.3775,
+        "ny": 0.7035,
+        "centre_dist": 0.2375,
+        "edge_dist": 0.2965
+      },
+      "second_planet": {
+        "planet_idx": 212,
+        "x": 1511,
+        "y": 2585,
+        "nx": 0.2555,
+        "ny": 0.7925,
+        "centre_dist": 0.3812,
+        "edge_dist": 0.2075
+      },
+      "inter_planet_dist": 302.03,
+      "inter_planet_dist_norm": 0.151
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37002,
+      "homeworld": {
+        "planet_idx": 606,
+        "x": 2286,
+        "y": 2039,
+        "nx": 0.643,
+        "ny": 0.5195,
+        "centre_dist": 0.1443,
+        "edge_dist": 0.357
+      },
+      "second_planet": {
+        "planet_idx": 402,
+        "x": 1846,
+        "y": 2141,
+        "nx": 0.423,
+        "ny": 0.5705,
+        "centre_dist": 0.1044,
+        "edge_dist": 0.423
+      },
+      "inter_planet_dist": 451.67,
+      "inter_planet_dist_norm": 0.2258
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37003,
+      "homeworld": {
+        "planet_idx": 293,
+        "x": 1614,
+        "y": 1999,
+        "nx": 0.307,
+        "ny": 0.4995,
+        "centre_dist": 0.193,
+        "edge_dist": 0.307
+      },
+      "second_planet": {
+        "planet_idx": 428,
+        "x": 1909,
+        "y": 1722,
+        "nx": 0.4545,
+        "ny": 0.361,
+        "centre_dist": 0.1463,
+        "edge_dist": 0.361
+      },
+      "inter_planet_dist": 404.67,
+      "inter_planet_dist_norm": 0.2023
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37004,
+      "homeworld": {
+        "planet_idx": 568,
+        "x": 2198,
+        "y": 1724,
+        "nx": 0.599,
+        "ny": 0.362,
+        "centre_dist": 0.1698,
+        "edge_dist": 0.362
+      },
+      "second_planet": {
+        "planet_idx": 656,
+        "x": 2381,
+        "y": 1307,
+        "nx": 0.6905,
+        "ny": 0.1535,
+        "centre_dist": 0.3954,
+        "edge_dist": 0.1535
+      },
+      "inter_planet_dist": 455.39,
+      "inter_planet_dist_norm": 0.2277
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37005,
+      "homeworld": {
+        "planet_idx": 773,
+        "x": 2621,
+        "y": 1903,
+        "nx": 0.8105,
+        "ny": 0.4515,
+        "centre_dist": 0.3143,
+        "edge_dist": 0.1895
+      },
+      "second_planet": {
+        "planet_idx": 619,
+        "x": 2326,
+        "y": 1644,
+        "nx": 0.663,
+        "ny": 0.322,
+        "centre_dist": 0.2414,
+        "edge_dist": 0.322
+      },
+      "inter_planet_dist": 392.56,
+      "inter_planet_dist_norm": 0.1963
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37006,
+      "homeworld": {
+        "planet_idx": 734,
+        "x": 2535,
+        "y": 1700,
+        "nx": 0.7675,
+        "ny": 0.35,
+        "centre_dist": 0.3067,
+        "edge_dist": 0.2325
+      },
+      "second_planet": {
+        "planet_idx": 540,
+        "x": 2170,
+        "y": 1722,
+        "nx": 0.585,
+        "ny": 0.361,
+        "centre_dist": 0.1629,
+        "edge_dist": 0.361
+      },
+      "inter_planet_dist": 365.66,
+      "inter_planet_dist_norm": 0.1828
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37007,
+      "homeworld": {
+        "planet_idx": 627,
+        "x": 2334,
+        "y": 1541,
+        "nx": 0.667,
+        "ny": 0.2705,
+        "centre_dist": 0.2838,
+        "edge_dist": 0.2705
+      },
+      "second_planet": {
+        "planet_idx": 481,
+        "x": 2019,
+        "y": 1776,
+        "nx": 0.5095,
+        "ny": 0.388,
+        "centre_dist": 0.1124,
+        "edge_dist": 0.388
+      },
+      "inter_planet_dist": 393.0,
+      "inter_planet_dist_norm": 0.1965
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37008,
+      "homeworld": {
+        "planet_idx": 457,
+        "x": 1981,
+        "y": 1591,
+        "nx": 0.4905,
+        "ny": 0.2955,
+        "centre_dist": 0.2047,
+        "edge_dist": 0.2955
+      },
+      "second_planet": {
+        "planet_idx": 538,
+        "x": 2123,
+        "y": 1240,
+        "nx": 0.5615,
+        "ny": 0.12,
+        "centre_dist": 0.3849,
+        "edge_dist": 0.12
+      },
+      "inter_planet_dist": 378.64,
+      "inter_planet_dist_norm": 0.1893
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37009,
+      "homeworld": {
+        "planet_idx": 326,
+        "x": 1666,
+        "y": 2295,
+        "nx": 0.333,
+        "ny": 0.6475,
+        "centre_dist": 0.2228,
+        "edge_dist": 0.333
+      },
+      "second_planet": {
+        "planet_idx": 290,
+        "x": 1593,
+        "y": 2000,
+        "nx": 0.2965,
+        "ny": 0.5,
+        "centre_dist": 0.2035,
+        "edge_dist": 0.2965
+      },
+      "inter_planet_dist": 303.9,
+      "inter_planet_dist_norm": 0.1519
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37010,
+      "homeworld": {
+        "planet_idx": 346,
+        "x": 1752,
+        "y": 2263,
+        "nx": 0.376,
+        "ny": 0.6315,
+        "centre_dist": 0.1807,
+        "edge_dist": 0.3685
+      },
+      "second_planet": {
+        "planet_idx": 536,
+        "x": 2154,
+        "y": 2245,
+        "nx": 0.577,
+        "ny": 0.6225,
+        "centre_dist": 0.1447,
+        "edge_dist": 0.3775
+      },
+      "inter_planet_dist": 402.4,
+      "inter_planet_dist_norm": 0.2012
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37011,
+      "homeworld": {
+        "planet_idx": 363,
+        "x": 1808,
+        "y": 2288,
+        "nx": 0.404,
+        "ny": 0.644,
+        "centre_dist": 0.1731,
+        "edge_dist": 0.356
+      },
+      "second_planet": {
+        "planet_idx": 199,
+        "x": 1452,
+        "y": 2070,
+        "nx": 0.226,
+        "ny": 0.535,
+        "centre_dist": 0.2762,
+        "edge_dist": 0.226
+      },
+      "inter_planet_dist": 417.44,
+      "inter_planet_dist_norm": 0.2087
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37012,
+      "homeworld": {
+        "planet_idx": 506,
+        "x": 2052,
+        "y": 2360,
+        "nx": 0.526,
+        "ny": 0.68,
+        "centre_dist": 0.1819,
+        "edge_dist": 0.32
+      },
+      "second_planet": {
+        "planet_idx": 408,
+        "x": 1851,
+        "y": 1983,
+        "nx": 0.4255,
+        "ny": 0.4915,
+        "centre_dist": 0.075,
+        "edge_dist": 0.4255
+      },
+      "inter_planet_dist": 427.24,
+      "inter_planet_dist_norm": 0.2136
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37013,
+      "homeworld": {
+        "planet_idx": 489,
+        "x": 2066,
+        "y": 2162,
+        "nx": 0.533,
+        "ny": 0.581,
+        "centre_dist": 0.0875,
+        "edge_dist": 0.419
+      },
+      "second_planet": {
+        "planet_idx": 378,
+        "x": 1806,
+        "y": 1966,
+        "nx": 0.403,
+        "ny": 0.483,
+        "centre_dist": 0.0985,
+        "edge_dist": 0.403
+      },
+      "inter_planet_dist": 325.6,
+      "inter_planet_dist_norm": 0.1628
+    },
+    {
+      "prt": "IT",
+      "map_size": "huge",
+      "seed": 37014,
+      "homeworld": {
+        "planet_idx": 493,
+        "x": 2039,
+        "y": 2516,
+        "nx": 0.5195,
+        "ny": 0.758,
+        "centre_dist": 0.2587,
+        "edge_dist": 0.242
+      },
+      "second_planet": {
+        "planet_idx": 630,
+        "x": 2289,
+        "y": 2291,
+        "nx": 0.6445,
+        "ny": 0.6455,
+        "centre_dist": 0.2051,
+        "edge_dist": 0.3545
+      },
+      "inter_planet_dist": 336.34,
+      "inter_planet_dist_norm": 0.1682
+    }
+  ]
+}
